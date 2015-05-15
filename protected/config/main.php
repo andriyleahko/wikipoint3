@@ -11,6 +11,8 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+    
+        'defaultController' => 'main',
 
 	// autoloading model and component classes
 	'import'=>array(

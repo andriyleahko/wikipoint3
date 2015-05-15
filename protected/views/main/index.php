@@ -1,17 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<style>
-
-@import url(css/style.css);
-
-</style>
-</head>
-<body>
-<div class="wrapper">
-
-
 <div id="main-page">
 	<h1>Аренда квартир и комнат <br>напрямую у владельцев</h1>
 	<p class="subheader">база собственников жилой недвижимости</p>
@@ -31,9 +17,3 @@
 	VK.Widgets.Group("vk_groups", {mode: 0, width: "620", height: "270", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 55603717);
 	</script>
 </div>
-
-
-
-</div>
-</body>
-</html>

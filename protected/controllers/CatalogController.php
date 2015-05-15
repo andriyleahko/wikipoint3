@@ -1,6 +1,6 @@
 <?php
 
-class MainController extends Controller
+class CatalogController extends Controller
 {
         public $layout='page';
         
