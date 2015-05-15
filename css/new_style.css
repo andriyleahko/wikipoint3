@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+body {font: 18px/30px "PT Sans"; background: url(bg.png) repeat-y center top;}
+h1 {font: 700 48px/60px "PT Sans"; color: #4579A6; text-align: center;}
+h2 {font: 700 36px/60px "PT Sans"; color: #393939; text-align: center; margin-bottom: 30px;}
+h3 {font: 700 24px/30px "PT Sans"; color: #393939; margin-bottom: 30px;}
+.subheader {font: italic 29px/60px "PT Sans"; color: #4A4A4A; text-align: center; margin-bottom: 60px;}
+.wrapper {width: 940px; background: rgba(0, 255, 255, 0.62); margin: auto; overflow: hidden;}
+
+
+
+/* Главное меню */
+
+#main-menu {overflow: hidden; margin-bottom: 30px;}
+#main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(img/logo.jpg) no-repeat center center; background-size: 200px;}
+#main-menu .menu-option {font: 700 italic 24px/60px "PT Sans"; text-decoration: none; color: #4579A6; margin-right: 20px;}
+#main-menu .add-item {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(img/note.svg) no-repeat 15px center; background-color: #9B9B9B; margin-top: 8px;}
+
+
+/* Главная страница */
+
+#main-page {text-align: center;}
+#main-page #statistics {color: #4A4A4A; font: 26px/45px "PT Sans"; text-align: left; margin: auto; width: 620px;}
+#main-page #statistics strong {font-weight: 700;}
+#main-page #statistics a {color: #558DB5;}
+#main-page #statistics .pricerange {padding-left: 20px;}
+#main-page .disclaimer {margin: 30px 0px 30px 0px;}
+#main-page #vk_groups {margin: auto auto 60px auto;}
+
+
+/* Поиск */
+
+#main-search { background: #FBFAF6; box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20); overflow: hidden; color: #9B9B9B; margin-bottom: 30px;}
+#main-search p, a {line-height: 60px; float: left; margin-right: 20px;}
+#main-search .room { display: inline-block; float: left; margin-right: 20px; color: black;}
+#main-search .room input[type="checkbox"] {display: none;}
+#main-search .room input[type="checkbox"] + label { display: block; float: left; line-height: 44px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; cursor: pointer; margin: 8px 0px;}
+#main-search .room input[type="checkbox"] + label:nth-of-type(1){ border-left: 1px solid #BCBCBC; border-radius: 4px;}
+#main-search .room label:last-of-type { border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px;}
+#main-search .room input[type="checkbox"]:checked + label {background: rgba(0, 0, 0, 0.07); box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50); }
+#main-search .rooms {color: black;}
+#main-search .rooms input[type="checkbox"] {display: none;}
+#main-search .rooms input[type="checkbox"] + label {display: block; float: left; line-height: 44px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; border-left: none; cursor: pointer; margin: 8px 0px;}
+#main-search .rooms input[type="checkbox"] + label:nth-of-type(1){border-left: 1px solid #BCBCBC; border-radius: 4px 0px 0px 4px;}
+#main-search .rooms label:last-of-type {border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px;}
+#main-search .rooms input[type="checkbox"]:checked + label {background: rgba(0, 0, 0, 0.07); box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);}
+#main-search .rooms p {margin-left: 20px;}
+#main-search .choose-metro {display: block; float: left; line-height: 44px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; border-radius: 4px; cursor: pointer; margin-top: 8px; text-decoration: none; color: black;}
+#main-search select {appearance: none; -webkit-appearance: none; -moz-appearance: none; float: left; margin-right: 20px; height: 44px; font: 18px/30px "PT Sans"; margin-top: 8px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; 	background: none; text-align: center;}
+#main-search input[type="submit"] {background: #4579A6; border: none; border-radius: 4px; color: white; height: 44px; font: 18px/30px "PT Sans"; padding: 0px 20px 0px 20px; margin-top: 8px;} 
+
+
+
+
+
+
+
+
+
+
+
+
