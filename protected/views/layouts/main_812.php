@@ -1,3 +1,6 @@
+<html>
+<head>
+
 <meta charset="utf-8">
 <style>
     @import url(css/style.css);
@@ -9,7 +12,8 @@
     #main-menu .add-item {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(img/note.svg) no-repeat 15px center; background-color: #9B9B9B; margin-top: 8px;}
 
 </style>
-
+</head>
+<body>
 <div class="wrapper">
 
     <div id="main-menu">
@@ -24,3 +28,5 @@
 
 
 </div>
+</body>
+</html>
