@@ -1,0 +1,8 @@
+2015/05/16 09:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "пшш".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('??????')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%D0%BF%D1%88%D1%88
+---
