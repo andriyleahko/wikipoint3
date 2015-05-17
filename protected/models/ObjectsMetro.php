@@ -1,29 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "pictures".
+ * This is the model class for table "objects_metro".
  *
- * The followings are the available columns in table 'pictures':
- * @property integer $id
- * @property integer $user_id
+ * The followings are the available columns in table 'objects_metro':
  * @property integer $id_object
- * @property string $file
- * @property string $descr
- * @property string $insert_date
- * @property string $modarated
- * @property string $entity
- * @property integer $entity_pk
- * @property integer $num
- * @property integer $defaultr
+ * @property integer $id_metro
+ * @property integer $id_tometro
+ * @property integer $time_tometro
  */
-class Pictures extends CActiveRecord
+class ObjectsMetro extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'pictures';
+		return 'objects_metro';
 	}
 
 	/**
@@ -34,15 +27,11 @@ class Pictures extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, id_object, descr, entity, entity_pk, num, defaultr', 'required'),
-			array('user_id, id_object, entity_pk, num, defaultr', 'numerical', 'integerOnly'=>true),
-			array('file', 'length', 'max'=>128),
-			array('descr', 'length', 'max'=>255),
-			array('entity', 'length', 'max'=>15),
-			array('insert_date, modarated', 'safe'),
+			array('id_object, id_metro, id_tometro, time_tometro', 'required'),
+			array('id_object, id_metro, id_tometro, time_tometro', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, id_object, file, descr, insert_date, modarated, entity, entity_pk, num, defaultr', 'safe', 'on'=>'search'),
+			array('id_object, id_metro, id_tometro, time_tometro', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,7 +43,8 @@ class Pictures extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'Objects'=>array(self::HAS_ONE, 'Objects', 'id_object'),
+				'Objects'=>array(self::HAS_MANY, 'Objects', 'id_object'),
+				'ObjectsDovMetro'=>array(self::HAS_ONE, 'ObjectsDovMetro', 'id')
 		);
 	}
 
@@ -64,17 +54,10 @@ class Pictures extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'user_id' => 'User',
 			'id_object' => 'Id Object',
-			'file' => 'File',
-			'descr' => 'Descr',
-			'insert_date' => 'Insert Date',
-			'modarated' => 'Modarated',
-			'entity' => 'Entity',
-			'entity_pk' => 'Entity Pk',
-			'num' => 'Num',
-			'defaultr' => 'Defaultr',
+			'id_metro' => 'Id Metro',
+			'id_tometro' => 'Id Tometro',
+			'time_tometro' => 'Time Tometro',
 		);
 	}
 
@@ -96,17 +79,10 @@ class Pictures extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('id_object',$this->id_object);
-		$criteria->compare('file',$this->file,true);
-		$criteria->compare('descr',$this->descr,true);
-		$criteria->compare('insert_date',$this->insert_date,true);
-		$criteria->compare('modarated',$this->modarated,true);
-		$criteria->compare('entity',$this->entity,true);
-		$criteria->compare('entity_pk',$this->entity_pk);
-		$criteria->compare('num',$this->num);
-		$criteria->compare('defaultr',$this->defaultr);
+		$criteria->compare('id_metro',$this->id_metro);
+		$criteria->compare('id_tometro',$this->id_tometro);
+		$criteria->compare('time_tometro',$this->time_tometro);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -117,7 +93,7 @@ class Pictures extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Pictures the static model class
+	 * @return ObjectsMetro the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

@@ -72,6 +72,14 @@ class Objects extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+				'Owners'=>array(self::HAS_ONE, 'Owners', 'id_owner'),
+				'ObjectsAppartment'=>array(self::HAS_ONE, 'ObjectsAppartment', 'id_object'),
+				'ObjectsDovType'=>array(self::BELONGS_TO, 'ObjectsDovType', 'id_objectType'),
+				'Pictures'=>array(self::HAS_MANY, 'Pictures', 'id_object'),
+				'ObjectsMetro'=>array(self::HAS_ONE, 'ObjectsMetro', 'id_object'),
+				'ObjectsDovStreets'=>array(self::BELONGS_TO, 'ObjectsDovStreets', 'id_street'),
+				'ObjectsMoreinfo'=>array(self::HAS_ONE,'ObjectsMoreinfo', 'id_object')
+				
 				
 		);
 	}
