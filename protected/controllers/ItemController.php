@@ -10,8 +10,10 @@ class ItemController extends Controller
 	
 	public function  actionShowItem($itemId)
 	{
-		$model=Objects::model()->with('ObjectsMetro')->findByPk($itemId);
-		$this->render('index', array('model'=>$model));
+		$model=Objects::model()->with('ObjectsMetro','Owners')->findByPk($itemId);
+		if ($model){
+			$this->render('index', array('model'=>$model));
+		}
 	}
 
 	// Uncomment the following methods and override them if needed

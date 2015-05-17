@@ -4,7 +4,7 @@
 
 body {
 	font: 18px/30px "PT Sans";
-	background: url(bg.png) repeat-y center top;
+	/*background: url(bg.png) repeat-y center top;*/
 }
 
 h1 {

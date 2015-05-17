@@ -4,18 +4,8 @@
 <meta charset="utf-8">
 <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(59.934280,30.335099),
-          zoom: 10,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-      }
-    </script>
+</script>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	
 <style>
 @import url(css/style.css);
@@ -24,7 +14,9 @@
       body { height: 100%; margin: 0; padding: 0 }
       #map_canvas { height: 540px; width: 620px; }
 
-
+body {
+    background: #99aec2 none repeat scroll 0 0;
+}
 
 #item {}
 #item h1 {font: 700 28px/30px "PT Sans"; color: black; text-align: left; padding-top: 30px;}
@@ -165,7 +157,7 @@
 
 </style>
 </head>
-<body onload="initialize()">
+<body">
 
 
 <div id="item" class="wrapper">
