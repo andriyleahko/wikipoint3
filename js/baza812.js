@@ -1,12 +1,14 @@
 $(document).ready(function(){
     $('#search-submit').on('click', function(){
+        $.fancybox.showActivity();
         var data = $(this).closest('form').serialize();
         $.ajax({
             type : 'get',
             url : '/catalog/search',
             data : data,
             success : function(data) {
-                $('#search-results').html(data)
+                $('#search-results').html(data);
+                $.fancybox.hideActivity();
             }
         })
         return false;
@@ -39,6 +41,7 @@ $(document).ready(function(){
     })
     
     $('body').on('click','#more-object', function () {
+            $.fancybox.showActivity();
             var data = $('#search-form').serialize();
             var offset = $('[name=offsetNext]:last').val();
             $.ajax({
@@ -46,7 +49,8 @@ $(document).ready(function(){
                 url: '/catalog/search?offset='+offset,
                 data: data,
                 success: function (data) {
-                    $('#search-results').append(data)
+                    $('#search-results').append(data);
+                    $.fancybox.hideActivity();
                 }
             })
             $(this).remove();

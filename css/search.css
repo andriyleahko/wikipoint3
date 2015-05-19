@@ -22,7 +22,7 @@
 }
 
 .item .type {color: #4A4A4A; font: 700 28px/30px "PT Sans"; padding-top: 8px;}
-.item .metro {font-size: 16px; padding-left: 37px; background: url() no-repeat left center; float: left;}
+.item .metro11 {font-size: 16px; padding-left: 37px; background: url() no-repeat left center; float: left;}
 
 .item .line-1 {color: #702785; background-image: url(/img/metro-line-1.png);}
 .item .line-2 {color: #702785; background-image: url(/img/metro-line-2.png);}
