@@ -1,38 +1,42 @@
 <script type="text/javascript">
 
-	var fenway = new google.maps.LatLng(<?php echo ($model->longitude)?$model->longitude:59.939039; ?>, <?php echo ($model->latitude)?$model->latitude:30.315785;?>);
-	var mapZoom=<?php echo($model->longitude&&$model->latitude)?15:10?>
-
-	function map() {
-    	var mapOptions = {
-        	center: fenway, 
-          	zoom: mapZoom,
-          	mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-      	}
+		var fenway = new google.maps.LatLng(<?php echo ($model->longitude)?$model->longitude:59.939039; ?>, <?php echo ($model->latitude)?$model->latitude:30.315785;?>);
+		var mapZoom=<?php echo($model->longitude&&$model->latitude)?15:10?>
+		
+		function map() {
+	    	var mapOptions = {
+	        	center: fenway, 
+	          	zoom: mapZoom,
+	          	mapTypeId: google.maps.MapTypeId.ROADMAP
+	        };
+	        var map = new google.maps.Map(document.getElementById("map_canvas"),
+	            mapOptions);
+	      	}
 	
 
-	function pan() {  
-		var mapOptions = {
-			center: fenway,
-			zoom: 14,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		var map = new google.maps.Map(
-		  	document.getElementById("map_canvas"), mapOptions);
-		   	var panoramaOptions = {
-			  	position: fenway,
-			  	pov: {
-					heading: 34,
-					pitch: 10,
-					zoom: 1
-			  	}
-			};
-			var panorama = new  google.maps.StreetViewPanorama(document.getElementById("pano"),panoramaOptions);
-		   	map.setStreetView(panorama);
-	 }  
+/**************** for panorama */
+		var map;
+		var sv = new google.maps.StreetViewService();
+		var panorama;
+		function pan() {
+			  panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+			  sv.getPanoramaByLocation(fenway, 200, processSVData);
+		}
+		function processSVData(data, status) {
+		  if (status == google.maps.StreetViewStatus.OK) {
+		    
+		    panorama.setPano(data.location.pano);
+		    panorama.setPov({
+		      heading: 270,
+		      pitch: 0
+		    });
+		    panorama.setVisible(true);
+		  } else {
+		    alert('Street View data not found for this location.');
+		  }
+		}
+/**************** for panorama */
+ 
 
 	function showpan(){
 		$('#pano').attr("style", "visibility: visible; height:540px; width:620px;");
