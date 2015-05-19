@@ -6,7 +6,6 @@
     @import url(/css/style.css);
     @import url(/css/catalog.css);
     @import url(/css/search.css);
-    @import url(/js/jquery.fancybox-1.3.4/jquery.fancybox-1.3.4.css);
 
     #main-menu {overflow: hidden; margin-bottom: 30px;}
     #main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(img/logo.jpg) no-repeat center center; background-size: 200px;}
@@ -17,9 +16,10 @@ body {
 }
 </style>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="/js/jquery.fancybox-1.3.4/jquery.fancybox-1.3.4.js"></script>
-<script src="/js/baza812.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+<script  type="text/javascript" src="/js/baza812.js"></script>
 </head>
 <body>
 <div class="wrapper">

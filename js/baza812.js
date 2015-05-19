@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#search-submit').on('click',function(){
+    $('#search-submit').on('click', function(){
         var data = $(this).closest('form').serialize();
         $.ajax({
             type : 'get',
@@ -11,6 +11,7 @@ $(document).ready(function(){
         })
         return false;
     })
+    
 })
 
 

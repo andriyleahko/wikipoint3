@@ -2,8 +2,19 @@
 
 <?php if (count($objects)) : ?>
     <?php foreach ($objects as $item): ?>
+        <?php $first = null; ?>
         <div class="item">
-            <div class="image"></div>
+            <?php if ($item->Pictures) :?>
+                <?php foreach ($item->Pictures as $k => $pic) : ?>
+                    <?php if (!$k) $first = "http://grandprime.info/" . $pic->file ?>
+                <?php endforeach; ?>
+            <?php endif;?>
+            <div class="image" style="overflow: hidden"><?php if ($first !== null) :?> <a class="fancy" rel="example_group<?php echo $item->id_object ?>" href="<?php echo $first ?>"><img src="<?php echo $first ?>"/></a><?php endif; ?></div>
+            <?php if ($item->Pictures) :?>
+                <?php foreach ($item->Pictures as $k => $pic) : ?>
+                    <?php if ($k):?><a class="fancy" rel="example_group<?php echo $item->id_object ?>" style="display:none" href="http://grandprime.info/<?php echo $pic->file ?>"> </a><?php endif;?>
+                <?php endforeach; ?>
+            <?php endif;?>
             <div class="info">
                 <p class="price"><?php echo $item->price ?> руб.</p>
                 
@@ -40,3 +51,8 @@
 
 
 <p class="items-counter"><a href="#">Ещё объекти.</a></p>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("a[rel^='example_group']").fancybox();
+    })
+</script>
