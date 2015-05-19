@@ -43,7 +43,7 @@ class CatalogController extends Controller
                 $model = Objects::model()->findAll($criteria);
                 
                 $this->renderPartial('search-result',
-                        array('objects' => $model,'total' => $count)
+                        array('objects' => $model,'total' => $count, 'offsetNext' => Yii::app()->request->getParam('offset',0) + $this->limit)
                 );
                 Yii::app()->end();
             }

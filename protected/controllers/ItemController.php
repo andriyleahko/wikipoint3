@@ -8,7 +8,7 @@ class ItemController extends Controller
 		$this->render('index');
 	}
 	
-	public function  actionShowItem($itemId)
+	public function  actionShow($itemId)
 	{
 		$model=Objects::model()->with('ObjectsMetro','Owners')->findByPk($itemId);
 		if ($model){

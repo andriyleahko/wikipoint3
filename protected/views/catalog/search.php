@@ -1,6 +1,6 @@
 <div id="main-search">
     <p>Я ищу</p>
-    <form method="get">
+    <form method="get" id="search-form">
     <fieldset class="room">
         <input type="checkbox" name="rooms-amount[]" value="7,8,9,10,11,12,13,14,15" id="r441">
         <label for="r441"><span>комнату</span></label>
