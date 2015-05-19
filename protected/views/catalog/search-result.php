@@ -1,5 +1,5 @@
-<p class="items-counter">Найдено <?php echo $total ?> объектов.</p>
-<input type="text" name="offsetNext" value="<?php echo $offsetNext ?>" />
+<?php if (!$offset) : ?><p class="items-counter">Найдено <?php echo $total ?> объектов.</p> <?php endif; ?>
+<input type="hidden" name="offsetNext" value="<?php echo $offsetNext ?>" />
 <?php if (count($objects)) : ?>
     <?php foreach ($objects as $item): ?>
         <?php $first = null; ?>
@@ -37,17 +37,25 @@
                 <br />
                 <div class="features">
                     <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
+                        <?php if ($item->ObjectsMoreinfo): ?>
                         <?php if ($item->ObjectsMoreinfo->internet == 1): ?>
                             <img  width="13px" title='Интернет' src='/img/sp4.png'> <span style='margin-left: 15px;'>Интернет</span> <br>
                         <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if ($item->ObjectsMoreinfo): ?>    
                         <?php if ($item->ObjectsMoreinfo->washer == 1): ?>
                             <img width='13px' title='Стиральная Машинка' src='/mg/sp2.png'> <span style='margin-left: 15px;'>Стиральная Машинка</span><br>
                         <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if ($item->ObjectsMoreinfo): ?>    
                         <?php if ($item->ObjectsMoreinfo->fridge == 1): ?>
                             <img width='13px' title='Холодильник' src='/img/sp1.png'> <span style='margin-left: 15px;'>Холодильник</span> <br>
                         <?php endif; ?>
+                         <?php endif; ?>
+                            <?php if ($item->ObjectsMoreinfo): ?>
         <?php if ($item->ObjectsMoreinfo->furniture == 1): ?>
                             <img width='13px' title='Мебель' src='/img/sp3.png'> <span style='margin-left: 15px;'>Мебель</span> 
+        <?php endif; ?>
         <?php endif; ?>
                     </div>
                 </div>
@@ -68,18 +76,5 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("a[rel^='example_group']").fancybox();
-        $('#more-object').on('click', function () {
-            var data = $('#search-form').serialize();
-            var offset = $('[name=offsetNext]').val();
-            $.ajax({
-                type: 'get',
-                url: '/catalog/search?offset='+offset,
-                data: data,
-                success: function (data) {
-                    $('#search-results').append(data)
-                }
-            })
-            return false;
-        })
     })
 </script>
