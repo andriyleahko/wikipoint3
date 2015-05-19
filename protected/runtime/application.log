@@ -115,3 +115,943 @@ Stack trace:
 REQUEST_URI=/catalog/img/logo.jpg
 HTTP_REFERER=http://wikipoint3.loc/catalog/search
 ---
+2015/05/19 18:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/19 18:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/19 18:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('view')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('view')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/view')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/12124
+---
+2015/05/19 18:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('view')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('view')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/view')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/1212
+---
+2015/05/19 18:58:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show/itemI...')
+#5 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show/itemId=95
+---
+2015/05/19 18:58:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show/itemI...')
+#5 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show/itemId=95
+---
+2015/05/19 18:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp4.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp4.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 18:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 18:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp1.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp1.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 18:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp2.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp2.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 18:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp3.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp3.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp4.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp4.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp2.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp2.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp1.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp1.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp4.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp4.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/sp3.pn...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/sp3.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295
+---
+2015/05/19 19:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=2951
+---
+2015/05/19 19:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:09:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=955
+---
+2015/05/19 19:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=955
+---
+2015/05/19 19:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=955
+---
+2015/05/19 19:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:18:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:24:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:25:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:28:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:29:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:30:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:32:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:52:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:53:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:53:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 19:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:07:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:34:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:41:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:41:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:45:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288815
+---
+2015/05/19 20:47:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288814
+---
+2015/05/19 20:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288814
+---
+2015/05/19 20:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288813
+---
+2015/05/19 20:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OS\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OS\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OS\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288812
+---
