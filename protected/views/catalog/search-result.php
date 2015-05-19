@@ -72,6 +72,8 @@
 
 
 
+
+
 <p class="items-counter" style="text-align: center"><a id="more-object" href="#">Ещё объекти.</a></p>
 <script type="text/javascript">
     $(document).ready(function () {

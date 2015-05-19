@@ -32,8 +32,33 @@ class CatalogController extends Controller
                 $roomString = (count($rooms)) ? implode(',', $rooms) : null;
                 
                 if ($roomString) {
-                    $where.=' AND (id_objectType IN(' . $roomString . '))';
+                    $where .=' AND (id_objectType IN(' . $roomString . '))';
                 }
+                
+                if ($priceFrom = Yii::app()->request->getParam('price_from')) {
+                    $where .=' AND (price >= ' . $priceFrom . ')';
+                }
+                if ($priceTo = Yii::app()->request->getParam('price_to')) {
+                    $where .=' AND (price <= ' . $priceTo . ')';
+                }
+                
+                $metro = trim(Yii::app()->request->getParam('metro',''));
+                
+                if (!empty($metro)) {
+                    $metro = "'" . implode("','",array_map('trim',explode(',',rtrim($metro,',')))) . "'";
+                    $metroCriteria = new CDbCriteria();
+                    $metroCriteria->addCondition('name in (' . $metro . ')');
+                    $modelMetro = ObjectsDovMetro::model()->findAll($metroCriteria);
+                    if ($modelMetro) {
+                        $metroIDS = array();
+                        foreach ($modelMetro as $metro) {
+                            $metroIDS[] = $metro['id'];
+                        }
+                    }
+                    
+                    $where .= " AND (ObjectsMetro.id_metro in(" . implode(',',$metroIDS) . "))";  
+                }
+                
                 
                 $criteria->addCondition($where);
                 $count = Objects::model()->count($criteria);
