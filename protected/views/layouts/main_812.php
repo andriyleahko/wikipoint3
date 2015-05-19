@@ -3,8 +3,10 @@
 
 <meta charset="utf-8">
 <style>
-    @import url(css/style.css);
-    @import url(css/catalog.css);
+    @import url(/css/style.css);
+    @import url(/css/catalog.css);
+    @import url(/css/search.css);
+    @import url(/js/jquery.fancybox-1.3.4/jquery.fancybox-1.3.4.css);
 
     #main-menu {overflow: hidden; margin-bottom: 30px;}
     #main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(img/logo.jpg) no-repeat center center; background-size: 200px;}
@@ -14,6 +16,10 @@ body {
     background: #99aec2 none repeat scroll 0 0;
 }
 </style>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/js/jquery.fancybox-1.3.4/jquery.fancybox-1.3.4.js"></script>
+<script src="/js/baza812.js"></script>
 </head>
 <body>
 <div class="wrapper">

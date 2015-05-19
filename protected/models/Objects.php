@@ -75,6 +75,7 @@ class Objects extends CActiveRecord
 				'Owners'=>array(self::BELONGS_TO, 'Owners', 'id_owner'),
 				'ObjectsAppartment'=>array(self::HAS_ONE, 'ObjectsAppartment', 'id_object'),
 				'ObjectsDovType'=>array(self::BELONGS_TO, 'ObjectsDovType', 'id_objectType'),
+				'ObjectsDovDistrict'=>array(self::BELONGS_TO, 'ObjectsDovDistrict', 'id_district'),
 				'Pictures'=>array(self::HAS_MANY, 'Pictures', 'id_object'),
 				'ObjectsMetro'=>array(self::HAS_ONE, 'ObjectsMetro', 'id_object'),
 				'ObjectsDovStreets'=>array(self::BELONGS_TO, 'ObjectsDovStreets', 'id_street'),

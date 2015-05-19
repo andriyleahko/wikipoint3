@@ -44,7 +44,8 @@ class ObjectsMetro extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 				'Objects'=>array(self::HAS_MANY, 'Objects', 'id_object'),
-				'ObjectsDovMetro'=>array(self::BELONGS_TO, 'ObjectsDovMetro', 'id_metro')
+				'ObjectsDovMetro'=>array(self::BELONGS_TO, 'ObjectsDovMetro', 'id_metro'),
+				'ObjectsDovTometro'=>array(self::BELONGS_TO, 'ObjectsDovTometro', 'id_tometro'),
 		);
 	}
 

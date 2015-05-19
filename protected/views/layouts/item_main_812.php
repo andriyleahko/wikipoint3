@@ -8,7 +8,7 @@
       <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	
 <style>
-@import url(css/style.css);
+@import url(/css/style.css);
 
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
@@ -76,7 +76,7 @@ body {
 	margin: 15px 0px 0px 15px;
 }
 
-.buy-password: hover {
+.buy-password:hover {
 	background: #4579A6;
 	color: white;
 }
