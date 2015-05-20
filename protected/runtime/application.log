@@ -115,3 +115,152 @@ Stack trace:
 REQUEST_URI=/catalog/img/logo.jpg
 HTTP_REFERER=http://wikipoint3.loc/catalog/search
 ---
+2015/05/20 09:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/20 09:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mg/sp2.png".' in /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/sp2.png')
+#1 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mg/sp2.png
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:36:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
+2015/05/20 09:36:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/london/site/wikipoint3/framework/framework/web/CController.php:483
+Stack trace:
+#0 /home/london/site/wikipoint3/framework/framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/london/site/wikipoint3/framework/framework/web/CWebApplication.php(141): CWebApplication->runController('catalog/img/log...')
+#3 /home/london/site/wikipoint3/framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /home/london/site/wikipoint3/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/logo.jpg
+HTTP_REFERER=http://wikipoint3.loc/catalog/search
+---
