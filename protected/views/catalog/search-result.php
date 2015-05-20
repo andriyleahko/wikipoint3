@@ -28,7 +28,7 @@
 
 
 
-                <p class="metro"> <?php if ($item->ObjectsDovDistrict) echo $item->ObjectsDovDistrict->name ?></p>
+                <p class="metro11"> <?php if ($item->ObjectsDovDistrict) echo $item->ObjectsDovDistrict->name ?></p>
                 <p class="address">&nbsp;<?php if ($item->ObjectsDovStreets) {
             echo $item->ObjectsDovStreets->name;
             echo $item->building_number;
@@ -66,6 +66,8 @@
         </div>
     <?php endforeach; ?>
 <?php endif; ?>
+
+
 
 
 
