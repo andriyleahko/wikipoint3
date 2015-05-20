@@ -16,10 +16,16 @@ $(document).ready(function(){
     
     $('#mapspb a').on('click',function(){
         var name = $(this).attr('title');
-        $('#select-metro').append(" <span style='margin-left:5px;'>" + name + "<span class='close-metro' style='text-decoration:underline;color:red;cursor:pointer'> x </span>");
+        $('#select-metro').append(" <span class='selected-metroes' style='display:block; margin-top:1px;margin-left:5px;'>" + name + "<span class='close-metro' style='color:red;cursor:pointer'> x </span>");
         var metro = $('#select-metro').text();
         var metroVal = metro.split('x').join(',');
-        $('[name=metro]').val(metroVal)
+        $('[name=metro]').val(metroVal);
+        if ($('.selected-metroes').length > 0){
+            $('.choose-metro').text('Выбрано ' + $('.selected-metroes').length + ' станций')
+        } else {
+            $('.choose-metro').text('Выбрать станции')
+            
+        }
         
         return false;
     })
@@ -28,7 +34,13 @@ $(document).ready(function(){
         $(this).parent('span').remove();
         var metro = $('#select-metro').text();
         var metroVal = metro.split('x').join(',');
-        $('[name=metro]').val(metroVal)
+        $('[name=metro]').val(metroVal);
+        if ($('.selected-metroes').length > 0){
+            $('.choose-metro').text('Выбрано ' + $('.selected-metroes').length + ' станций')
+        } else {
+            $('.choose-metro').text('Выбрать станции')
+            
+        }
     })
     
     $('.choose-metro').on('click',function(){
