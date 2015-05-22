@@ -64,6 +64,7 @@ class CatalogController extends Controller
                 $count = Objects::model()->count($criteria);
                 $criteria->limit = $this->limit;
                 $criteria->offset = Yii::app()->request->getParam('offset',0);
+                $criteria->order='t.id_object DESC';
                 
                 $model = Objects::model()->findAll($criteria);
                 

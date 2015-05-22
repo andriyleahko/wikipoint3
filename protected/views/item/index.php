@@ -1,5 +1,4 @@
-<script type="text/javascript">
-
+<script type="text/javascript"> 
 		var fenway = new google.maps.LatLng(<?php echo ($model->longitude)?$model->longitude:59.939039; ?>, <?php echo ($model->latitude)?$model->latitude:30.315785;?>);
 		var mapZoom=<?php echo($model->longitude&&$model->latitude)?15:10?>
 		
@@ -41,24 +40,34 @@
 	function showpan(){
 		$('#pano').attr("style", "visibility: visible; height:540px; width:620px;");
 		$('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
-		$('#photos').attr("style", "visibility: hidden; height:0px; width:0px;")
+		$('#photo').attr("style", "visibility: hidden; height:0px; width:0px;")
 		pan();				
 	}
 	function showmap(){
 		$('#map_canvas').attr("style", "visibility: visible; height:540px; width:620px;");
 		$('#pano').attr("style", "visibility: hidden; height:0px; width:0px;");
-		$('#photos').attr("style", "visibility: hidden; height:0px; width:0px;")
+		$('#photo').attr("style", "visibility: hidden; height:0px; width:0px;")
 		map();
 	}
 	function showphoto(){
-		$('#photos').attr("style", "visibility: visible; height:540px; width:620px;");
+		$('#photo').attr("style", "visibility: visible; height:540px; width:620px;");
 		$('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
 		$('#pano').attr("style", "visibility: hidden; height:0px; width:0px;")
-		photoshow();
+		
 	}
 	
       $(document).ready(function(){ 
 				map();
+				$('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
+
+
+				$('#scrollLeft').cycle({ 
+				    fx:      'scrollHorz', 
+				    speed:    1000, 
+				    timeout:  5000,
+				    prev:    '#prev',
+				   	next:    '#next'
+				}); 
        });
 
 
@@ -68,7 +77,8 @@
       body { height: 100%; margin: 0; padding: 0 }
       #map_canvas { height: 540px; width: 620px; }
 	  #pano{height: 540px; width: 620px;}
-	  #photos{height: 540px; width: 620px;}
+	  #photo{height: 540px; width: 620px;}
+	  #control{top:10px !important;}
 </style>
 
 <?php $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.', 'Трехкомн. кв.', 'Четырехкомн. кв.',
@@ -88,24 +98,38 @@
 <div class="info-box">
 	<div class="left-column">
 		<div id="map_canvas"></div>
-		<div class="photos" id='photos'></div>
+		<div class="photos" id='photo'>
+		<?php if (isset($model->Pictures)&&$model->Pictures){?>
+			<div id="scrollLeft">
+				<?php foreach ($model->Pictures as $pic): ?>
+				<img style='height: 540px; width: 620px; text-align:center;' src="<?php echo 'http://grandprime.info/'.$pic['file'];?>" />
+				<?php endforeach;?>
+			</div>
+			<div id='control'>
+		        <a href="#"><span id="prev">Prev</span></a> 
+		        <a href="#"><span id="next">Next</span></a>
+    		</div>
+    	<?php } else{?>
+    		<img style='height: 540px; width: 620px; text-align:center;' src="http://grandprime.info/images/no-photo.jpg" />
+    	<?php }?>
+		</div>
 		<div class="panorama" id='pano'></div>
 	</div>
 	<div class="right-column">
 		<p class="price"><?php echo $model->price?> <span> в месяц</span></p>
-		<div class="features">
-			<div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
-			<?php if($model->ObjectsMoreinfo->internet==1):?>
-				<img  width="13px" title='Интернет' src='/img/sp4.png'> <span style='margin-left: 15px;'>Интернет</span> <br>
-			<?php endif;?>
-			<?php if($model->ObjectsMoreinfo->washer==1):?>
-				<img width='13px' title='Стиральная Машинка' src='/img/sp2.png'> <span style='margin-left: 15px;'>Стиральная Машинка</span><br>
+		<div class="features" style='padding-top: 17px; background: transparent; height: 70px;'>
+			<div style='text-align: center; font: italic 14px/20px "PT Sans"; padding-top:5px;'>
+			<?php if($model->ObjectsMoreinfo->furniture==1):?>
+				<img title='Мебель' src='/img/mebel.png'>  
 			<?php endif;?>
 			<?php if($model->ObjectsMoreinfo->fridge==1):?>
-				<img width='13px' title='Холодильник' src='/img/sp1.png'> <span style='margin-left: 15px;'>Холодильник</span> <br>
+				<img title='Холодильник' src='/img/holod.png'> 
 			<?php endif;?>
-			<?php if($model->ObjectsMoreinfo->furniture==1):?>
-				<img width='13px' title='Мебель' src='/img/sp3.png'> <span style='margin-left: 15px;'>Мебель</span> 
+			<?php if($model->ObjectsMoreinfo->washer==1):?>
+				<img title='Стиральная Машинка' src='/img/pralka.png'> 
+			<?php endif;?>
+			<?php if($model->ObjectsMoreinfo->internet==1):?>
+				<img  title='Интернет' src='/img/internet.png'> 
 			<?php endif;?>
 			</div>
 		</div>

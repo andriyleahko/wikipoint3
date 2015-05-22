@@ -28,35 +28,41 @@
 
 
 
-                <p class="metro11"> <?php if ($item->ObjectsDovDistrict) echo $item->ObjectsDovDistrict->name ?></p>
-                <p class="address">&nbsp;<?php if ($item->ObjectsDovStreets) {
-            echo $item->ObjectsDovStreets->name;
-            echo $item->building_number;
-        } ?> </p>
+                <p class="metro11"> 
+                	<?php if ($item->ObjectsDovDistrict) {
+                		echo $item->ObjectsDovDistrict->name;
+                	} ?>
+                </p>
+                <p class="address">&nbsp;
+                	<?php if ($item->ObjectsDovStreets) {
+            			echo $item->ObjectsDovStreets->name;
+        		    	echo $item->building_number;
+		        	} ?> 	
+        		</p>
 
                 <br />
                 <div class="features">
                     <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
                         <?php if ($item->ObjectsMoreinfo): ?>
                         <?php if ($item->ObjectsMoreinfo->internet == 1): ?>
-                            <img  width="13px" title='Интернет' src='/img/sp4.png'> <span style='margin-left: 15px;'>Интернет</span> <br>
+                            <img  title='Интернет' src='/img/internet.png'> 
                         <?php endif; ?>
                         <?php endif; ?>
                         <?php if ($item->ObjectsMoreinfo): ?>    
                         <?php if ($item->ObjectsMoreinfo->washer == 1): ?>
-                            <img width='13px' title='Стиральная Машинка' src='/mg/sp2.png'> <span style='margin-left: 15px;'>Стиральная Машинка</span><br>
+                            <img title='Стиральная Машинка' src='/img/pralka.png'> 
                         <?php endif; ?>
                         <?php endif; ?>
                         <?php if ($item->ObjectsMoreinfo): ?>    
                         <?php if ($item->ObjectsMoreinfo->fridge == 1): ?>
-                            <img width='13px' title='Холодильник' src='/img/sp1.png'> <span style='margin-left: 15px;'>Холодильник</span> <br>
+                            <img title='Холодильник' src='/img/holod.png'>
                         <?php endif; ?>
                          <?php endif; ?>
                             <?php if ($item->ObjectsMoreinfo): ?>
-        <?php if ($item->ObjectsMoreinfo->furniture == 1): ?>
-                            <img width='13px' title='Мебель' src='/img/sp3.png'> <span style='margin-left: 15px;'>Мебель</span> 
-        <?php endif; ?>
-        <?php endif; ?>
+       					 <?php if ($item->ObjectsMoreinfo->furniture == 1): ?>
+                            <img  title='Мебель' src='/img/mebel.png'>  
+        				<?php endif; ?>
+        				<?php endif; ?>
                     </div>
                 </div>
                 <p class="timestamp"><?php list($date, $time) = explode(' ', $item->date_add);
