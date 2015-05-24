@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru">
-</script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&language=ru"></script>
+<!-- <script type="text/javascript" -->
+<!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->
+<!-- </script> -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
@@ -27,7 +28,7 @@ body {
 #item h1 {font: 700 28px/30px "PT Sans"; color: black; text-align: left; padding-top: 30px;}
 #item .breadcrumbs {color: #9B9B9B; margin-bottom: 30px;}
 #item .breadcrumbs a {color: #4579A6;}
-#item .timestamp {color: #9B9B9B; background: url(img/icon-timestamp.png) no-repeat left center; padding-left: 25px; float: right;}
+#item .timestamp {color: #9B9B9B; /*background: url(img/icon-timestamp.png) no-repeat left center;*/ padding-left: 25px; float: right;}
 
 #item .info-box {background: #FBFAF6; overflow: hidden;}
 #item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey;}

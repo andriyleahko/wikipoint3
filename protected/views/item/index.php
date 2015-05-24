@@ -1,8 +1,32 @@
+<script src="/js/jquery.cookie.js" ></script>
 <script type="text/javascript"> 
-		var fenway = new google.maps.LatLng(<?php echo ($model->longitude)?$model->longitude:59.939039; ?>, <?php echo ($model->latitude)?$model->latitude:30.315785;?>);
-		var mapZoom=<?php echo($model->longitude&&$model->latitude)?15:10?>
-		
-		function map() {
+
+
+
+// пошук координат за адресом		
+			geocoder = new google.maps.Geocoder();
+			function getCoord(address, callback){
+				var coordinates;
+				geocoder.geocode({'address': address}, function(results, status){
+					var lat=results[0].geometry.location.A;
+					var lon=results[0].geometry.location.F;
+					coordinates=[lat,lon]
+	        		callback(coordinates);
+					});
+			}
+
+			function Adress(adr){
+				getCoord(adr, function(coordinates){ $.cookie('coor1', coordinates[0]); $.cookie('coor2', coordinates[1])});
+			}
+
+			
+			Adress('<?php echo 'Санкт-Петербург, '; echo ($model->ObjectsDovStreets->name)?$model->ObjectsDovStreets->name:''.', '; echo ($model->building_number)?$model->building_number:''?>');
+
+// пошук координат за адресом
+
+			var fenway = new google.maps.LatLng($.cookie('coor1'),$.cookie('coor2'));
+			var mapZoom=15;
+			function map() {
 	    	var mapOptions = {
 	        	center: fenway, 
 	          	zoom: mapZoom,
@@ -37,6 +61,7 @@
 /**************** for panorama */
  
 
+    
 	function showpan(){
 		$('#pano').attr("style", "visibility: visible; height:540px; width:620px;");
 		$('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
@@ -56,7 +81,7 @@
 		
 	}
 	
-      $(document).ready(function(){ 
+      $(document).ready(function(){
 				map();
 				$('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
 
@@ -93,7 +118,7 @@
 
 <h1><?php echo $aObjectType2[$model->ObjectsDovType->id]?>, <?php echo $model->ObjectsDovStreets->name.', '; echo $model->building_number?></h1>
 <p class="timestamp"><?php list($date, $time)=explode(' ',$model->date_add); echo 'Добавлен '.date('d.m.Y',strtotime($date))?></p> 
-<p class="breadcrumbs">Санкт-Петербург / <a href="">аренда квартир</a> / <a href=""><?php echo 'м. '.$model->ObjectsMetro->ObjectsDovMetro->name?></a> / №<?php echo $model->id_object?></p>
+<p class="breadcrumbs" id='adres'>Санкт-Петербург / <a href="">аренда квартир</a> / <a href=""><?php echo 'м. '.$model->ObjectsMetro->ObjectsDovMetro->name?></a> / №<?php echo $model->id_object?></p>
 
 <div class="info-box">
 	<div class="left-column">
