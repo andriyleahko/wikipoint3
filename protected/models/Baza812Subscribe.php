@@ -45,7 +45,7 @@ class Baza812Subscribe extends CActiveRecord
 			array('about_me', 'length', 'max'=>250), // є ще поле param
 			array('animals, kids', 'in','range'=>array('1','2'),'allowEmpty'=>false),
 			//***************** перевірити
-			//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 			//*******************	
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
