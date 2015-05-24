@@ -2039,3 +2039,571 @@ Stack trace:
 REQUEST_URI=/item/img/icon-timestamp.png
 HTTP_REFERER=http://baza812.loc/item/show?itemId=288816
 ---
+2015/05/22 14:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/22 14:30:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288798
+---
+2015/05/23 13:22:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 13:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/23 13:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/23 13:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288721
+---
+2015/05/23 15:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=286814
+---
+2015/05/23 15:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=286814
+---
+2015/05/23 15:35:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=286814
+---
+2015/05/23 16:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 16:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 16:18:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288816
+---
+2015/05/23 16:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 16:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 17:36:39 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "postParam".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(7): CComponent->__call('postParam', Array)
+#1 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(7): CHttpRequest->postParam('subscribe')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/23 20:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/23 20:23:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/23 20:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 20:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 20:34:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 20:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 20:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 20:42:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288813
+---
+2015/05/23 20:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=288813
+---
+2015/05/23 20:43:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/23 22:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitecontroller".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('sitecontroller')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitecontroller
+---
+2015/05/24 08:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/24 08:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/24 08:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---
+2015/05/24 09:44:22 [error] [php] Object of class Baza812Subscribe could not be converted to string (D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php:2352)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(628): inputField()
+#1 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(68): textField()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#6 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(94): SubscribeController->render()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (68)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (94)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 09:51:41 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Baza812Subscribe.subscribe".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('subscribe')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('subscribe')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Baza812Subscribe), 'subscribe')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(1788): CHtml::activeInputField('hidden', Object(Baza812Subscribe), 'subscribe', Array)
+#4 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(136): CHtml::activeHiddenField(Object(Baza812Subscribe), 'subscribe')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(94): CController->render('index', Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/24 09:51:52 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Baza812Subscribe.subscribe".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('subscribe')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('subscribe')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Baza812Subscribe), 'subscribe')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(1788): CHtml::activeInputField('hidden', Object(Baza812Subscribe), 'subscribe', Array)
+#4 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(136): CHtml::activeHiddenField(Object(Baza812Subscribe), 'subscribe')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(94): CController->render('index', Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/24 09:55:13 [error] [php] Object of class Baza812Subscribe could not be converted to string (D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php:2352)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(827): inputField()
+#1 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(136): hiddenField()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#6 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(94): SubscribeController->render()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (136)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (94)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 09:55:23 [error] [php] Object of class Baza812Subscribe could not be converted to string (D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php:2352)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(827): inputField()
+#1 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(136): hiddenField()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#6 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(94): SubscribeController->render()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (136)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (94)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 11:08:06 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Baza812Subscribe.verifyCode".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('verifyCode')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('verifyCode')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Baza812Subscribe), 'verifyCode')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Baza812Subscribe), 'verifyCode', Array)
+#4 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(130): CHtml::activeTextField(Object(Baza812Subscribe), 'verifyCode')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(96): CController->render('index', Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/24 11:12:07 [error] [php] Object of class CCaptcha could not be converted to string (D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php:131)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(103): SubscribeController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (131)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (103)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 11:21:02 [error] [php] Object of class CCaptcha could not be converted to string (D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php:131)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(102): SubscribeController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\filters\CFilterChain.php(133): SubscribeController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\filters\CInlineFilter.php(58): SubscribeController->filterAccessControl()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (131)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (102)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 11:22:02 [error] [php] Object of class CCaptcha could not be converted to string (D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php:131)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(96): SubscribeController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (131)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (96)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 11:22:12 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Baza812Subscribe.verifyCode".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('verifyCode')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('verifyCode')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Baza812Subscribe), 'verifyCode')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Baza812Subscribe), 'verifyCode', Array)
+#4 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(132): CHtml::activeTextField(Object(Baza812Subscribe), 'verifyCode')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(96): CController->render('index', Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/24 11:22:27 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Baza812Subscribe.verifyCode".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('verifyCode')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('verifyCode')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Baza812Subscribe), 'verifyCode')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Baza812Subscribe), 'verifyCode', Array)
+#4 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(132): CHtml::activeTextField(Object(Baza812Subscribe), 'verifyCode')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(96): CController->render('index', Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('subscribe')
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/subscribe
+---
+2015/05/24 11:28:14 [error] [php] Object of class Baza812Subscribe could not be converted to string (D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php:2352)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\helpers\CHtml.php(628): inputField()
+#1 D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php(129): textField()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#6 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(106): SubscribeController->render()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (129)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (106)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/05/24 12:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/img/not...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/img/note.svg
+HTTP_REFERER=http://baza812.loc/catalog/search
+---

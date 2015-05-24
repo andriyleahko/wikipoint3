@@ -6,7 +6,7 @@ h2 {font: 700 36px/60px "PT Sans"; color: #393939; text-align: center; margin-bo
 h3 {font: 700 24px/30px "PT Sans"; color: #393939; margin-bottom: 30px;}
 .subheader {font: italic 29px/60px "PT Sans"; color: #4A4A4A; text-align: center; margin-bottom: 60px;}
 //.wrapper {width: 940px; background: rgba(0, 255, 255, 0.62); margin: auto; overflow: hidden;}
-.wrapper {width: 940px; background: white; margin: auto; overflow: hidden;}
+.wrapper {width: 940px; background: white; margin: auto; overflow: hidden;  padding: 10px;}
 
 
 /* Формы */
