@@ -163,7 +163,7 @@ body {
 
 </style>
 </head>
-<body">
+<body>
 
 
 <div id="item" class="wrapper">

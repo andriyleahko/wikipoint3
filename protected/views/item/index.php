@@ -1,6 +1,8 @@
 <script src="/js/jquery.cookie.js" ></script>
-<script type="text/javascript"> 
+<!-- <input type="hidden" id="coord1"> -->
+<!-- <input type="hidden" id="coord2"> -->
 
+<script type="text/javascript"> 
 
 
 // пошук координат за адресом		
@@ -15,16 +17,20 @@
 					});
 			}
 
-			function Adress(adr){
-				getCoord(adr, function(coordinates){ $.cookie('coor1', coordinates[0]); $.cookie('coor2', coordinates[1])});
-			}
-
 			
-			Adress('<?php echo 'Санкт-Петербург, '; echo ($model->ObjectsDovStreets->name)?$model->ObjectsDovStreets->name:''.', '; echo ($model->building_number)?$model->building_number:''?>');
+
+			getCoord("<?php echo 'Санкт-Петербург, '; echo ($model->ObjectsDovStreets->name)?$model->ObjectsDovStreets->name:''.', '; echo ($model->building_number)?$model->building_number:''?>", 
+					function(coordinates){ $.cookie('coor1', coordinates[0]); $.cookie('coor2', coordinates[1])});
+/*
+			getCoord("<?php echo 'Санкт-Петербург, '; echo ($model->ObjectsDovStreets->name)?$model->ObjectsDovStreets->name:''.', '; echo ($model->building_number)?$model->building_number:''?>", 
+					function(coordinates){ $('#coord1').val(coordinates[0]); $('#coord2').val(coordinates[1])});
+			
+*/
 
 // пошук координат за адресом
 
 			var fenway = new google.maps.LatLng($.cookie('coor1'),$.cookie('coor2'));
+			//var fenway = new google.maps.LatLng($('#coord1').val(),$('#coord2').val());
 			var mapZoom=15;
 			function map() {
 	    	var mapOptions = {
@@ -94,7 +100,6 @@
 				   	next:    '#next'
 				}); 
        });
-
 
 </script>
 <style>
