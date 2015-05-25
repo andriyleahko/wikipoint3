@@ -1,5 +1,4 @@
 <?php
-
 // This is the database connection configuration.
 return array(
 	//'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -8,7 +7,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=miniwiki',
             'emulatePrepare' => false,
             'username' => 'root',
-            'password' => 'fylhsq1',
+            'password' => 'root',
             'charset' => 'utf8',
             'tablePrefix' => '',
 	
