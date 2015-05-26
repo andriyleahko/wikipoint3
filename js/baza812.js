@@ -18,7 +18,7 @@ $(document).ready(function () {
         var name = $(this).attr('title');
         var metro = $('#select-metro').text();
         var metroArr = metro.split('x').map(function(e){return e.trim();});
-        console.log(metroArr);
+        
         if (metroArr.indexOf(name) < 0) {
             var metroVal = metroArr.join(',');
             $('#select-metro').append(" <span class='selected-metroes' style='display:block; margin-top:1px;margin-left:5px;'>" + name + "<span class='close-metro' style='color:red;cursor:pointer'> x </span>");
