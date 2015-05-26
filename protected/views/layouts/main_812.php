@@ -29,7 +29,7 @@
                 <a class="menu-option" href="">Принцип работы</a>
                 <a class="menu-option" href="">Документы</a>
                 <a class="menu-option" href="">Оплата</a>
-                <a class="add-item" href="">Сообщить о квартире</a>
+                <a class="add-item" href="/add-item">Сообщить о квартире</a>
             </div>
 
             <?php echo $content; ?>

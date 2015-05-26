@@ -7,7 +7,9 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=miniwiki',
             'emulatePrepare' => false,
             'username' => 'root',
+
             'password' => 'fylhsq1',
+
             'charset' => 'utf8',
             'tablePrefix' => '',
 	

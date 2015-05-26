@@ -4,7 +4,8 @@ class SubscribeController extends Controller {
 
     public $layout = 'page';
 
-//****************	перевірити
+
+
     public function actions() {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page
@@ -16,7 +17,7 @@ class SubscribeController extends Controller {
         );
     }
 
-//******************
+
     public function actionIndex() {
         $model = new Baza812Subscribe;
         $metroName = '';
@@ -67,6 +68,45 @@ class SubscribeController extends Controller {
         }
         $this->render('index', array('model' => $model, 'metroName' => $metroName));
     }
+    
+    public function actionObjectForSending($subscriber_email)
+    {
+    	$model = Baza812Subscribe::model()->find('subscriber_email=:subscriber_email',array(':subscriber_email'=>$subscriber_email));
+    	
+    	$criteria = new CDbCriteria();
+        $criteria->with = array('ObjectsMetro',
+                               'Owners',
+                               'ObjectsAppartment',
+                               'ObjectsDovType',
+                               'Pictures',
+                               'ObjectsDovStreets',
+                               'ObjectsMoreinfo'
+                             	);
+        $where='';
+        if (isset($model->rooms_amount)&&$model->rooms_amount){
+        	$where.='ObjectsDovType.id IN('.$model->rooms_amount.')';
+        }
+        if (isset($model->price_max)&&$model->price_max){
+        	$where.=' AND price <= '.$model->price_max;
+        }
+        if (isset($model->metro)&&$model->metro){
+        	$where.=' AND ObjectsMetro.id_metro IN('.$model->metro.')';
+        }
+        
+        $criteria->addCondition($where);
+        $count = Objects::model()->count($criteria);
+        //**************************************************************************
+        $criteria->limit = 10; //// може треба буде ліміт, які і скільки відправляти
+        $criteria->offset = 10; //// може треба буде офсет, які і скільки відправляти
+        //****************************************************************************
+        $criteria->order='t.id_object DESC';
+        
+        $modelsend = Objects::model()->findAll($criteria);
+		
+        return $modelsend;
+        
+    }
+    
 
     // Uncomment the following methods and override them if needed
     /*

@@ -44,9 +44,7 @@ class Baza812Subscribe extends CActiveRecord
 			array('subscriber_name, subscriber_email, variant, rooms_amount, metro, subscriber_phone, people', 'length', 'max'=>50),
 			array('about_me', 'length', 'max'=>250), // є ще поле param
 			array('animals, kids', 'in','range'=>array('1','2'),'allowEmpty'=>false),
-			//***************** перевірити
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
-			//*******************	
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, subscriber_name, subscriber_email, variant, rooms_amount, price_max, metro, subscriber_phone, people, animals, kids, about_me', 'safe', 'on'=>'search'), // є ще поле param

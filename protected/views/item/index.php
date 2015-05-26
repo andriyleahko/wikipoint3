@@ -1,4 +1,5 @@
 <script src="/js/jquery.cookie.js" ></script>
+
 <script type="text/javascript">
         
     var Data = '';
@@ -23,6 +24,7 @@
     var lng = Data.results[0].geometry.location.lng;
     
         
+
 // пошук координат за адресом
     
     var fenway = new google.maps.LatLng(lat, lng);
@@ -96,7 +98,6 @@
             next: '#next'
         });
     });
-
 
 </script>
 <style>

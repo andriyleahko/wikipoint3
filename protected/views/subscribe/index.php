@@ -56,17 +56,19 @@
 
 
 <p>
-	<label class="wide">
-	<span>Подходящие станции метро:</span>
+    <label class="wide">
+        <span>Подходящие станции метро:</span>
         <?php 
             $metroArr = array();
             if (isset($metroName) && !empty($metroName)) {
                 $metroArr = explode(',', $metroName);
             }
         ?>
-	<a class="select-metro choose-metro"><?php if (count($metroArr)) : ?> Выбрано <?php echo count($metroArr) ?> станций <?php else : ?>Выбрать станции<?php endif; ?></a>
+	<a style="float: none" class="select-metro choose-metro"><?php if (count($metroArr)) : ?> Выбрано <?php echo count($metroArr) ?> станций <?php else : ?>Выбрать станции<?php endif; ?></a>
 	<input type="hidden" id="metro-field" name="Baza812Subscribe[metro]" value="<?php echo(isset($metroName)&&$metroName)?$metroName:'';?>">
+       
 	<span class="extra-span"></span>
+    </label>
 </p>
 
 
