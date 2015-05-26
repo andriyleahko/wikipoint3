@@ -96,4 +96,13 @@ function initMetro() {
     }
 }
 
+function selectRoomFlat(el) {
+    $('[id=sel-room]').hide();
+    $('[id=sel-flat]').hide();
+    if ($(el).prop('checked')) {
+        $('[data-type='+$(el).attr('id')+']').show()
+    }
+    
+}
+
 

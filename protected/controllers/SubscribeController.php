@@ -5,7 +5,7 @@ class SubscribeController extends Controller {
     public $layout = 'page';
 
 
-//****************	перевірити
+
     public function actions() {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page
@@ -17,7 +17,7 @@ class SubscribeController extends Controller {
         );
     }
 
-//******************
+
     public function actionIndex() {
         $model = new Baza812Subscribe;
         $metroName = '';
