@@ -16,6 +16,14 @@
             }
         </style>
 
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&language=ru"></script>
+        <!-- <script type="text/javascript" -->
+        <!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->
+        <!-- </script> -->
+
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
         <link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
@@ -133,18 +141,18 @@
                 </div>
                 <div>
                     <button onclick="$('#metro').hide();
-                return false;" style="background: #4579A6;border: none; border-radius: 4px; color: white;  height: 44px;  font: 18px/30px 'PT Sans';  padding: 0px 20px 0px 20px;  margin-top: 8px;">
+                            return false;" style="background: #4579A6;border: none; border-radius: 4px; color: white;  height: 44px;  font: 18px/30px 'PT Sans';  padding: 0px 20px 0px 20px;  margin-top: 8px;">
                         Выбрать
                     </button>
                     <button onclick="
-                $('.selected-metroes').remove();
-                $('#metro').hide();
-                if ($('.selected-metroes').length > 0) {
-                    $('.choose-metro').text('Выбрано ' + $('.selected-metroes').length + ' станций')
-                } else {
-                    $('.choose-metro').text('Выбрать станции')
-                }
-                return false;
+                            $('.selected-metroes').remove();
+                            $('#metro').hide();
+                            if ($('.selected-metroes').length > 0) {
+                                $('.choose-metro').text('Выбрано ' + $('.selected-metroes').length + ' станций')
+                            } else {
+                                $('.choose-metro').text('Выбрать станции')
+                            }
+                            return false;
                             " 
                             style="
                             background: #DEDEDE;

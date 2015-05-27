@@ -8,7 +8,6 @@
     function getCoordinate() {
         $.ajax({
             async: false,
-            dataType: 'jsop',
             url: '/item/getCoordinate?address=<?php echo 'Санкт-Петербург, ';echo ($model->ObjectsDovStreets->name) ? $model->ObjectsDovStreets->name : '' . ', ';echo ($model->building_number) ? $model->building_number : '' ?>&key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY',
             type: 'get',
             success : function(data) {

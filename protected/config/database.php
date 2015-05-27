@@ -8,7 +8,7 @@ return array(
             'emulatePrepare' => false,
             'username' => 'root',
 
-            'password' => 'fylhsq1',
+            'password' => 'root',
 
             'charset' => 'utf8',
             'tablePrefix' => '',
