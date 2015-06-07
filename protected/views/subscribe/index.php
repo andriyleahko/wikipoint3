@@ -1,3 +1,10 @@
+<div id="search-results">
+
+
+
+
+</div>
+
 <div id="subscribe">
 
 <h1>Подписка на рассылку<br/> новых объектов</h1>

@@ -6,7 +6,8 @@ class MainController extends Controller
         
 	public function actionIndex()
 	{
-		$this->render('index');
+		$num=Objects::model()->count();
+		$this->render('index',array('NumberObjects'=>$num));
 	}
 
 	// Uncomment the following methods and override them if needed

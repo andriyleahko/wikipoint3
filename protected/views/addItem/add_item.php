@@ -1,3 +1,6 @@
+<script>
+$('#main-search').empty();
+</script>
 <style>
 
 
@@ -54,10 +57,10 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 <p class="wide-label">
 	<span style="float: left;">Сдаётся:</span>
 	<fieldset class="">
-                <input onchange="selectRoomFlat(this); return false;" checked="checked" type="radio" name="AddObjectForm[room_flat]" id="room" checked>
+                <input onchange="selectRoomFlat(this); return false;" checked="checked" type="radio" name="AddObjectForm[room_flat]" id="flat" checked>
 		<label for="flat"><span>квартира</span></label>
 		
-		<input onchange="selectRoomFlat(this); return false;" type="radio" name="AddObjectForm[room_flat]" id="flat">
+		<input onchange="selectRoomFlat(this); return false;" type="radio" name="AddObjectForm[room_flat]" id="room">
 		<label for="room"><span>комната</span></label>
 	</fieldset>
 </p>
@@ -66,7 +69,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 <p class="wide-label">
 	<span>Количество комнат:</span>
-	<select id="sel-room" data-type="room" name="AddObjectForm[rooms]">
+	<select id="sel-flat" data-type="flat" name="AddObjectForm[flat]">
             <option selected="selected" value="1">1 комнотна</option>
             <option value="2">2 комнотна</option>
             <option value="3">3 комнотна</option>
@@ -75,7 +78,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
             <option value="6">много комнотна</option>
                 
 	</select>
-	<select id="sel-flat" style="display:none" data-type="flat" name="AddObjectForm[flat]">
+	<select id="sel-room" style="display:none" data-type="room" name="AddObjectForm[room]">
             <option selected="selected" value="7">1(2)ккв</option>
             <option value="8">1(3)ккв</option>
             <option value="9">1(4)ккв</option>

@@ -9,11 +9,36 @@ $(document).ready(function () {
             success: function (data) {
                 $('#search-results').html(data);
                 $.fancybox.hideActivity();
+               // $('#main-page').attr("style", "height:0px; width:0px;");
+                $('#main-page').empty();
+                $('#howitworks').empty();
+                $('#subscribe').empty();
             }
         })
         return false;
-    })
-
+    });
+    
+    
+    $('#showphone').on('click', function(){
+    	var obectId=$('#obectId').val();
+    	var pasword=$('#pasword').val();
+    	$('.wrong-password').attr("style", "visibility: hidden !important");
+    	$.ajax({
+    		type:'post',
+    		url:'/item/showphone?obectId='+obectId+'&pasword='+pasword,
+    		success: function(data){
+    			 var dataJS = JSON.parse(data);
+    			 if (dataJS.status=='ok'){
+    				 $('.owner-phone').text(dataJS.phone);
+    			 }else{
+    				 $('.wrong-password').attr("style", "visibility: visible !important");
+    				 $('.wrong-password').text(dataJS.status);
+    			 }
+    		}
+    		
+    	});
+    });
+    
     $('#mapspb a').on('click', function () {
         var name = $(this).attr('title');
         var metro = $('#select-metro').text();

@@ -1,6 +1,6 @@
 <style>
-@import url(reset.css);
-@import url(style.css);
+@import url(/css/reset.css);
+@import url(/css/style.css);
 
 body {
 	font: 18px/30px "PT Sans";
@@ -22,7 +22,7 @@ h1 {
 
 .wrapper {
 	width: 940px;
-	background: rgba(0, 255, 255, 0.62);
+	/*background: rgba(0, 255, 255, 0.62);*/
 	margin: auto;
 }
 
@@ -40,13 +40,20 @@ h1 {
 #how-it-works li {width: 640px;	background: url() no-repeat 80px top; padding-left: 220px; margin-bottom: 30px;}
 #how-it-works li::first-line {font: 700 24px/60px "PT Sans"; display: block;}
 
-#how-it-works #one {background-image: url(img/icon-how-it-works-1.png);}
-#how-it-works #two {background-image: url(img/icon-how-it-works-2.png);}
-#how-it-works #three {background-image: url(img/icon-how-it-works-3.png);}
-#how-it-works #four {background-image: url(img/icon-how-it-works-4.png);}
+#how-it-works #one {background-image: url(/img/icon-how-it-works-1.png);}
+#how-it-works #two {background-image: url(/img/icon-how-it-works-2.png);}
+#how-it-works #three {background-image: url(/img/icon-how-it-works-3.png);}
+#how-it-works #four {background-image: url(/img/icon-how-it-works-4.png);}
 
 
 </style>
+<div id="search-results">
+
+
+
+
+</div>
+<div id='howitworks'>
 <h1>Как работает “БАЗА 812”</h1>
 <p class="subheader">секреты качественных объявлений</p>
 <ul id="how-it-works">
@@ -55,3 +62,4 @@ h1 {
 	<li id="three">3. Ручная проверка <br/>Наши модераторы звонят по каждому объявлению и уточняют все данные.<br/> После этого, можно с уверенностью сказать, что все объявления в Базе 812 от собственников и содержат актуальную информацию.</li>
 	<li id="four">4. Размещение объявлений <br/>Публикуем объявления,  делаем email-рассылки и смс-рассылки нашим клиентам.</li>
 </ul>
+</div>

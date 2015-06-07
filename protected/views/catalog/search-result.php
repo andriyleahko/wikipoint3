@@ -70,9 +70,6 @@
             <p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $item->ObjectsDovType->name ?> квартира</a></p>
             <div class="info">
                 <p class="price"><?php echo $item->price ?> руб.</p>
-
-
-
                 <p class="metro11"> 
                     <?php
                     if ($item->ObjectsDovDistrict) {
@@ -131,7 +128,7 @@
 
 
 
-<p class="items-counter" style="text-align: center"><a id="more-object" href="#">Ещё объекти.</a></p>
+<p class="items-counter" style="text-align: center !important"><a id="more-object" style='text-decoration:none; color: white' href="#">Показать ещё</a></p>
 <script type="text/javascript">
     $(document).ready(function () {
         $("a[rel^='example_group']").fancybox();

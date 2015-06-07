@@ -1,5 +1,6 @@
 <script src="/js/jquery.cookie.js" ></script>
 
+
 <script type="text/javascript">
         
     var Data = '';
@@ -115,7 +116,7 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
     'Две комнаты в 5-ккв', 'Две комнаты в Многокомн. кв.');
 ?>
 
-<a class="back-to-search" href="">← Вернуться к поиску</a>
+<a class="back-to-search" href="/catalog/search">← Вернуться к поиску</a>
 <a class="add-to-favorites" href="">Добавить в избранное</a>
 
 
@@ -165,10 +166,11 @@ echo $model->building_number ?></h1>
             </div>
         </div>
         <p class="owner-name">Владелец: <?php echo $model->Owners->name ?></p>
+        <input type='hidden' id='obectId' value="<?php echo $model->id_object?>">
         <p class="owner-phone">+7 <?php echo substr_replace($model->Owners->phone_1, 'XXX', 5, 3) ?></p>
-        <form class="open-contact">
-            <input type="text" placeholder="Введите пароль">
-            <input type="submit" value="Показать телефон ">
+        <form class="open-contact" method="get">
+            <input type="text" id='pasword' placeholder="Введите пароль">
+            <input type="button" id='showphone' value="Показать телефон ">
             <p class="wrong-password">Этот пароль не подходит :(</p>
         </form>
         <div class="get-acces">
