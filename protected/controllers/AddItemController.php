@@ -23,15 +23,19 @@ class AddItemController extends Controller {
         
         $modelAddForm = new AddObjectForm();
         $metro = ObjectsDovMetro::model()->findAll();
-        
+
         if (Yii::app()->request->getPost('add_object') == 1) {
             
             $dataPost = Yii::app()->request->getPost('AddObjectForm');
 
             $modelAddForm->setAttributes($dataPost);
             
+            $modelAddForm->validatePhotoes($_FILES['AddObjectForm']);
             
-            if ($modelAddForm->validate()) {
+            $modelAddForm->validate(null,false);       
+            
+            if (!$modelAddForm->getErrors()) {
+                exit('1');
                 
                 // зареєструвати власника автоматично пароль на почту
                 // записати всі поля для обєкту 
@@ -41,7 +45,7 @@ class AddItemController extends Controller {
                 // 
                 
             } 
-        }
+        } 
         $this->render('add_item', array('metro' => $metro, 'model' => $modelAddForm));
     }
 

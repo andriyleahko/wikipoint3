@@ -2,6 +2,8 @@
 
 class AddObjectForm extends CFormModel {
 
+    private static $ALLOW_PHOTO_TYPE = array('image/jpeg', 'image/png', 'image/jpg');
+    private static $ALLOW_PHOTO_SIZE = 2;
     public $room_flat;
     public $address;
     public $time_to_metro;
@@ -23,6 +25,8 @@ class AddObjectForm extends CFormModel {
     public $frige;
     public $rooms;
     public $flat;
+    public $metro_to;
+    public $photo;
 
     /**
      * @todo must be attributes
@@ -36,8 +40,8 @@ class AddObjectForm extends CFormModel {
         // will receive user inputs.
         return array(
             array('room_flat, address, time_to_metro, metro, floor, floor_max, phone, phone_my, user, area_full, area_kitchen, area_live, price', 'required'), // є ще поле param
-            array('rooms, flat, area_full, area_kitchen, metro, frige, furniture, washer, net, about_me, area_live, floor, floor_max, time_to_metro, price', 'numerical'),
-            array('phone, phone_my, address, room_flat, user', 'length', 'max' => 250), // є ще поле param
+            array('rooms, flat, metro_to, area_full, area_kitchen, metro, frige, furniture, washer, net, area_live, floor, floor_max, time_to_metro, price', 'numerical'),
+            array('phone, phone_my, address, room_flat, user, photo, about_me', 'length', 'max' => 255), // є ще поле param
             array('verifyCode', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
         );
     }
@@ -68,7 +72,30 @@ class AddObjectForm extends CFormModel {
             'frige' => 'Холодильник',
             'rooms' => 'Квартира',
             'flat' => 'Комнота',
+            'metro_to' => 'Пешком Транспортом',
+            'photo' => 'Фото',
         );
+    }
+    
+    /**
+     * 
+     * @param array $photoes
+     */
+    public function validatePhotoes($photoes) {
+        
+        foreach ($photoes['name']['photoes'] as $key => $value) {
+            if (!in_array($photoes['type']['photoes'][$key], self::$ALLOW_PHOTO_TYPE)) {
+                $this->addError('photo','Неверный тип фото: ' . $photoes['name']['photoes'][$key]);
+            }
+            if ($photoes['size']['photoes'][$key] > self::$ALLOW_PHOTO_SIZE * 1024 * 1024) {
+                $this->addError('photo','Размер фото больше 2МБ: ' . $photoes['name']['photoes'][$key]);
+            }
+        }
+        
+    }
+    
+    public function uploadPhoto($photoes) {
+        
     }
 
 }
