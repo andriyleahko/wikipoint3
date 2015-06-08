@@ -45,6 +45,9 @@ $(document).ready(function () {
         var metroArr = metro.split('x').map(function(e){return e.trim();});
         
         if (metroArr.indexOf(name) < 0) {
+            metroArr.push(name);
+            metroArr = cleanArray(metroArr);
+            console.log(metroArr)
             var metroVal = metroArr.join(',');
             $('#select-metro').append(" <span class='selected-metroes' style='display:block; margin-top:1px;margin-left:5px;'>" + name + "<span class='close-metro' style='color:red;cursor:pointer'> x </span>");
 
@@ -63,7 +66,9 @@ $(document).ready(function () {
     $('body').on('click', '.close-metro', function () {
         $(this).parent('span').remove();
         var metro = $('#select-metro').text();
-        var metroVal = metro.split('x').join(',');
+        var metroVal = metro.split('x').map(function(e){return e.trim();});
+        metroVal = cleanArray(metroVal).join(',');
+        
         $('#metro-field').val(metroVal);
         if ($('.selected-metroes').length > 0) {
             $('.choose-metro').text('Выбрано ' + $('.selected-metroes').length + ' станций')
@@ -128,6 +133,16 @@ function selectRoomFlat(el) {
         $('[data-type='+$(el).attr('id')+']').show()
     }
     
+}
+
+function cleanArray(actual){
+  var newArray = new Array();
+  for(var i = 0; i<actual.length; i++){
+      if (actual[i]){
+        newArray.push(actual[i]);
+    }
+  }
+  return newArray;
 }
 
 

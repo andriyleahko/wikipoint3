@@ -67,7 +67,7 @@
         </fieldset>
 
         <p>рядом с метро</p>
-        <input type="hidden" name="metro" value="">
+        <input type="hidden" id="metro-field" name="metro" value="">
         <input type="hidden" name="search" value="1">
         <a class="choose-metro" href="#">Выбрать станции</a>
         
