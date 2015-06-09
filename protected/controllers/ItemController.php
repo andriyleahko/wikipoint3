@@ -42,12 +42,17 @@ class ItemController extends Controller {
     							'condition'=>'pasword=:pasword', 
     							'params'=>array(':pasword'=>$pasword)
     							));
+    	
     	if (isset($model)&&$this->_checkAssess($model)){
     		//pasword found
-    		$ids=$model->ids_object;
-    		$ids.=$obectId.',';
-    		$model->ids_object=$ids;
-    		$model->save();
+    		If(!$ids=unserialize($model->ids_object)){
+    			$ids=array();
+    		}; 
+    		if(!in_array($obectId,$ids)){ 
+	    		$ids[]=$obectId;
+	    		$model->ids_object=serialize($ids);
+	    		$model->save();
+    		}
     		echo json_encode(array('phone' => $phone, 'status'=>$status));
     	}else{
     		// pasword not found or not allowed
