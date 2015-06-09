@@ -8,6 +8,7 @@
  * @property string $name
  * @property string $phone
  * @property integer $email
+ * @property integer $about_me
  */
 class Baza812User extends CActiveRecord
 {
@@ -31,6 +32,7 @@ class Baza812User extends CActiveRecord
 			array('email', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>100),
 			array('phone', 'length', 'max'=>50),
+			array('about_me', 'length', 'max'=>700),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, phone, email', 'safe', 'on'=>'search'),
@@ -59,6 +61,7 @@ class Baza812User extends CActiveRecord
 			'name' => 'Name',
 			'phone' => 'Phone',
 			'email' => 'Email',
+			'about_me' => 'About me',
 		);
 	}
 
