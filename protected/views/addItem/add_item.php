@@ -93,13 +93,39 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 </p>
 
 
-
+<?php /*
 <p class="wide-label">
 	<span  class="wide-label">Адрес:</span>
 	<input class="wide-input" type="text" name="AddObjectForm[address]" value="<?php if (isset($_POST['AddObjectForm']['address'])): ?><?php echo $_POST['AddObjectForm']['address'] ?><?php endif;?>" />
+</p> */ ?>
+
+<p class="wide-label">
+	<span  class="wide-label">Район:</span>
+        <select name="AddObjectForm[district]">
+                <?php foreach ($district as $d): ?>
+                    <option <?php if (isset($_POST['AddObjectForm']['district'])): ?><?php if ($_POST['AddObjectForm']['district'] == $d->id) : ?> selected="selected" <?php endif;?><?php endif;?> value="<?php echo $d->id ?>"><?php echo $d->name?></option>
+                <?php endforeach;?>
+		
+	</select>
+	
 </p>
 
+<p class="wide-label">
+	<span>Улица:</span>
+        <select name="AddObjectForm[street]">
+                <?php foreach ($street as $s): ?>
+                    <?php if ($s->truename) : ?><option <?php if (isset($_POST['AddObjectForm']['street'])): ?><?php if ($_POST['AddObjectForm']['street'] == $s->id) : ?> selected="selected" <?php endif;?><?php endif;?> value="<?php echo $s->id ?>"><?php echo $s->truename?></option><?php endif;?>
+                <?php endforeach;?>
+		
+	</select>
+	
+</p>
 
+<p class="wide-label">
+	<span  class="wide-label">Дом:</span>
+        <input class="wide-input" type="text" name="AddObjectForm[house_no]" value="<?php if (isset($_POST['AddObjectForm']['address'])): ?><?php echo $_POST['AddObjectForm']['address'] ?><?php endif;?>" />
+	
+</p>
 
 
 <p  class="wide-label">
