@@ -17,18 +17,30 @@
             }
         </style>
 
+        
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+        
+        <script  type="text/javascript" src="/js/baza812.js"></script>
+        
+        
+        
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&language=ru"></script>
         <!-- <script type="text/javascript" -->
         <!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->
         <!-- </script> -->
 
-        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+       
         <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
         <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+        
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+        
+
+
+        
         <link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
-        <script  type="text/javascript" src="/js/baza812.js"></script>
+        
     </head>
     <body>
         <div class="wrapper">

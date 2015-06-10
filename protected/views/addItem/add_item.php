@@ -69,7 +69,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 <p class="wide-label">
 	<span>Количество комнат:</span>
-	<select id="sel-flat" data-type="flat" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'room') : ?> style="display:none" <?php endif;?><?php endif;?> name="AddObjectForm[flat]">
+	<select id="sel-flat" data-type="flat" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'flat') : ?> style="display:none" <?php endif;?><?php endif;?> name="AddObjectForm[flat]">
             <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '1') : ?> selected="selected" <?php endif;?><?php endif;?> value="1">1 комнотна</option>
             <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '2') : ?> selected="selected" <?php endif;?><?php endif;?> value="2">2 комнотна</option>
             <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '3') : ?> selected="selected" <?php endif;?><?php endif;?> value="3">3 комнотна</option>
@@ -78,16 +78,16 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
             <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '6') : ?> selected="selected" <?php endif;?><?php endif;?> value="6">много комнотна</option>
                 
 	</select>
-	<select id="sel-room" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'flat') : ?> style="display:none" <?php endif;?><?php else: ?>style="display:none"<?php endif;?> data-type="room" name="AddObjectForm[room]">
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '7') : ?> selected="selected" <?php endif;?><?php endif;?>  selected="selected" value="7">1(2)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '8') : ?> selected="selected" <?php endif;?><?php endif;?>  value="8">1(3)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '9') : ?> selected="selected" <?php endif;?><?php endif;?>  value="9">1(4)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '10') : ?> selected="selected" <?php endif;?><?php endif;?> value="10">1(5)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '11') : ?> selected="selected" <?php endif;?><?php endif;?>  value="11">1(мн)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '12') : ?> selected="selected" <?php endif;?><?php endif;?>  value="12">2(3)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '13') : ?> selected="selected" <?php endif;?><?php endif;?>  value="13">2(4)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '14') : ?> selected="selected" <?php endif;?><?php endif;?>  value="14">2(5)ккв</option>
-            <option <?php if (isset($_POST['AddObjectForm']['room'])): ?><?php if ($_POST['AddObjectForm']['room'] == '15') : ?> selected="selected" <?php endif;?><?php endif;?>  value="15">2(мн)ккв</option>
+	<select id="sel-room" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'room') : ?> style="display:none" <?php endif;?><?php else: ?>style="display:none"<?php endif;?> data-type="room" name="AddObjectForm[rooms]">
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '7') : ?> selected="selected" <?php endif;?><?php endif;?>  selected="selected" value="7">1(2)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '8') : ?> selected="selected" <?php endif;?><?php endif;?>  value="8">1(3)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '9') : ?> selected="selected" <?php endif;?><?php endif;?>  value="9">1(4)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '10') : ?> selected="selected" <?php endif;?><?php endif;?> value="10">1(5)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '11') : ?> selected="selected" <?php endif;?><?php endif;?>  value="11">1(мн)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '12') : ?> selected="selected" <?php endif;?><?php endif;?>  value="12">2(3)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '13') : ?> selected="selected" <?php endif;?><?php endif;?>  value="13">2(4)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '14') : ?> selected="selected" <?php endif;?><?php endif;?>  value="14">2(5)ккв</option>
+            <option <?php if (isset($_POST['AddObjectForm']['rooms'])): ?><?php if ($_POST['AddObjectForm']['rooms'] == '15') : ?> selected="selected" <?php endif;?><?php endif;?>  value="15">2(мн)ккв</option>
                 
 	</select>
 </p>
@@ -123,7 +123,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 <p class="wide-label">
 	<span  class="wide-label">Дом:</span>
-        <input class="wide-input" type="text" name="AddObjectForm[house_no]" value="<?php if (isset($_POST['AddObjectForm']['address'])): ?><?php echo $_POST['AddObjectForm']['address'] ?><?php endif;?>" />
+        <input class="wide-input" type="text" name="AddObjectForm[house_no]" value="<?php if (isset($_POST['AddObjectForm']['house_no'])): ?><?php echo $_POST['AddObjectForm']['house_no'] ?><?php endif;?>" />
 	
 </p>
 
@@ -186,15 +186,21 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 <p class="wide-label">
 	<span>Телефон собственника:</span>
-	<input type="text" name="AddObjectForm[phone]" value="<?php if (isset($_POST['AddObjectForm']['phone'])): ?><?php echo $_POST['AddObjectForm']['phone'] ?><?php endif;?>" />
+	<input type="text" class="phone" name="AddObjectForm[phone]" value="<?php if (isset($_POST['AddObjectForm']['phone'])): ?><?php echo $_POST['AddObjectForm']['phone'] ?><?php endif;?>" />
 </p>
 
 
 <p class="wide-label">
 	<span>Ваш номер телефона:</span>
-	<input type="text" name="AddObjectForm[phone_my]" value="<?php if (isset($_POST['AddObjectForm']['phone_my'])): ?><?php echo $_POST['AddObjectForm']['phone_my'] ?><?php endif;?>" />
+	<input type="text" class="phone" name="AddObjectForm[phone_my]" value="<?php if (isset($_POST['AddObjectForm']['phone_my'])): ?><?php echo $_POST['AddObjectForm']['phone_my'] ?><?php endif;?>" />
 	<span style="font: italic 17px/20px 'PT Sans'; float: right; width: 400px; text-align: left; margin-right: 0px;">Если вы собственник — не заполняется.<br/> На этот номер придет пароль для открытия 5-ти контактов.</span>
 </p>
+<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+    $('document').ready(function() {
+        $(".phone").mask('(999)999-99-99');
+    })
+</script>
 
 
 

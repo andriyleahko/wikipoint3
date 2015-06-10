@@ -28,7 +28,7 @@ class Baza812User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, phone, email', 'required'),
+			array('phone', 'required'),
 			array('email', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>100),
 			array('phone', 'length', 'max'=>50),

@@ -20,109 +20,101 @@ class AddItemController extends Controller {
     }
 
     public function actionAdd() {
-        
+
         $modelAddForm = new AddObjectForm();
         $metro = ObjectsDovMetro::model()->findAll();
         $street = ObjectsDovStreets::model()->findAll();
         $district = ObjectsDovDistrict::model()->findAll();
 
         if (Yii::app()->request->getPost('add_object') == 1) {
-            
+
             $dataPost = Yii::app()->request->getPost('AddObjectForm');
 
             $modelAddForm->setAttributes($dataPost);
-            
+
             $modelAddForm->validatePhotoes($_FILES['AddObjectForm']);
-            
-            $modelAddForm->validate(null,false);       
-            
+
+            $modelAddForm->validate(null, false);
+
             if (!$modelAddForm->getErrors()) {
-                
+
+                $modelAddForm->uploadPhoto($_FILES['AddObjectForm']);
+
+                $criteria = new CDbCriteria();
+                $criteria->addCondition("phone = '" . $modelAddForm->phone_my . "'");
+                $user = Baza812User::model()->find($criteria);
+                if (!$user) {
+                    $user = new Baza812User();
+                    $user->name = '';
+                    $user->phone = $modelAddForm->phone_my;
+                    $user->email = '';
+                    $user->about_me = $modelAddForm->about_me;
+                    $user->save(FALSE);
+                }
+
                 $owner = new Owners();
-                $owner->name = '';
-                $owner->phone_1 = '';
-                $owner->date_add = '';
+                $owner->name = $modelAddForm->user;
+                $owner->phone_1 = $modelAddForm->phone;
+                $owner->date_add = date("Y-m-d H:i:s", time());
                 $owner->save(FALSE);
-                
+
                 $object = new Objects();
-                $object->id_objectType = ''; // кількісь кімнат (ід тут звязок використовується) 
+                $object->id_objectType = ($modelAddForm->room_flat == 'room') ?
+                        $modelAddForm->rooms : $modelAddForm->flat; // кількісь кімнат (ід тут звязок використовується) 
                 $object->id_owner = $owner->id_owner;
-                $object->price = '';
-                $object->id_district = '';
-                $object->id_street = '';
-                $object->building_number = '';
+                $object->price = $modelAddForm->price;
+                $object->id_district = $modelAddForm->district;
+                $object->id_street = $modelAddForm->street;
+                $object->building_number = $modelAddForm->house_no;
                 $object->status = 0; // статус показу на сайті
-                $object->date_add = '';
+                $object->date_add = date("Y-m-d H:i:s", time());
                 $object->id_currency = 2; // валюта
                 $object->note = '';
+                $object->who_add = $user->id;
+                $object->is_new = 1;
                 $object->save(FALSE);
-                
+
                 if ($modelAddForm->photo) {
-                    foreach ($modelAddForm->photo as $photo) {
+                    foreach ($modelAddForm->photo as $key => $photo) {
                         $picture = new Pictures();
                         $picture->id_object = $object->id_object;
                         /* @todo перевірити шляхи до грандпрайм */
-                        $picture->file = $photo; 
+                        $picture->file = $photo;
+                        $picture->entity_pk = '-1';
+                        $picture->num = $key;
                         $picture->save(FALSE);
                     }
                 }
-                
-                
+
                 $objectApartament = new ObjectsAppartment();
                 $objectApartament->id_object = $object->id_object;
-                $objectApartament->area_kitchen = ''; 
-                $objectApartament->area_living = '';
-                $objectApartament->area_total = '';
-                $objectApartament->floor = ''; // поверх
-                $objectApartament->floors = ''; // всього поверхів
+                $objectApartament->area_kitchen = $modelAddForm->area_kitchen;
+                $objectApartament->area_living = $modelAddForm->area_live;
+                $objectApartament->area_total = $modelAddForm->area_full;
+                $objectApartament->floor = $modelAddForm->floor; // поверх
+                $objectApartament->floors = $modelAddForm->floor_max; // всього поверхів
                 $objectApartament->save(FALSE);
 
-                
-                
                 $objectMetro = new ObjectsMetro();
-                $objectMetro->id_metro = '';
-                $objectMetro->id_object = '';
-                $objectMetro->id_tometro = '';
-                $objectMetro->time_tometro = '';
+                $objectMetro->id_metro = $modelAddForm->metro;
+                $objectMetro->id_object = $object->id_object;
+                $objectMetro->id_tometro = $modelAddForm->metro_to;
+                $objectMetro->time_tometro = $modelAddForm->time_to_metro;
                 $objectMetro->save(FALSE);
-                
+
                 $moreInfo = new ObjectsMoreinfo();
-                $moreInfo->fridge = '';
-                $moreInfo->furniture = '';
-                $moreInfo->internet = '';
-                $moreInfo->washer = '';
-                $moreInfo->tv = '';
+                $moreInfo->fridge = (int) $modelAddForm->frige;
+                $moreInfo->furniture = (int) $modelAddForm->furniture;
+                $moreInfo->internet = (int) $modelAddForm->net;
+                $moreInfo->washer = (int) $modelAddForm->washer;
+                $moreInfo->id_object = $object->id_object;
                 $moreInfo->save(FALSE);
-                
-            } 
-        } 
+
+                Yii::app()->user->setFlash('success', "Обект добавлен!!!!");
+            }
+        }
         $this->render('add_item', array('metro' => $metro, 'model' => $modelAddForm, 'district' => $district, 'street' => $street));
     }
 
-    // Uncomment the following methods and override them if needed
-    /*
-      public function filters()
-      {
-      // return the filter configuration for this controller, e.g.:
-      return array(
-      'inlineFilterName',
-      array(
-      'class'=>'path.to.FilterClass',
-      'propertyName'=>'propertyValue',
-      ),
-      );
-      }
 
-      public function actions()
-      {
-      // return external action classes, e.g.:
-      return array(
-      'action1'=>'path.to.ActionClass',
-      'action2'=>array(
-      'class'=>'path.to.AnotherActionClass',
-      'propertyName'=>'propertyValue',
-      ),
-      );
-      }
-     */
 }

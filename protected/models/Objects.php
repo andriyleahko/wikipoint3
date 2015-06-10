@@ -31,6 +31,8 @@
  * @property string $createdby
  * @property string $updatedby
  * @property integer $id_wherefrom
+ * @property integer $who_add
+ * @property integer $is_new
  */
 class Objects extends CActiveRecord
 {
@@ -51,7 +53,7 @@ class Objects extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id_owner, id_contractType, id_objectType, id_typeRealty, id_category, id_condition, id_district, id_street, price, id_currency, date_add, id_arendap, id_parser, noagent, createdby, updatedby', 'required'),
-			array('id_owner, id_contractType, id_objectType, id_typeRealty, id_category, id_condition, id_district, id_street, price, id_currency, send, status, id_wherefrom', 'numerical', 'integerOnly'=>true),
+			array('is_new, who_add, id_owner, id_contractType, id_objectType, id_typeRealty, id_category, id_condition, id_district, id_street, price, id_currency, send, status, id_wherefrom', 'numerical', 'integerOnly'=>true),
 			array('building_number, building_k, address_rest, longitude, latitude', 'length', 'max'=>50),
 			array('source_url', 'length', 'max'=>300),
 			array('id_arendap, id_parser', 'length', 'max'=>11),
@@ -60,7 +62,7 @@ class Objects extends CActiveRecord
 			array('note', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_object, id_owner, id_contractType, id_objectType, id_typeRealty, id_category, id_condition, id_district, id_street, building_number, building_k, address_rest, longitude, latitude, price, id_currency, note, source_url, date_add, id_arendap, id_parser, send, noagent, status, createdby, updatedby, id_wherefrom', 'safe', 'on'=>'search'),
+			array('is_new, who_add, id_object, id_owner, id_contractType, id_objectType, id_typeRealty, id_category, id_condition, id_district, id_street, building_number, building_k, address_rest, longitude, latitude, price, id_currency, note, source_url, date_add, id_arendap, id_parser, send, noagent, status, createdby, updatedby, id_wherefrom', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -118,6 +120,8 @@ class Objects extends CActiveRecord
 			'createdby' => 'Createdby',
 			'updatedby' => 'Updatedby',
 			'id_wherefrom' => 'Id Wherefrom',
+			'who_add' => 'Кто добавил',
+			'is_new' => 'New',
 		);
 	}
 

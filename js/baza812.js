@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+   
+    
     $('#search-submit').on('click', function () {
         $.fancybox.showActivity();
         var data = $(this).closest('form').serialize();

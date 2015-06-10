@@ -34,7 +34,7 @@ class Pictures extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, id_object, descr, entity, entity_pk, num, defaultr', 'required'),
+			array('user_id, id_object, entity, num', 'required'),
 			array('user_id, id_object, entity_pk, num, defaultr', 'numerical', 'integerOnly'=>true),
 			array('file', 'length', 'max'=>128),
 			array('descr', 'length', 'max'=>255),

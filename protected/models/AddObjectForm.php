@@ -5,7 +5,7 @@ class AddObjectForm extends CFormModel {
     private static $ALLOW_PHOTO_TYPE = array('image/jpeg', 'image/png', 'image/jpg');
     private static $ALLOW_PHOTO_SIZE = 2;
     /* @todo перевірити шляхи до грандпрайм */
-    private static $UPLOAD_DIR = '';
+    private static $UPLOAD_DIR = 'tmp_photo/';
     public $room_flat;
     public $address;
     public $time_to_metro;
