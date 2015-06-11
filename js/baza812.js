@@ -1,6 +1,5 @@
 $(document).ready(function () {
     
-   
     
     $('#search-submit').on('click', function () {
         $.fancybox.showActivity();
@@ -32,7 +31,7 @@ $(document).ready(function () {
     		success: function(data){
     			 var dataJS = JSON.parse(data);
     			 if (dataJS.status=='ok'){
-    				 $('.owner-phone').text(dataJS.phone);
+    				 $('.owner-phone').text('+7 '+dataJS.phone);
     			 }else{
     				 $('.wrong-password').attr("style", "visibility: visible !important");
     				 $('.wrong-password').text(dataJS.status);
@@ -40,6 +39,28 @@ $(document).ready(function () {
     		}
     		
     	});
+    });
+    
+    $('#pasword').keypress(function (e) {
+    	  if (e.which == 13) {
+    	    	var obectId=$('#obectId').val();
+    	    	var pasword=$('#pasword').val();
+    	    	$('.wrong-password').attr("style", "visibility: hidden !important");
+    	    	$.ajax({
+    	    		type:'post',
+    	    		url:'/item/showphone?obectId='+obectId+'&pasword='+pasword,
+    	    		success: function(data){
+    	    			 var dataJS = JSON.parse(data);
+    	    			 if (dataJS.status=='ok'){
+    	    				 $('.owner-phone').text('+7 '+dataJS.phone);
+    	    			 }else{
+    	    				 $('.wrong-password').attr("style", "visibility: visible !important");
+    	    				 $('.wrong-password').text(dataJS.status);
+    	    			 }
+    	    		}
+    	    		
+    	    	});
+    	  }
     });
     
     $('#mapspb a').on('click', function () {

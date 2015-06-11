@@ -10,11 +10,34 @@ class ItemController extends Controller {
 
     public function actionShow($itemId) {
         $model = Objects::model()->with('ObjectsMetro', 'Owners')->findByPk($itemId);
+        $opened=FALSE;
+        
+        If(isset(Yii::app()->session['user_id'])&&Yii::app()->session['user_id']){
+        	// if session exist, then find all users in Baza812UserAccess with current user_id 
+        	$modelBaza812UserAccess=Baza812UserAccess::model()->findAll(array(
+        			'select'=>'ids_object',
+        			'condition'=>'user_id=:user_id',
+        			'params'=>array(':user_id'=>Yii::app()->session['user_id'])
+        	));
+        	if ($modelBaza812UserAccess){
+	        	foreach ($modelBaza812UserAccess as $mod){
+	        		$ids=unserialize($mod->ids_object);
+	        		if(in_array($itemId,$ids)){
+	        			$opened=TRUE;
+	        		}
+	        	}
+        	}
+        }
+        
+        
         if ($model) {
-            $this->render('index', array('model' => $model));
+            $this->render('index', array('model' => $model, 'opened'=>$opened));
         }
     }
-
+	/**
+	 * This method return latitude and longitude.
+	 * @return array 
+	 */
     public function actionGetCoordinate() {
 
         $ch = curl_init();
@@ -54,6 +77,7 @@ class ItemController extends Controller {
 	    		$model->save();
     		}
     		echo json_encode(array('phone' => $phone, 'status'=>$status));
+    		Yii::app()->session['user_id'] = $model->user_id;
     	}else{
     		// pasword not found or not allowed
     		$status='Этот пароль не подходит или закончился доступ';
