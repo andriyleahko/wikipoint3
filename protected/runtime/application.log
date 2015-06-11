@@ -7277,3 +7277,36 @@ Stack trace:
 REQUEST_URI=/item/show
 HTTP_REFERER=http://baza812.loc/item/show?itemId=297406
 ---
+2015/06/11 20:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 20:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 20:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "buaccess".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('buaccess')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/buaccess
+---
+2015/06/11 20:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "style.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('style.css')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style.css
+HTTP_REFERER=http://baza812.loc/byaccess
+---

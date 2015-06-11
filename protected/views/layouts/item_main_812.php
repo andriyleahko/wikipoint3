@@ -14,7 +14,9 @@
  <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script> 
 
  -->
+ <script src="/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script  type="text/javascript" src="/js/baza812.js"></script>
+
 	
 
 <style>
@@ -220,7 +222,7 @@ body {
                 <a class="logo" href="/"></a>
                 <a class="menu-option" href="/howitworks/">Принцип работы</a>
                 <a class="menu-option" href="">Документы</a>
-                <a class="menu-option" href="">Оплата</a>
+                <a class="menu-option" href="/byaccess">Оплата</a>
                 <a class="add-item" href="/add-item">Сообщить о квартире</a>
            </div>
 
