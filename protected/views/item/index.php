@@ -167,12 +167,12 @@ echo $model->building_number ?></h1>
         </div>
         <p class="owner-name">Владелец: <?php echo $model->Owners->name ?></p>
         <input type='hidden' id='obectId' value="<?php echo $model->id_object?>">
-        <p class="owner-phone">+7 <?php echo substr_replace($model->Owners->phone_1, 'XXX', 5, 3) ?></p>
-        <form class="open-contact" method="get">
+        <p class="owner-phone">+7 <?php echo (isset($opened)&&$opened)?$model->Owners->phone_1:substr_replace($model->Owners->phone_1, 'XXX', 5, 3) ?></p>
+        <div class="open-contact" method="get">
             <input type="text" id='pasword' placeholder="Введите пароль">
             <input type="button" id='showphone' value="Показать телефон ">
             <p class="wrong-password">Этот пароль не подходит :(</p>
-        </form>
+        </div>
         <div class="get-acces">
             <a class="buy-password" href="">Купить пароль</a>
             <a class="get-for-free" href="">Получить<br/> бесплатно</a>

@@ -7138,3 +7138,175 @@ Stack trace:
 REQUEST_URI=/item/showphone?obectId=297414&pasword=123
 in D:\OpenServer\domains\baza812.loc\protected\controllers\ItemController.php (50)
 in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/11 14:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 14:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 15:49:35 [error] [php] Non-static method CHttpSession::get() should not be called statically, assuming $this from incompatible context (D:\OpenServer\domains\baza812.loc\protected\controllers\ItemController.php:14)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ItemController->runAction()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ItemController->runActionWithFilters()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ItemController->run()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/item/show?itemId=297420
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ItemController.php (14)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/11 16:35:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 16:35:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 16:35:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297420
+---
+2015/06/11 16:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 16:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 16:38:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297392
+---
+2015/06/11 17:08:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297407
+---
+2015/06/11 17:09:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297407
+---
+2015/06/11 17:09:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297407
+---
+2015/06/11 17:14:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:336
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/item/show
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297406
+---
+2015/06/11 20:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 20:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/11 20:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "buaccess".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('buaccess')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/buaccess
+---
+2015/06/11 20:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "style.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('style.css')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style.css
+HTTP_REFERER=http://baza812.loc/byaccess
+---

@@ -1,9 +1,8 @@
 <script>
 $('#main-search').empty();
 </script>
+
 <style>
-
-
 .wide-label {line-height: 60px;}
 .wide-label span {width: 270px; display: inline-block; text-align: right; margin-right: 30px;}
 

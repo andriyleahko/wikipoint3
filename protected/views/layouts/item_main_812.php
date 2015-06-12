@@ -14,7 +14,9 @@
  <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script> 
 
  -->
+ <script src="/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script  type="text/javascript" src="/js/baza812.js"></script>
+
 	
 
 <style>
@@ -44,6 +46,7 @@ body {
 #item .info-box .features {width: 240px; height: 90px; display: block; background: lightgray; margin: auto;}
 #item .info-box .owner-name {font: italic 18px/30px "PT Sans"; color: #4A4A4A;}
 #item .info-box .owner-phone {font: 700 28px/60px "PT Sans"; color: #4A4A4A; color: #4A4A4A;}
+#main-menu .add-item:hover {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #4579A6; margin-top: 8px;}
 
 #item .info-box form {}
 
@@ -58,13 +61,37 @@ body {
 	padding: 0px 20px
 }
 
+#item .info-box form div {
+	font: 18px/30px "PT Sans";
+	box-sizing: border-box;
+	height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	padding: 0px 20px
+}
+
 #item .info-box form input[type="text"] {
 	border: 1px solid #4579A6; 
 	border-radius: 4px;
 	margin-bottom: 15px;
 }
 
+#item .info-box div input[type="text"] {
+	border: 1px solid #4579A6; 
+	border-radius: 4px;
+	margin-bottom: 15px;
+	text-align:center;
+}
+
 #item .info-box form input[type="submit"] {
+	border: 1px solid #4579A6; 
+	border-radius: 4px;
+	background: #4579A6;
+	color: white;
+	cursor: pointer;
+}
+
+#item .info-box div input[type="submit"] {
 	border: 1px solid #4579A6; 
 	border-radius: 4px;
 	background: #4579A6;
@@ -80,7 +107,18 @@ body {
 	cursor: pointer;
 }
 
+#item .info-box div input[type="button"] {
+	border: 1px solid #4579A6; 
+	border-radius: 4px;
+	background: #4579A6;
+	color: white;
+	cursor: pointer;
+}
+
+
 #item .info-box form .wrong-password {color: red; font-size: 16px; visibility: hidden;}
+
+#item .info-box div .wrong-password {color: red; font-size: 16px; visibility: hidden;}
 
 .buy-password {
 	border: 2px solid #4579A6;
@@ -180,7 +218,13 @@ body {
 
 
 <div id="item" class="wrapper">
-
+<div id="main-menu">
+                <a class="logo" href="/"></a>
+                <a class="menu-option" href="/howitworks/">Принцип работы</a>
+                <a class="menu-option" href="">Документы</a>
+                <a class="menu-option" href="/byaccess">Оплата</a>
+                <a class="add-item" href="/add-item">Сообщить о квартире</a>
+           </div>
 
 <?php echo $content; ?>
 
