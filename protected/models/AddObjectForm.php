@@ -4,8 +4,7 @@ class AddObjectForm extends CFormModel {
 
     private static $ALLOW_PHOTO_TYPE = array('image/jpeg', 'image/png', 'image/jpg');
     private static $ALLOW_PHOTO_SIZE = 2;
-    /* @todo перевірити шляхи до грандпрайм */
-    private static $UPLOAD_DIR = 'tmp_photo/';
+    private static $UPLOAD_DIR = '../images/temp/';
     public $room_flat;
     public $address;
     public $time_to_metro;
@@ -44,7 +43,7 @@ class AddObjectForm extends CFormModel {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('house_no, room_flat, district, street, time_to_metro, metro, floor, floor_max, phone, phone_my, user, area_full, area_kitchen, area_live, price', 'required'), // є ще поле param
+            array('house_no, room_flat, district, street, time_to_metro, metro, floor, floor_max, phone, user, area_full, area_kitchen, area_live, price', 'required'), // є ще поле param
             array('district, street, rooms, flat, metro_to, area_full, area_kitchen, metro, frige, furniture, washer, net, area_live, floor, floor_max, time_to_metro, price', 'numerical'),
             array('phone, phone_my, house_no, address, room_flat, user, photo, about_me', 'length', 'max' => 255), // є ще поле param
             array('verifyCode', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
@@ -110,7 +109,7 @@ class AddObjectForm extends CFormModel {
                 $ext = end(explode('.', $photoes['name']['photoes'][$key]));
                 $name = md5($photoes['name']['photoes'][$key]);
                 move_uploaded_file($photoes['tmp_name']['photoes'][$key], self::$UPLOAD_DIR . $name . '.' . $ext);
-                $this->photo[] = self::$UPLOAD_DIR . $name . '.' . $ext;
+                $this->photo[] =  'images/temp/' . $name . '.' . $ext;
             }
         }
     }

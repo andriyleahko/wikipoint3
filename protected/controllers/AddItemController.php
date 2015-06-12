@@ -37,6 +37,10 @@ class AddItemController extends Controller {
             $modelAddForm->validate(null, false);
 
             if (!$modelAddForm->getErrors()) {
+                
+                if (!$modelAddForm->phone_my) {
+                    $modelAddForm->phone_my = $modelAddForm->phone;
+                }
 
                 $modelAddForm->uploadPhoto($_FILES['AddObjectForm']);
 
@@ -78,7 +82,6 @@ class AddItemController extends Controller {
                     foreach ($modelAddForm->photo as $key => $photo) {
                         $picture = new Pictures();
                         $picture->id_object = $object->id_object;
-                        /* @todo перевірити шляхи до грандпрайм */
                         $picture->file = $photo;
                         $picture->entity_pk = '-1';
                         $picture->num = $key;
