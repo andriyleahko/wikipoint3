@@ -31,8 +31,10 @@
         <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>
         
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
-                
         <link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+        <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+        <script src="/js/jquery.cookie.js" ></script>
+        
         <script type="text/javascript" src="/js/jquery.maskedinput.js" ></script>
         <script  type="text/javascript" src="/js/baza812.js"></script>
         
@@ -44,7 +46,7 @@
                 <a class="logo" href="/"></a>
                 <a class="menu-option" href="/howitworks/">Принцип работы</a>
                 <a class="menu-option" href="">Документы</a>
-                <a class="menu-option" href="/byaccess">Оплата</a>
+                <a class="menu-option" href="/byAccess">Оплата</a>
                 <a class="add-item" href="/add-item">Сообщить о квартире</a>
             </div>
 <div id="main-search">

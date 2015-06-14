@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Чрв 11 2015 р., 17:33
+-- Час створення: Чрв 14 2015 р., 21:28
 -- Версія сервера: 5.5.41-log
 -- Версія PHP: 5.4.35
 
@@ -33,14 +33,15 @@ CREATE TABLE IF NOT EXISTS `baza812_user` (
   `email` varchar(50) NOT NULL,
   `about_me` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Дамп даних таблиці `baza812_user`
 --
 
 INSERT INTO `baza812_user` (`id`, `name`, `phone`, `email`, `about_me`) VALUES
-(1, 'roman', '+380638720191', 'leshkoroman@gmail.com', 'This is me');
+(1, 'roman', '+380638720191', 'leshkoroman@gmail.com', 'This is me'),
+(2, 'Федя', '+380962545357', 'feda@mail.ru', 'Федя');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

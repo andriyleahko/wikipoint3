@@ -42,7 +42,7 @@
 
 <fieldset class="radio-box">
 	<input type="radio" name="tarif" id="t1" checked>
-	<label for="t1"><span>доступ на 31 день</span></label>
+	<label for="t1"><span>доступ на 30 дней</span></label>
 	
 	<input type="radio" name="tarif" id="t2">
 	<label for="t2"><span>доступ на 15 дней</span></label>

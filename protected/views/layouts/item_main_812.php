@@ -9,11 +9,10 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
 <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
-<!--
-тут, щось глючить 
- <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script> 
 
- -->
+<!--  <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>  -->
+
+<script src="/js/jquery.cookie.js" ></script>
  <script src="/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script  type="text/javascript" src="/js/baza812.js"></script>
 
@@ -114,6 +113,14 @@ body {
 	color: white;
 	cursor: pointer;
 }
+#item .info-box div input[type="button"]:hover {
+	border: 1px solid #4579A6; 
+	border-radius: 5px;
+	background: #4579A6;
+	color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
 
 
 #item .info-box form .wrong-password {color: red; font-size: 16px; visibility: hidden;}
@@ -206,10 +213,23 @@ body {
 	padding: 0px 20px;
 	margin: 7px 22px 7px 0px;
 	border-radius: 4px;
+	cursor:pointer;
 }
-.add-to-favorites {
-	background: #9B9B9B;
+
+.back-to-search:hover, .add-to-favorites:hover {
+	text-decoration: none;
+	color: white;
+	background: #4579A6;
+	line-height: 46px;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 7px 22px 7px 0px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+/* .add-to-favorites { */
+/* 	background: #9B9B9B; */
+/* } */
 
 
 </style>
@@ -222,7 +242,7 @@ body {
                 <a class="logo" href="/"></a>
                 <a class="menu-option" href="/howitworks/">Принцип работы</a>
                 <a class="menu-option" href="">Документы</a>
-                <a class="menu-option" href="/byaccess">Оплата</a>
+                <a class="menu-option" href="/byAccess">Оплата</a>
                 <a class="add-item" href="/add-item">Сообщить о квартире</a>
            </div>
 

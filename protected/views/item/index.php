@@ -1,5 +1,3 @@
-<script src="/js/jquery.cookie.js" ></script>
-
 
 <script type="text/javascript">
         
@@ -116,8 +114,9 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
     'Две комнаты в 5-ккв', 'Две комнаты в Многокомн. кв.');
 ?>
 
-<a class="back-to-search" href="/catalog/search">← Вернуться к поиску</a>
-<a class="add-to-favorites" href="">Добавить в избранное</a>
+<a class="back-to-search" href='/catalog/search'>← Вернуться к поиску</a>
+<a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
+echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
 
 
 
@@ -202,5 +201,6 @@ echo $model->building_number ?></h1>
 </p>
 
 
-<a class="back-to-search" href="">← Вернуться к поиску</a>
-<a class="add-to-favorites" href="">Добавить в избранное</a>
+<a class="back-to-search" >← Вернуться к поиску</a>
+<a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
+echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>

@@ -66,18 +66,10 @@ class ItemController extends Controller {
     							'params'=>array(':pasword'=>$pasword)
     							));
     	
-    	if (isset($model)&&$this->_checkAssess($model)){
+    	if (isset($model)&&$this->_checkAssess($model,$obectId)){
     		//pasword found
-    		If(!$ids=unserialize($model->ids_object)){
-    			$ids=array();
-    		}; 
-    		if(!in_array($obectId,$ids)){ 
-	    		$ids[]=$obectId;
-	    		$model->ids_object=serialize($ids);
-	    		$model->save();
-    		}
     		echo json_encode(array('phone' => $phone, 'status'=>$status));
-    		Yii::app()->session['user_id'] = $model->user_id;
+    		Yii::app()->session['user_id'] = $model->user_id; // save session data
     	}else{
     		// pasword not found or not allowed
     		$status='Этот пароль не подходит или закончился доступ';
@@ -86,20 +78,41 @@ class ItemController extends Controller {
     	exit();
     }
     
-    private function _checkAssess($model){
+    private function _checkAssess($model,$obectId){
     	switch ($model->type_pasword) {
-    		case 1: // pasword was bought
+    		case 1: // pasword was bought for 30 days
     			if(time()-($model->when_get_pasword)<30*24*60*60){
+					$this->_workWithIds($model,$obectId);
     				return true;
     			}else{
     				return false;
     			}
-    		default:
-    			if(time()-($model->when_get_pasword)<6*30*24*60*60&&$model->number_opened_phone_allowed>0){
-    				Baza812UserAccess::model()
-    							->updateByPk($model->id, array(
-    										'number_opened_phone_allowed'=>($model->number_opened_phone_allowed-1)
-    							));
+    			break;
+    			
+    			
+    		case 7: // pasword was bought for 15 days
+    			if(time()-($model->when_get_pasword)<15*24*60*60){
+    				$this->_workWithIds($model,$obectId);
+    				return true;
+    			}else{
+    				return false;
+    			}
+    			break;
+    			
+    			
+   			case 8: // pasword was bought for 25 contacts
+   				if($model->number_opened_phone_allowed>0){
+   					$this->_workWithIds($model,$obectId);
+    				return true;
+    			}else{
+    				return false;
+    			}
+    			break;
+    			
+    			
+    		default: // free pasword. It expiried after half year
+    			if(time()-($model->when_get_pasword)<6*31*24*60*60&&$model->number_opened_phone_allowed>0){
+    			   	$this->_workWithIds($model,$obectId);
     				return true;
     			}else{
     				return false;
@@ -107,7 +120,24 @@ class ItemController extends Controller {
     		break;
     	}
     }
-
+    
+    private function _workWithIds($model,$obectId){
+    		// look ids of opened objects
+			If(!$ids=unserialize($model->ids_object))
+			{
+   				$ids=array();
+   			};
+   			
+   			// if id of object is absent in $ids, we add current id in ids and decrement  'number_opened_phone_allowed'
+   			if (!in_array($obectId,$ids))
+   			{
+   				$ids[]=$obectId;
+   				$model->ids_object=serialize($ids);
+   				$model->save();
+	   			$model->number_opened_phone_allowed = $model->number_opened_phone_allowed-1;
+	   			$model->save();
+   			}
+    }
     // Uncomment the following methods and override them if needed
     /*
       public function filters()

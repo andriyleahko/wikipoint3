@@ -11,7 +11,7 @@ class CatalogController extends Controller
 		exit('not found');
 	}
         
-        public function actionSearch()
+        public function actionSearch($b=1)
         {
             if (Yii::app()->request->getParam('search') == 1) {
                 $criteria = new CDbCriteria();
@@ -67,6 +67,7 @@ class CatalogController extends Controller
                 $criteria->order='t.id_object DESC';
                 
                 $model = Objects::model()->findAll($criteria);
+                
                 
                 $this->renderPartial('search-result',
                         array('objects' => $model,'total' => $count,'offset' => Yii::app()->request->getParam('offset',0), 'offsetNext' => Yii::app()->request->getParam('offset',0) + $this->limit)

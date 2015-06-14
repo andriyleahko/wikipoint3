@@ -6,8 +6,8 @@ $(function() {
 
 
 $(document).ready(function () {
-    
-    
+
+    // search items by filter
     $('#search-submit').on('click', function () {
         $.fancybox.showActivity();
         var data = $(this).closest('form').serialize();
@@ -27,7 +27,7 @@ $(document).ready(function () {
         return false;
     });
     
-    
+    // show phone on click
     $('#showphone').on('click', function(){
     	var obectId=$('#obectId').val();
     	var pasword=$('#pasword').val();
@@ -48,6 +48,7 @@ $(document).ready(function () {
     	});
     });
     
+    // show phone on enter
     $('#pasword').keypress(function (e) {
     	  if (e.which == 13) {
     	    	var obectId=$('#obectId').val();

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Чрв 09 2015 р., 17:58
+-- Час створення: Чрв 14 2015 р., 20:11
 -- Версія сервера: 5.5.41-log
 -- Версія PHP: 5.4.35
 
@@ -30,19 +30,21 @@ CREATE TABLE IF NOT EXISTS `baza812_type_pasword` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Дамп даних таблиці `baza812_type_pasword`
 --
 
 INSERT INTO `baza812_type_pasword` (`id`, `name`) VALUES
-(1, 'куплено пароль и доступ'),
+(1, 'куплено пароль и доступ на 30 дней'),
 (2, 'Сообщение о сдаваемой квартире'),
 (3, 'лайк в vk'),
 (4, 'Подписка на рассылку новых объявлений'),
 (5, 'Привести друзей на сайт'),
-(6, 'Написать отзыв Вконтакте');
+(6, 'Написать отзыв Вконтакте'),
+(7, 'куплено пароль и доступ на 15 дней'),
+(8, 'куплено пароль на 25 контактов');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
