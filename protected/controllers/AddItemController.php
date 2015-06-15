@@ -65,6 +65,10 @@ class AddItemController extends Controller {
                 $object = new Objects();
                 $object->id_objectType = ($modelAddForm->room_flat == 'room') ?
                         $modelAddForm->rooms : $modelAddForm->flat; // кількісь кімнат (ід тут звязок використовується) 
+                $object->id_category = 1;
+                $object->id_condition = 1;
+                $object->id_contractType = 1;
+                $object->id_typeRealty = 1;
                 $object->id_owner = $owner->id_owner;
                 $object->price = $modelAddForm->price;
                 $object->id_district = $modelAddForm->district;
