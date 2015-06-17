@@ -51,16 +51,16 @@ class AddItemController extends Controller {
                     $user = new Baza812User();
                     $user->name = '';
                     $user->phone = $modelAddForm->phone_my;
-                    $user->email = '';
+                    $user->email = $modelAddForm->email;
                     $user->about_me = $modelAddForm->about_me;
-                    $user->save(FALSE);
+                    $user->save(false);
                 }
 
                 $owner = new Owners();
                 $owner->name = $modelAddForm->user;
                 $owner->phone_1 = $modelAddForm->phone;
                 $owner->date_add = date("Y-m-d H:i:s", time());
-                $owner->save(FALSE);
+                $owner->save(false);
 
                 $object = new Objects();
                 $object->id_objectType = ($modelAddForm->room_flat == 'room') ?
@@ -71,16 +71,17 @@ class AddItemController extends Controller {
                 $object->id_typeRealty = 1;
                 $object->id_owner = $owner->id_owner;
                 $object->price = $modelAddForm->price;
+                $object->source_url = 'Baza 812';
                 $object->id_district = $modelAddForm->district;
                 $object->id_street = $modelAddForm->street;
                 $object->building_number = $modelAddForm->house_no;
                 $object->status = 0; // статус показу на сайті
                 $object->date_add = date("Y-m-d H:i:s", time());
                 $object->id_currency = 2; // валюта
-                $object->note = '';
+                $object->note = $modelAddForm->about_object;
                 $object->who_add = $user->id;
                 $object->is_new = 1;
-                $object->save(FALSE);
+                $object->save(false);
 
                 if ($modelAddForm->photo) {
                     foreach ($modelAddForm->photo as $key => $photo) {
@@ -89,7 +90,7 @@ class AddItemController extends Controller {
                         $picture->file = $photo;
                         $picture->entity_pk = '-1';
                         $picture->num = $key;
-                        $picture->save(FALSE);
+                        $picture->save(false);
                     }
                 }
 
@@ -100,14 +101,14 @@ class AddItemController extends Controller {
                 $objectApartament->area_total = $modelAddForm->area_full;
                 $objectApartament->floor = $modelAddForm->floor; // поверх
                 $objectApartament->floors = $modelAddForm->floor_max; // всього поверхів
-                $objectApartament->save(FALSE);
+                $objectApartament->save(false);
 
                 $objectMetro = new ObjectsMetro();
                 $objectMetro->id_metro = $modelAddForm->metro;
                 $objectMetro->id_object = $object->id_object;
                 $objectMetro->id_tometro = $modelAddForm->metro_to;
                 $objectMetro->time_tometro = $modelAddForm->time_to_metro;
-                $objectMetro->save(FALSE);
+                $objectMetro->save(false);
 
                 $moreInfo = new ObjectsMoreinfo();
                 $moreInfo->fridge = (int) $modelAddForm->frige;
@@ -115,9 +116,16 @@ class AddItemController extends Controller {
                 $moreInfo->internet = (int) $modelAddForm->net;
                 $moreInfo->washer = (int) $modelAddForm->washer;
                 $moreInfo->id_object = $object->id_object;
-                $moreInfo->save(FALSE);
+                $moreInfo->save(false);
+                
+//                 var_dump($moreInfo->errors);
+//                 var_dump($objectMetro->errors);
+//                 var_dump($objectApartament->errors);
+//                 var_dump($object->errors);
+//                 var_dump($owner->errors);
+//                 var_dump($user->errors);
 
-                Yii::app()->user->setFlash('success', "Обект добавлен!!!!");
+                Yii::app()->user->setFlash('success', "Объект добавлен!!!!");
             }
         }
         $this->render('add_item', array('metro' => $metro, 'model' => $modelAddForm, 'district' => $district, 'street' => $street));

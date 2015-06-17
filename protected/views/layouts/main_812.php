@@ -13,7 +13,7 @@
             #main-menu .add-item {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #9B9B9B; margin-top: 8px;}
             #main-menu .add-item:hover {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #4579A6; margin-top: 8px;}
             body {
-                background: #99aec2 none repeat scroll 0 0;
+              /*  background: #99aec2 none repeat scroll 0 0;*/
             }
         </style>
 
@@ -147,7 +147,7 @@
                 <li class="nsel" id="Petrohradskaya"><a class="Petrohradskaya" title="Петроградская" href="#"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Horkovskaya"><a class="Horkovskaya" title="Горьковская" href="#"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Nevskiy"><a class="Nevskiy" href="#" title="Невский проспект"><span>&nbsp;</span></a></li>
-                <li class="nsel" id="Hostinnui"><a class="Hostinnui" href="#" title="Гостинный двор"><span>&nbsp;</span></a></li>
+                <li class="nsel" id="Hostinnui"><a class="Hostinnui" href="#" title="Гостиный двор"><span>&nbsp;</span></a></li>
 
 
 

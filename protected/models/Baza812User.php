@@ -9,6 +9,7 @@
  * @property string $phone
  * @property integer $email
  * @property integer $about_me
+ * @property string $ids_object
  */
 class Baza812User extends CActiveRecord
 {
@@ -28,14 +29,14 @@ class Baza812User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('phone', 'required'),
-			array('email', 'numerical', 'integerOnly'=>true),
+			array('phone, email, ids_object', 'required'),
+			array('email', 'email'),
 			array('name', 'length', 'max'=>100),
 			array('phone', 'length', 'max'=>50),
 			array('about_me', 'length', 'max'=>700),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, phone, email', 'safe', 'on'=>'search'),
+			array('id, name, phone, email, ids_object', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +63,7 @@ class Baza812User extends CActiveRecord
 			'phone' => 'Phone',
 			'email' => 'Email',
 			'about_me' => 'About me',
+			'ids_object'=>'Id objects'
 		);
 	}
 
@@ -87,6 +89,7 @@ class Baza812User extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('email',$this->email);
+		$criteria->compare('ids_object',$this->ids_object,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

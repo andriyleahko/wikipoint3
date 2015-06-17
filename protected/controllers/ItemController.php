@@ -14,17 +14,11 @@ class ItemController extends Controller {
         
         If(isset(Yii::app()->session['user_id'])&&Yii::app()->session['user_id']){
         	// if session exist, then find all users in Baza812UserAccess with current user_id 
-        	$modelBaza812UserAccess=Baza812UserAccess::model()->findAll(array(
-        			'select'=>'ids_object',
-        			'condition'=>'user_id=:user_id',
-        			'params'=>array(':user_id'=>Yii::app()->session['user_id'])
-        	));
-        	if ($modelBaza812UserAccess){
-	        	foreach ($modelBaza812UserAccess as $mod){
-	        		$ids=unserialize($mod->ids_object);
-	        		if(in_array($itemId,$ids)){
-	        			$opened=TRUE;
-	        		}
+        	$modelBaza812User=Baza812User::model()->findByPk(Yii::app()->session['user_id']);
+        	if ($modelBaza812User->ids_object){
+	        	$ids=unserialize($modelBaza812User->ids_object);
+	        	if(in_array($itemId,$ids)){
+	        		$opened=TRUE;
 	        	}
         	}
         }
@@ -122,8 +116,10 @@ class ItemController extends Controller {
     }
     
     private function _workWithIds($model,$obectId){
+    		$UserModel=Baza812User::model()->findByPk($model->user_id);
+    		
     		// look ids of opened objects
-			If(!$ids=unserialize($model->ids_object))
+			If(!$ids=unserialize($UserModel->ids_object))
 			{
    				$ids=array();
    			};
@@ -132,8 +128,8 @@ class ItemController extends Controller {
    			if (!in_array($obectId,$ids))
    			{
    				$ids[]=$obectId;
-   				$model->ids_object=serialize($ids);
-   				$model->save();
+   				$UserModel->ids_object=serialize($ids);
+   				$UserModel->save();
 	   			$model->number_opened_phone_allowed = $model->number_opened_phone_allowed-1;
 	   			$model->save();
    			}

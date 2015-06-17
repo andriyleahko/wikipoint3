@@ -23,7 +23,7 @@ class CatalogController extends Controller
                                'ObjectsDovStreets',
                                'ObjectsMoreinfo'
                               );
-                $where = ' status = 1 ';
+                $where = ' t.status = 1 ';
                 $rooms = array();
                 if (Yii::app()->request->getParam('rooms-amount')){
                     foreach (Yii::app()->request->getParam('rooms-amount') as $room)

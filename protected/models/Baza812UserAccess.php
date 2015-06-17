@@ -10,7 +10,6 @@
  * @property integer $when_get_pasword
  * @property integer $type_pasword
  * @property integer $number_opened_phone_allowed
- * @property string $ids_object
  */
 class Baza812UserAccess extends CActiveRecord
 {
@@ -30,13 +29,13 @@ class Baza812UserAccess extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, pasword, when_get_pasword, type_pasword, number_opened_phone_allowed, ids_object', 'required'),
+			array('user_id, pasword, when_get_pasword, type_pasword, number_opened_phone_allowed', 'required'),
 			array('user_id, when_get_pasword, type_pasword, number_opened_phone_allowed', 'numerical', 'integerOnly'=>true),
 			array('pasword', 'length', 'max'=>15),
 			array('pasword', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, pasword, when_get_pasword, type_pasword, number_opened_phone_allowed, ids_object', 'safe', 'on'=>'search'),
+			array('id, user_id, pasword, when_get_pasword, type_pasword, number_opened_phone_allowed', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,7 +64,6 @@ class Baza812UserAccess extends CActiveRecord
 			'when_get_pasword' => 'When Get Pasword',
 			'type_pasword' => 'Type Pasword',
 			'number_opened_phone_allowed' => 'Number Opened Phone Allowed',
-			'ids_object' => 'Ids Object',
 		);
 	}
 
@@ -93,7 +91,6 @@ class Baza812UserAccess extends CActiveRecord
 		$criteria->compare('when_get_pasword',$this->when_get_pasword);
 		$criteria->compare('type_pasword',$this->type_pasword);
 		$criteria->compare('number_opened_phone_allowed',$this->number_opened_phone_allowed);
-		$criteria->compare('ids_object',$this->ids_object,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

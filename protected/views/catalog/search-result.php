@@ -1,3 +1,18 @@
+<?php $aObjectType2 = array(1 => '1 комнатная квартира', 
+		'2 комнатная квартира', 
+		'3 комнатная квартира', 
+		'4 комнатная квартира', 
+		'5 комнатная квартира', 
+		'Мн комнатная квартира', 
+		'комната 1(2)', 
+		'комната 1(3)', 
+		'комната 1(4)', 
+		'комната 1(5)', 
+		'комната 1(МН)', 
+		'2 комнаты 2(3)',
+		 '2 комнаты 2(4)', 
+		'2 комнаты 2(5)', 
+		'2 комнаты 2(МН)');?>
 <?php if (!$offset) : ?><p class="items-counter">Найдено <?php echo $total ?> объектов.</p> <?php endif; ?>
 <input type="hidden" name="offsetNext" value="<?php echo $offsetNext ?>" />
 <?php if (count($objects)) : ?>
@@ -67,16 +82,17 @@
                     <?php if ($k): ?><a class="fancy" rel="example_group<?php echo $item->id_object ?>" style="display:none" href="http://grandprime.info/<?php echo $pic->file ?>"> </a><?php endif; ?>
             <?php endforeach; ?>
         <?php endif; ?>
-            <p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $item->ObjectsDovType->name ?> квартира</a></p>
             <div class="info">
-                <p class="price"><?php echo $item->price ?> руб.</p>
-                <p class="metro11"> 
+				<p class="price"><?php echo $item->price ?> &#x1D71; </p>
+            	<p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></a></p>
+                <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
                     <?php
-                    if ($item->ObjectsDovDistrict) {
-                        echo $item->ObjectsDovDistrict->name;
+                    if ($item->ObjectsMetro->ObjectsDovMetro->name) {
+                        echo $item->ObjectsMetro->ObjectsDovMetro->name;
                     }
                     ?>
                 </p>
+                <br/>
                 <p class="address">&nbsp;
                     <?php
                     if ($item->ObjectsDovStreets) {
@@ -85,8 +101,7 @@
                     }
                     ?> 	
                 </p>
-
-                <br />
+				<br/>
                 <div class="features">
                     <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
                         <?php if ($item->ObjectsMoreinfo): ?>

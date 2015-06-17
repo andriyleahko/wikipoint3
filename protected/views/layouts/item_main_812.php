@@ -26,7 +26,7 @@
       #map_canvas { height: 540px; width: 620px; }
 
 body {
-    background: #99aec2 none repeat scroll 0 0;
+   /* background: #99aec2 none repeat scroll 0 0;*/
 }
 
 

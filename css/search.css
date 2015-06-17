@@ -1,12 +1,12 @@
 #search-results {}
-#search-results .items-counter {text-align: center; color: white; font: italic 20px/60px "PT Sans";}
+#search-results .items-counter {text-align: center; color: white; font: italic 20px/60px "PT Sans"; padding-top: 20px;}
 
 .item {
 	background: white;
 	height: 240px;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
 	border-radius: 2px;
-	margin-bottom: 30px;
+	margin: 20px;
 	cursor: pointer;
 	overflow: hidden;
 }
@@ -21,7 +21,7 @@
 	display: block;
 }
 #search-results {
-    background-color: #4579A6;
+    background-color: #99aec2;
 }
 
 .item .type {color: #4A4A4A; font: 700 28px/30px "PT Sans"; padding-top: 8px;}
@@ -33,12 +33,12 @@
 .item .line-4 {color: #702785; background-image: url(/img/metro-line-4.png);}
 .item .line-5 {color: #702785; background-image: url(/img/metro-line-5.png);}
 
-.item .address {color: #9B9B9B; font: 16px/30px "PT Sans"; margin-bottom: 30px; float: left;}
+.item .address {color: #9B9B9B; font: 16px/30px "PT Sans"; /*margin-bottom: 30px;*/ float: left;}
 .item .price {color: #4A4A4A; font: 700 28px/30px "PT Sans"; float: right;  padding: 30px 20px 0px 0px}
 .item .features {
 	height: 60px;
 	width: 240px;
-	//background: #efefef;
+	/*background: #efefef;*/
 	float: left;
 }
 .item .button {

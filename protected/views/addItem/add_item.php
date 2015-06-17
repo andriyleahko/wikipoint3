@@ -194,6 +194,12 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 	<input type="text" class="phone" name="AddObjectForm[phone_my]" value="<?php if (isset($_POST['AddObjectForm']['phone_my'])): ?><?php echo $_POST['AddObjectForm']['phone_my'] ?><?php endif;?>" />
 	<span style="font: italic 17px/20px 'PT Sans'; float: right; width: 400px; text-align: left; margin-right: 0px;">Если вы собственник — не заполняется.<br/> На этот номер придет пароль для открытия 5-ти контактов.</span>
 </p>
+
+<p class="wide-label">
+	<span>Ваш email:</span>
+	<input type="text" name="AddObjectForm[email]" value="<?php if (isset($_POST['AddObjectForm']['email'])): ?><?php echo $_POST['AddObjectForm']['email'] ?><?php endif;?>" />
+</p>
+
 <script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript">
     $('document').ready(function() {
@@ -246,6 +252,10 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 	<textarea name="AddObjectForm[about_me]"><?php if (isset($_POST['AddObjectForm']['about_me'])): ?><?php echo $_POST['AddObjectForm']['about_me'] ?><?php endif;?></textarea>
 </p>
 
+<p class="wide-label">
+	<span>Расскажите об объекте:</span>
+	<textarea name="AddObjectForm[about_object]"><?php if (isset($_POST['AddObjectForm']['about_object'])): ?><?php echo $_POST['AddObjectForm']['about_object'] ?><?php endif;?></textarea>
+</p>
 
 <?php  $this->widget('CCaptcha'); ?> 
 <?php echo CHtml::activeTextField($model,'verifyCode'); ?>

@@ -7405,3 +7405,287 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/06/15 19:55:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 D:\OpenServer\domains\baza812.loc\protected\controllers\MainController.php(9): CActiveRecord->count()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): MainController->actionIndex()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/06/15 19:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/15 19:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/15 20:00:30 [error] [php] Only variables should be passed by reference (D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php:109)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): AddItemController->runAction()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): AddItemController->runActionWithFilters()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): AddItemController->run()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/add-item
+in D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php (109)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\AddItemController.php (45)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/16 13:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/16 13:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/16 14:17:20 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 )
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/16 14:17:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 ).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/16 14:17:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 )' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&search=1&price_from=0&price_to=0
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/16 14:17:51 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 )
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/16 14:17:51 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 ).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/16 14:17:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( status = 1 )' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&search=1&price_from=0&price_to=0
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/16 21:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/16 21:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 16:07:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 16:07:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 16:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 16:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 17:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 17:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 21:41:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 21:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/17 22:58:46 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/17 22:59:48 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/17 23:01:09 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/17 23:03:22 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/17 23:04:09 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/17 23:07:27 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)

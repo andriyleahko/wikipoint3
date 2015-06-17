@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Чрв 14 2015 р., 21:24
+-- Час створення: Чрв 17 2015 р., 23:21
 -- Версія сервера: 5.5.41-log
 -- Версія PHP: 5.4.35
 
@@ -33,19 +33,37 @@ CREATE TABLE IF NOT EXISTS `baza812_user_access` (
   `when_get_pasword` int(11) NOT NULL,
   `type_pasword` int(11) NOT NULL,
   `number_opened_phone_allowed` int(11) NOT NULL,
-  `ids_object` longtext NOT NULL COMMENT 'ids form table object',
   PRIMARY KEY (`id`),
   UNIQUE KEY `pasword` (`pasword`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 --
 -- Дамп даних таблиці `baza812_user_access`
 --
 
-INSERT INTO `baza812_user_access` (`id`, `user_id`, `pasword`, `when_get_pasword`, `type_pasword`, `number_opened_phone_allowed`, `ids_object`) VALUES
-(1, 1, '123', 1433862779, 1, 10, 'a:15:{i:0;s:6:"297414";i:1;s:6:"297409";i:2;s:6:"297420";i:3;s:6:"297397";i:4;s:6:"297395";i:5;s:6:"297392";i:6;s:6:"297407";i:7;s:6:"297406";i:8;s:6:"297401";i:9;s:6:"297400";i:10;s:6:"297300";i:11;s:6:"297301";i:12;s:6:"297419";i:13;s:6:"297415";i:14;s:6:"297405";}'),
-(2, 1, '111', 1433862779, 8, 21, 'a:3:{i:0;s:6:"297418";i:1;s:6:"297415";i:2;s:6:"297410";}'),
-(3, 2, '00', 1133862779, 8, 1, 'a:1:{i:0;s:6:"297050";}');
+INSERT INTO `baza812_user_access` (`id`, `user_id`, `pasword`, `when_get_pasword`, `type_pasword`, `number_opened_phone_allowed`) VALUES
+(1, 1, '123', 1433862779, 1, 6),
+(2, 1, '111', 1433862779, 8, 20),
+(3, 2, '00', 1133862779, 8, 1),
+(4, 3, '25394', 1434395614, 2, 5),
+(5, 5, '25185', 1434453248, 2, 5),
+(6, 4, '10867', 1434455876, 2, 5),
+(7, 6, '99134', 1434455879, 2, 5),
+(8, 6, '26207', 1434456893, 2, 5),
+(9, 6, '93501', 1434461320, 2, 3),
+(10, 6, '91870', 1434461628, 2, 5),
+(11, 6, '72786', 1434461814, 2, 5),
+(12, 6, '79202', 1434461848, 2, 5),
+(13, 6, '14328', 1434462462, 2, 5),
+(14, 6, '65821', 1434462771, 2, 5),
+(15, 6, '43821', 1434467684, 2, 5),
+(16, 6, '15666', 1434468056, 2, 5),
+(17, 6, '97058', 1434468203, 2, 5),
+(18, 6, '77016', 1434552134, 2, 5),
+(19, 6, '42711', 1434552293, 2, 5),
+(20, 7, '63003', 1434552534, 2, 5),
+(21, 8, '59595', 1434553809, 2, 5),
+(22, 9, '23837', 1434556097, 2, 5);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
