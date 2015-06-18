@@ -202,7 +202,7 @@
                 <li class="nsel" id="Sadova"><a class="Sadova" href="#" title="Садовая"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Teatralna"><a class="Teatralna" href="#" title="Театральная"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Tehnology1"><a class="Tehnology1" href="#" title="Технологический институт"><span>&nbsp;</span></a></li>
-                <li class="nsel" id="Tehnology2"><a class="Tehnology2" href="#" title="Технологический институт 2"><span>&nbsp;</span></a></li>					
+                <li class="nsel" id="Tehnology2"><a class="Tehnology2" href="#" title="Технологический институт"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Baltiska"><a class="Baltiska" href="#" title="Балтийская"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Narvska"><a class="Narvska" href="#" title="Нарвская"><span>&nbsp;</span></a></li>	
                 <li class="nsel" id="Kirovsky"><a class="Kirovsky" href="#" title="Кировский завод"><span>&nbsp;</span></a></li>

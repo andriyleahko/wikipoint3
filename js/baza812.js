@@ -73,6 +73,11 @@ $(document).ready(function () {
     
     $('#mapspb a').on('click', function () {
         var name = $(this).attr('title');
+        if($(this).hasClass("active")){
+            $(this).removeClass("active")
+        }else{
+            $(this).addClass("active")
+        }
         var metro = $('#select-metro').text();
         var metroArr = metro.split('x').map(function(e){return e.trim();});
         
