@@ -1,3 +1,4 @@
+<div id="search-results">
 <?php $aObjectType2 = array(1 => '1 комнатная квартира', 
 		'2 комнатная квартира', 
 		'3 комнатная квартира', 
@@ -141,9 +142,15 @@
 
 
 
+<?php if ($offsetPrev) : ?>
+<a href="/<?php echo $offsetPrev ?>">ранше</a>
+<?php endif; ?>
+<?php if ($offsetNext) : ?>
+<a href="/<?php echo $offsetNext ?>">пізніше</a>
+<?php endif; ?>
 
-
-<p class="items-counter" style="text-align: center !important"><a id="more-object" style='text-decoration:none; color: white' href="#">Показать ещё</a></p>
+<?php //<p class="items-counter" style="text-align: center !important"><a id="more-object" style='text-decoration:none; color: white' href="#">Показать ещё</a></p> ?>
+</div>
 <script type="text/javascript">
     $(document).ready(function () {
         $("a[rel^='example_group']").fancybox();

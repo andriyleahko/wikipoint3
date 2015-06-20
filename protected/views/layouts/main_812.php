@@ -58,7 +58,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
             </div>
 <div id="main-search">
     <p>Я ищу</p>
-    <form method="get" id="search-form">
+    <form method="get" action="/catalog/search" id="search-form">
         <fieldset class="room">
             <input type="checkbox" name="rooms-amount[]" value="7,8,9,10,11,12,13,14,15" id="r441">
             <label for="r441"><span>комнату</span></label>
@@ -125,7 +125,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <!--             <option value="50000">50.000 руб.</option> -->
 <!--         </select> -->
 
-        <input type="submit" id="search-submit" value="Искать">
+        <input type="submit" id="--search-submit" value="Искать">
     </form>
 
 </div>
