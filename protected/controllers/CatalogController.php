@@ -68,9 +68,26 @@ class CatalogController extends Controller
                 
                 $model = Objects::model()->findAll($criteria);
                 
+                $offsetNext = Yii::app()->request->getParam('offset',0) + $this->limit;
+                $offsetPrev = Yii::app()->request->getParam('offset',0) - $this->limit;
                 
-                $this->renderPartial('search-result',
-                        array('objects' => $model,'total' => $count,'offset' => Yii::app()->request->getParam('offset',0), 'offsetNext' => Yii::app()->request->getParam('offset',0) + $this->limit)
+                if (isset($_GET['offset'])) {
+                    unset($_GET['offset']);
+                }
+                
+                $url = Yii::app()->request->pathInfo . '?' . http_build_query($_GET);
+                
+                if ($count > $offsetNext) {
+                    $nextUrl = $url . '&offset=' . $offsetNext;
+                }
+                
+                if ($offsetPrev >= 0) {
+                    $prevUrl = $url . '&offset=' . $offsetPrev;
+                }
+                
+                
+                $this->render('search-result',
+                        array('objects' => $model,'total' => $count,'offset' => Yii::app()->request->getParam('offset',0), 'offsetNext' => (isset($nextUrl)) ? $nextUrl : null, 'offsetPrev' => (isset($prevUrl)) ? $prevUrl : null)
                 );
                 Yii::app()->end();
             }
