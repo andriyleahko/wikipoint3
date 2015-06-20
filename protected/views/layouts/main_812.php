@@ -1,3 +1,9 @@
+<?php 
+$aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
+7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
+13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
+19=>"Фрунзенский",20=>"Центральный",);
+?>
 <html>
     <head>
 
@@ -32,6 +38,7 @@
         
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
         <link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+        <link rel="stylesheet" type="text/css" href="/css/filter_main.css" />
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
         <script src="/js/jquery.cookie.js" ></script>
         
@@ -81,56 +88,56 @@
         <a class="choose-metro" href="#">Выбрать станции</a>
         
         <p>по цене от </p>
-
-        <select name="price_from">
-            <option value="0" selected="selected">любой</option>
-            <option value="15000">15.000 руб.</option>
-            <option value="16000">16.000 руб.</option>
-            <option value="17000">17.000 руб.</option>
-            <option value="18000">18.000 руб.</option>
-            <option value="19000">19.000 руб.</option>
-            <option value="20000">20.000 руб.</option>
-            <option value="21000">21.000 руб.</option>
-            <option value="25000">25.000 руб.</option>
-            <option value="28000">28.000 руб.</option>
-            <option value="30000">30.000 руб.</option>
-            <option value="33000">33.000 руб.</option>
-            <option value="35000">35.000 руб.</option>
-            <option value="40000">40.000 руб.</option>
-            <option value="45000">45.000 руб.</option>
-            <option value="50000">50.000 руб.</option>
-        </select>
+		<input class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value=''>
+<!--         <select name="price_from"> -->
+<!--             <option value="0" selected="selected">любой</option> -->
+<!--             <option value="15000">15.000 руб.</option> -->
+<!--             <option value="16000">16.000 руб.</option> -->
+<!--             <option value="17000">17.000 руб.</option> -->
+<!--             <option value="18000">18.000 руб.</option> -->
+<!--             <option value="19000">19.000 руб.</option> -->
+<!--             <option value="20000">20.000 руб.</option> -->
+<!--             <option value="21000">21.000 руб.</option> -->
+<!--             <option value="25000">25.000 руб.</option> -->
+<!--             <option value="28000">28.000 руб.</option> -->
+<!--             <option value="30000">30.000 руб.</option> -->
+<!--             <option value="33000">33.000 руб.</option> -->
+<!--             <option value="35000">35.000 руб.</option> -->
+<!--             <option value="40000">40.000 руб.</option> -->
+<!--             <option value="45000">45.000 руб.</option> -->
+<!--             <option value="50000">50.000 руб.</option> -->
+<!--         </select> -->
 
         <p>до</p>
 
-        <select name="price_to">
-            <option value="0" selected="selected">любой</option>
-            <option value="20000">20.000 руб.</option>
-            <option value="21000">21.000 руб.</option>
-            <option value="25000">25.000 руб.</option>
-            <option value="28000">28.000 руб.</option>
-            <option value="30000">30.000 руб.</option>
-            <option value="33000">33.000 руб.</option>
-            <option value="35000">35.000 руб.</option>
-            <option value="40000">40.000 руб.</option>
-            <option value="45000">45.000 руб.</option>
-            <option value="50000">50.000 руб.</option>
-        </select>
+        <input class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10">
+<!--         <select name="price_to"> -->
+<!--             <option value="0" selected="selected">любой</option> -->
+<!--             <option value="20000">20.000 руб.</option> -->
+<!--             <option value="21000">21.000 руб.</option> -->
+<!--             <option value="25000">25.000 руб.</option> -->
+<!--             <option value="28000">28.000 руб.</option> -->
+<!--             <option value="30000">30.000 руб.</option> -->
+<!--             <option value="33000">33.000 руб.</option> -->
+<!--             <option value="35000">35.000 руб.</option> -->
+<!--             <option value="40000">40.000 руб.</option> -->
+<!--             <option value="45000">45.000 руб.</option> -->
+<!--             <option value="50000">50.000 руб.</option> -->
+<!--         </select> -->
 
         <input type="submit" id="search-submit" value="Искать">
     </form>
+
 </div>
             <?php echo $content; ?>
 
 
         </div>
+        
         <div class="reveal-modal" id="metro" style="heigth: 100%;">
+<?php /*?>
             <span class="close-reveal-modal"></span>
-            <?php /* <div style="position: relative">
-              <div id="select-metro" style="padding-left: 10px; padding-right: 10px; position: absolute; font-size: 11px;">
 
-              </div>
-              </div> */ ?>
             <ul id="mapspb" style="margin-top: 50px; float: left">
 
                 <li class="nsel" id="Komendantskiy"><a class="Komendantskiy" title="Комендантский проспект" href="#"><span>&nbsp;</span></a></li>					
@@ -173,7 +180,7 @@
                 <li class="nsel" id="Vostaniya"><a class="Vostaniya" href="#" title="Площадь Восстания"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Mayakovska"><a class="Mayakovska" href="#" title="Мяковская"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Obvodnui"><a class="Obvodnui" href="#" title="Обводный канал"><span>&nbsp;</span></a></li>
-                <li class="nsel" id="Obvodnui2"><a class="Obvodnui2" href="#" title="Обводный канал 2"><span>&nbsp;</span></a></li>			
+                <li class="nsel" id="Obvodnui2"><a class="Obvodnui2" href="#" title="Обводный канал"><span>&nbsp;</span></a></li>			
                 <li class="nsel" id="Volkovska"><a class="Volkovska" href="#" title="Волковская"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Byharestska"><a class="Byharestska" href="#" title="Бухарестская"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Mezhdynarod"><a class="Mezhdynarod" href="#" title="Международная"><span>&nbsp;</span></a></li>
@@ -190,7 +197,7 @@
                 <li class="nsel" id="Prbolshevik"><a class="Prbolshevik" href="#" title="Проспект Большевиков"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Dubenko"><a class="Dubenko" href="#" title="Улица Дыбенко"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Nevskii1"><a class="Nevskii1" href="#" title="Площадь Александра Невского"><span>&nbsp;</span></a></li>					
-                <li class="nsel" id="Nevskii2"><a class="Nevskii2" href="#" title="Площадь Александра Невского 2"><span>&nbsp;</span></a></li>
+                <li class="nsel" id="Nevskii2"><a class="Nevskii2" href="#" title="Площадь Александра Невского"><span>&nbsp;</span></a></li>
 
                 <li class="nsel" id="Pyshkinska"><a class="Pyshkinska" href="#" title="Пушкинская"><span>&nbsp;</span></a></li>
                 <li class="nsel" id="Zvinigorodska"><a class="Zvinigorodska" href="#" title="Звенигорадская"><span>&nbsp;</span></a></li>
@@ -261,6 +268,44 @@
                     <div class="clr"></div>
                 </div>
             </div>
+<?php */?>
+
+
+
+            
+	<div class="p-regions" style="display: block; z-index: 20000; top: 41px; left: -473px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);height: 506px;">
+	    <span class="close"></span>
+<!--     	<span class="ttl ttl_t1">Выберите район:</span> -->
+<!--     	<span class="ttl ttl_t2">Выберите станции метро:</span> -->
+    	<div class="clr"></div>
+		<div class="metro-map">
+		    <?php // New Metro Map (4-68)
+		    for( $i=4; $i<=68; $i++){ ?>
+		        <a href="javascript:void(0)" id="m_<?=$i?>" class="st-name" onclick="selMetro(this,<?=$i?>)"></a>
+		    <?php } ?>
+		</div>
+		
+		<?php //////////////////////////////// Районы ////////////////////////////////?>
+        <div class="col col_popup">
+			<?php foreach($aArea as $k=>$name){?>
+    			<label class="checkbox_in">
+        		<input class="" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
+        		<span id="sp<?=$k?>" style="background-position: left top;"></span>
+        		<?=$name?>
+    			</label>
+		<?php } ?>
         </div>
+            
+            <input type="hidden" name="str_metros" value="" id="str_metros"/>
+            <input type="hidden" name="str_districts" value="" id="str_districts"/>
+			<div class="subm-btns">
+	            <input type="reset" value="Сбросить" class="reset" onclick="resMetro(this);selMetro('undefined');"/>
+	            <input type="button" value="Выбрать" class="send"/>
+            <div class="clr"></div>
+        </div>
+	</div>
+        
+		</div>
+        
     </body>
 </html>

@@ -35,30 +35,30 @@ class CatalogController extends Controller
                     $where .=' AND (id_objectType IN(' . $roomString . '))';
                 }
                 
-                if ($priceFrom = Yii::app()->request->getParam('price_from')) {
+                if ($priceFrom = (int) Yii::app()->request->getParam('price_from')) {
                     $where .=' AND (price >= ' . $priceFrom . ')';
                 }
-                if ($priceTo = Yii::app()->request->getParam('price_to')) {
+                if ($priceTo = (int) Yii::app()->request->getParam('price_to')) {
                     $where .=' AND (price <= ' . $priceTo . ')';
                 }
                 
-                $metro = trim(Yii::app()->request->getParam('metro',''));
+                $metro = str_replace('m_', '', trim(Yii::app()->request->getParam('metro','')));
                 
+
                 if (!empty($metro)) {
-                    $metro = "'" . implode("','",array_map('trim',explode(',',rtrim($metro,',')))) . "'";
-                    $metroCriteria = new CDbCriteria();
-                    $metroCriteria->addCondition('name in (' . $metro . ')');
-                    $modelMetro = ObjectsDovMetro::model()->findAll($metroCriteria);
-                    if ($modelMetro) {
-                        $metroIDS = array();
-                        foreach ($modelMetro as $metro) {
-                            $metroIDS[] = $metro['id'];
-                        }
-                    }
-                    
-                    $where .= " AND (ObjectsMetro.id_metro in(" . implode(',',$metroIDS) . "))";  
+//                    $metro = "'" . implode("','",array_map('trim',explode(',',rtrim($metro,',')))) . "'";
+//                     $metroCriteria = new CDbCriteria();
+//                     $metroCriteria->addCondition('name in (' . $metro . ')');
+//                     $modelMetro = ObjectsDovMetro::model()->findAll($metroCriteria);
+//                     if ($modelMetro) {
+//                         $metroIDS = array();
+//                         foreach ($modelMetro as $metro) {
+//                             $metroIDS[] = $metro['id'];
+//                         }
+//                     }
+                    $where .= " AND (ObjectsMetro.id_metro in(" . $metro . "))";  
                 }
-                
+                //var_dump($where); exit;
                 
                 $criteria->addCondition($where);
                 $count = Objects::model()->count($criteria);

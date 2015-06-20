@@ -7749,3 +7749,597 @@ Stack trace:
 REQUEST_URI=/catalog/search?metro=%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82+2&search=1&price_from=0&price_to=0
 in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
 in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/18 22:38:39 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB+2&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/18 22:39:21 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0+%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+2&search=1&price_from=0&price_to=0
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 14:09:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/20 14:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/20 15:20:52 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?rooms-amount%5B%5D=3&metro=%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0+%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+2&search=1&price_from=1777&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:24:24 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB+2&search=1&price_from=&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:24:48 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB+2&search=1&price_from=&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:30:26 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%AE%D0%B3%D0%BE-%D0%97%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0%D1%8F&search=1&price_from=&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:36:53 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%91%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%D1%8F&search=1&price_from=&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:36:58 [error] [php] implode(): Invalid arguments passed (D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php:59)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CatalogController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CatalogController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CatalogController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(13): CWebApplication->run()
+REQUEST_URI=/catalog/search?metro=%D0%91%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%D1%8F&search=1&price_from=&price_to=
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (59)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 15:54:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "scc/filter_main.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('scc/filter_main...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scc/filter_main.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 15:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "scc/filter_main.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('scc/filter_main...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scc/filter_main.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 15:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "scc/filter_main.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('scc/filter_main...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scc/filter_main.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 15:58:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "scc/filter_main.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('scc/filter_main...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scc/filter_main.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 15:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "scc/filter_main.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('scc/filter_main...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scc/filter_main.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 16:47:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 16:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 16:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 16:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 16:56:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 16:56:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/checkbox.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/checkbox.pn...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/checkbox.png
+---
+2015/06/20 17:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:15:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:32:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:52:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+HTTP_REFERER=http://baza812.loc/css/filter_main.css
+---
+2015/06/20 17:53:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/close.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('img/close.png')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/close.png
+---
+2015/06/20 20:00:49 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(54,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:00:49 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(54,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:00:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(54,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_54%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:01:17 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,65,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:01:17 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,65,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:01:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,65,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_13%2Cm_65%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:03:30 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,42,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:03:30 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,42,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:03:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(13,42,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_13%2Cm_42%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:09:54 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:09:54 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:09:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:17:32 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:17:32 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:17:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_22%2Cm_23%2Cm_59%2Cm_60%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:23:26 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:23:26 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:23:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(22,23,59,60,67,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_22%2Cm_23%2Cm_59%2Cm_60%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:24:01 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:24:01 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (64)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:24:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) WHERE ( t.status = 1  AND (ObjectsMetro.id_metro in(59,67,)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(64): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---

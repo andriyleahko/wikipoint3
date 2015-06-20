@@ -1,6 +1,11 @@
 #search-results {}
 #search-results .items-counter {text-align: center; color: white; font: italic 20px/60px "PT Sans"; padding-top: 20px;}
 
+#mapspb  a:hover{
+    background: #dedede none repeat scroll 0 0;
+    opacity: 0.6;
+    border: 1px solid;
+}
 .active{
     background: #dedede none repeat scroll 0 0;
     opacity: 0.6;

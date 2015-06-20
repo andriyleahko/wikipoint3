@@ -4,9 +4,54 @@ $(function() {
 
 });
 
+function selMetro(el,metro_id){
+	if ($(el).hasClass('active')){
+		$(el).removeClass('active')
+	}else{
+		$(el).addClass('active');
+	}
+
+}
+function selDistrict(el,district_id){
+	if ($(el).hasClass('act')){
+		$(el).removeClass('act');
+		$('#sp'+district_id).attr("style", "background-position: left top;");
+	}else{
+		$(el).addClass('act');
+		$('#sp'+district_id).attr("style", "background-position: left bottom;");
+	}
+}
 
 $(document).ready(function () {
+	
+	//select metro
+	$('.send').on('click', function () {
+		var met='';
+		var countMetro=0;
+		$('.st-name').each(function(){
+				if ($(this).hasClass('active')){
+					var metroVal=$(this).attr('id');
+					met=met+metroVal+','
+					countMetro=countMetro+1;
+				}
+		});
+		$('#metro-field').val(met);
+		
+		if (countMetro > 0) {
+            $('.choose-metro').text('Выбрано ' + countMetro + ' станций')
+        } else {
+            $('.choose-metro').text('Выбрать станции')
 
+        }
+		
+		$('#metro').hide();
+	});
+	
+	// close metro window
+	$('.close').on('click', function () {
+		$('#metro').hide();
+	});
+	
     // search items by filter
     $('#search-submit').on('click', function () {
         $.fancybox.showActivity();
@@ -71,6 +116,7 @@ $(document).ready(function () {
     	  }
     });
     
+    // old versiion ***********************************
     $('#mapspb a').on('click', function () {
         var name = $(this).attr('title');
         if($(this).hasClass("active")){
@@ -99,7 +145,10 @@ $(document).ready(function () {
 
         return false;
     })
-
+    // old versiion *****************************************
+    
+    
+    // old versiion *****************************************
     $('body').on('click', '.close-metro', function () {
         $(this).parent('span').remove();
         var metro = $('#select-metro').text();
@@ -123,6 +172,7 @@ $(document).ready(function () {
         $('#metro').hide();
         return false;
     })
+    // old versiion *****************************************
 
     $('body').on('click', '#more-object', function () {
         $.fancybox.showActivity();
