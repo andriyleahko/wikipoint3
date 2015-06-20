@@ -95,6 +95,11 @@
             prev: '#prev',
             next: '#next'
         });
+
+    	if($('#c1').attr('checked')){
+   		 showphoto();
+   		$('#c1').attr('checked','checked');	
+   	}
     });
 
 </script>
@@ -183,10 +188,10 @@ echo $model->building_number ?></h1>
 
 
 <fieldset class="photo-map-panorama">
-    <input id="c1" name="photo-map-panorama" type="radio" onclick='showphoto()'/>
+    <input id="c1" name="photo-map-panorama"  type="radio" <?php  if (isset($model->Pictures) && $model->Pictures){echo "checked='checked'";}?> onclick='showphoto()'/>
     <label for="c1"><span>Фотографии</span></label>
 
-    <input id="c2" name="photo-map-panorama" type="radio" checked="checked" onclick='showmap()'/>
+    <input id="c2" name="photo-map-panorama" type="radio" <?php  if (isset($model->Pictures) && $model->Pictures){echo "";}else{echo "checked='checked'";}?> onclick='showmap()'/>
     <label for="c2"><span>Карта</span></label>
 
     <input id="c3" name="photo-map-panorama" type="radio" onclick='showpan()'/>
@@ -204,3 +209,6 @@ echo $model->building_number ?></h1>
 <a class="back-to-search" >← Вернуться к поиску</a>
 <a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
 echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
+
+
+

@@ -56,7 +56,7 @@ class CatalogController extends Controller
 //                             $metroIDS[] = $metro['id'];
 //                         }
 //                     }
-                    $where .= " AND (ObjectsMetro.id_metro in(" . $metro . "))";  
+                    $where .= " AND (ObjectsMetro.id_metro in(" . rtrim($metro,',') . "))";  
                 }
                 //var_dump($where); exit;
                 

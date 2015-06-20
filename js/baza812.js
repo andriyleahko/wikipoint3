@@ -24,6 +24,15 @@ function selDistrict(el,district_id){
 
 $(document).ready(function () {
 	
+	// reset metro
+	$('.reset').on('click', function () {
+		$('.st-name').each(function(){
+			if ($(this).hasClass('active')){
+				$(this).removeClass('active');
+			}
+		})
+	})
+	
 	//select metro
 	$('.send').on('click', function () {
 		var met='';

@@ -19,6 +19,7 @@
 	margin: 20px;
 	cursor: pointer;
 	overflow: hidden;
+	padding:5px;
 }
 
 .item .image {

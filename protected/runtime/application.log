@@ -8343,3 +8343,107 @@ Stack trace:
 REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
 HTTP_REFERER=http://baza812.loc/
 ---
+2015/06/20 20:33:51 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:33:51 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. Выполнявшийся SQL-запрос: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:33:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,)' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(52): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: CatalogController->actionSearch(1)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:34:14 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:34:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. Выполнявшийся SQL-запрос: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:34:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,)' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(52): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: CatalogController->actionSearch(1)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:37:08 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:37:08 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. Выполнявшийся SQL-запрос: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:37:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `objects_dov_metro` `t` WHERE id in (59,67,)' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(52): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: CatalogController->actionSearch(1)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/20 20:38:46 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:38:46 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. Выполнявшийся SQL-запрос: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (52)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/20 20:38:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `objects_dov_metro` `t` WHERE t.id in (59,67,)' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(52): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: CatalogController->actionSearch(1)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/catalog/search?metro=m_59%2Cm_67%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
