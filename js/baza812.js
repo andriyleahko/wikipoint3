@@ -24,11 +24,17 @@ function selDistrict(el,district_id){
 
 $(document).ready(function () {
 	
-	// reset metro
+	// reset metro and district
 	$('.reset').on('click', function () {
 		$('.st-name').each(function(){
 			if ($(this).hasClass('active')){
 				$(this).removeClass('active');
+			}
+		});
+		$('.dis').each(function(){
+			if ($(this).hasClass('act')){
+				$(this).removeClass('act');
+				$(this).next().attr('style','background-position: left top;')
 			}
 		})
 	})
@@ -36,6 +42,7 @@ $(document).ready(function () {
 	//select metro
 	$('.send').on('click', function () {
 		var met='';
+		var dis='';
 		var countMetro=0;
 		$('.st-name').each(function(){
 				if ($(this).hasClass('active')){
@@ -44,7 +51,16 @@ $(document).ready(function () {
 					countMetro=countMetro+1;
 				}
 		});
+		
+		$('.dis').each(function(){
+			if ($(this).hasClass('act')){
+				var disVal=$(this).attr('id');
+				dis=dis+disVal+','
+			}
+		});
+		
 		$('#metro-field').val(met);
+		$('#dictrict-field').val(dis);
 		
 		if (countMetro > 0) {
             $('.choose-metro').text('Выбрано ' + countMetro + ' станций')
@@ -60,6 +76,7 @@ $(document).ready(function () {
 	$('.close').on('click', function () {
 		$('#metro').hide();
 	});
+	
 	
     // search items by filter
     $('#search-submit').on('click', function () {
@@ -175,6 +192,7 @@ $(document).ready(function () {
 
     $('.choose-metro').on('click', function () {
         $('#metro').show();
+        $('.qq').addClass('popup-bg');
         return false;
     })
     $('.close-reveal-modal').on('click', function () {

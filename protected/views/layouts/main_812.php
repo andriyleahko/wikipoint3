@@ -1,4 +1,39 @@
-<?php 
+<?php
+$comnata=''; $k1='';  $k2='';  $k3='';  $k_more='';
+if(isset($_GET)){
+	if(isset($_GET['price_from'])&&$_GET['price_from']){
+		$price_from=strip_tags($_GET['price_from']);
+	}else{
+		$price_from='';
+	}
+	if(isset($_GET['price_to'])&&$_GET['price_to']){
+		$price_to=strip_tags($_GET['price_to']);
+	}else{
+		$price_to='';
+	}
+	if(isset($_GET['rooms-amount'])&&$_GET['rooms-amount']){
+		$rooms_amount=$_GET['rooms-amount'];
+		foreach ($rooms_amount as $one){
+			if('7,8,9,10,11,12,13,14,15'===$one){
+				$comnata='checked="checked"';
+			}
+			if('1'===$one){
+				$k1='checked="checked"';
+			}
+			if('2'===$one){
+				$k2='checked="checked"';
+			}
+			if('3'===$one){
+				$k3='checked="checked"';
+			}
+			if('4,5,6'===$one){
+				$k_more='checked="checked"';
+			}
+		}
+	}else{
+		$roomsamount=array();
+	}
+} 
 $aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
 7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
 13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
@@ -23,7 +58,6 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
             }
         </style>
 
-        
         
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
         
@@ -60,23 +94,23 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
     <p>Я ищу</p>
     <form method="get" action="/catalog/search" id="search-form">
         <fieldset class="room">
-            <input type="checkbox" name="rooms-amount[]" value="7,8,9,10,11,12,13,14,15" id="r441">
+            <input type="checkbox" name="rooms-amount[]" value="7,8,9,10,11,12,13,14,15" id="r441" <?php echo $comnata;?>>
             <label for="r441"><span>комнату</span></label>
         </fieldset>
 
         <p>квартиру</p>
 
         <fieldset class="rooms">
-            <input type="checkbox" value="1" name="rooms-amount[]" id="r1">
+            <input type="checkbox" value="1" name="rooms-amount[]" id="r1" <?php echo $k1;?>>
             <label for="r1"><span>1 комн.</span></label>
 
-            <input type="checkbox" value="2" name="rooms-amount[]" id="r2">
+            <input type="checkbox" value="2" name="rooms-amount[]" id="r2" <?php echo $k2;?>>
             <label for="r2"><span>2 комн.</span></label>
 
-            <input type="checkbox" value="3" name="rooms-amount[]"  id="r3">
+            <input type="checkbox" value="3" name="rooms-amount[]"  id="r3" <?php echo $k3;?>>
             <label for="r3"><span>3 комн.</span></label>
 
-            <input type="checkbox" value="4,5,6" name="rooms-amount[]" id="r4">
+            <input type="checkbox" value="4,5,6" name="rooms-amount[]" id="r4" <?php echo $k_more;?>>
             <label for="r4"><span>4 комн. и более</span></label>
             <?php /*<p style="color: #9B9B9B;">без агентов,</p>*/ ?>
             <p>без агентов,</p>
@@ -84,11 +118,12 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
         <p>рядом с метро</p>
         <input type="hidden" id="metro-field" name="metro" value="">
+        <input type="hidden" id="dictrict-field" name="dictrict" value="">
         <input type="hidden" name="search" value="1">
         <a class="choose-metro" href="#">Выбрать станции</a>
         
         <p>по цене от </p>
-		<input class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value=''>
+		<input class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_from;?>">
 <!--         <select name="price_from"> -->
 <!--             <option value="0" selected="selected">любой</option> -->
 <!--             <option value="15000">15.000 руб.</option> -->
@@ -110,7 +145,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
         <p>до</p>
 
-        <input class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10">
+        <input class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_to;?>">
 <!--         <select name="price_to"> -->
 <!--             <option value="0" selected="selected">любой</option> -->
 <!--             <option value="20000">20.000 руб.</option> -->
@@ -273,7 +308,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
 
             
-	<div class="p-regions" style="display: block; z-index: 20000; top: 41px; left: -473px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);height: 506px;">
+	<div class="p-regions" style="display: block; z-index: 20000; top: 41px; left: -473px; box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.5);height: 506px;">
 	    <span class="close"></span>
 <!--     	<span class="ttl ttl_t1">Выберите район:</span> -->
 <!--     	<span class="ttl ttl_t2">Выберите станции метро:</span> -->
@@ -281,15 +316,37 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 		<div class="metro-map">
 		    <?php // New Metro Map (4-68)
 		    for( $i=4; $i<=68; $i++){ ?>
-		        <a href="javascript:void(0)" id="m_<?=$i?>" class="st-name" onclick="selMetro(this,<?=$i?>)"></a>
-		    <?php } ?>
+		    	<?php
+		    		$act='';
+		    		if(isset($_GET)){
+		    			if(isset($_GET['metro'])&&$_GET['metro']){
+		    				$metroIDS=explode(',',rtrim(strip_tags($_GET['metro']),','));
+		    			}else{
+		    				$metroIDS=array();
+		    			}	
+		    		}
+		    		if(in_array('m_'.$i,$metroIDS)){
+		    			$act='active';
+		    		}
+		    	?>
+		        <a href="javascript:void(0)" id="m_<?=$i?>" class="st-name <?php echo $act;?>" onclick="selMetro(this,<?=$i?>)"></a>
+		    <?php }
+				$num=count($metroIDS);
+		    ?>
 		</div>
-		
+		<script type="text/javascript">		
+			if (<?php echo $num?> > 0) {
+            	$('.choose-metro').text('Выбрано ' + '<?php echo $num?>' + ' станций')
+        	} else {
+            	$('.choose-metro').text('Выбрать станции')
+
+        	}
+		</script>
 		<?php //////////////////////////////// Районы ////////////////////////////////?>
         <div class="col col_popup">
 			<?php foreach($aArea as $k=>$name){?>
     			<label class="checkbox_in">
-        		<input class="" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
+        		<input class="dis" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
         		<span id="sp<?=$k?>" style="background-position: left top;"></span>
         		<?=$name?>
     			</label>

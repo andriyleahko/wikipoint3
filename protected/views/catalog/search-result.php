@@ -138,21 +138,25 @@
 <?php endif; ?>
 
 
+<p class="items-counter" style="text-align: center !important"><?php if(($q=$total-$t)>0){echo 'Еще '.$q.' объектов';}?></p>
 
 
-
-
+<div style="background:white; text-align: center;">
 <?php if ($offsetPrev) : ?>
-<a href="/<?php echo $offsetPrev ?>">ранше</a>
+	<a class="back-to-search-item" href="/<?php echo $offsetPrev ?>">← Раньше</a>
 <?php endif; ?>
 <?php if ($offsetNext) : ?>
-<a href="/<?php echo $offsetNext ?>">пізніше</a>
+	<a class="back-to-search-item" href="/<?php echo $offsetNext ?>">Позже → </a>
 <?php endif; ?>
-
-<?php //<p class="items-counter" style="text-align: center !important"><a id="more-object" style='text-decoration:none; color: white' href="#">Показать ещё</a></p> ?>
 </div>
+
+</div>
+
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         $("a[rel^='example_group']").fancybox();
+        //if ($par[]) $('#r441').attr('checked','checked');
     })
 </script>

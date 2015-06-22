@@ -155,3 +155,25 @@
 	margin-top: 8px;
 	
 }
+.back-to-search-item, .add-to-favorites-item {
+	text-decoration: none;
+	color: white;
+	background: #4579A6;
+	line-height: 46px;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 7px 22px 7px 0px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+.back-to-search-item:hover, .add-to-favorites-item:hover {
+	text-decoration: none;
+	color: white;
+	background: #4579A6;
+	line-height: 46px;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 7px 22px 7px 0px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
