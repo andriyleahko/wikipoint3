@@ -21,7 +21,8 @@ class CatalogController extends Controller
                                'ObjectsDovType',
                                'Pictures',
                                'ObjectsDovStreets',
-                               'ObjectsMoreinfo'
+                               'ObjectsMoreinfo',
+                				'ObjectsDovDistrict'
                               );
                 $where = ' t.status = 1 ';
                 $rooms = array();
@@ -59,6 +60,13 @@ class CatalogController extends Controller
                     $where .= " AND (ObjectsMetro.id_metro in(" . rtrim($metro,',') . "))";  
                 }
                 //var_dump($where); exit;
+                
+                $distrist = str_replace('ch', '', trim(Yii::app()->request->getParam('dictrict','')));
+                
+                if (!empty($distrist)) {
+                	$where .= " AND (ObjectsDovDistrict.id in(" . rtrim($distrist,',') . "))";
+                }
+                
                 
                 $criteria->addCondition($where);
                 $count = Objects::model()->count($criteria);

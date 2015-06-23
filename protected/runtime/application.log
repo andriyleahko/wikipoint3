@@ -8796,3 +8796,87 @@ Stack trace:
 REQUEST_URI=/images/next.png
 HTTP_REFERER=http://baza812.loc/css/lightbox.css
 ---
+2015/06/23 20:00:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/23 20:00:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/23 20:10:25 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (ObjectsDovDistrict.id in(ch1)))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (72)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/23 20:10:25 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ch1' in 'where clause'. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (ObjectsDovDistrict.id in(ch1))).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (72)
+in D:\OpenServer\domains\baza812.loc\index.php (13)
+2015/06/23 20:10:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ch1' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (ObjectsDovDistrict.id in(ch1)))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(72): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=ch1%2C&search=1&price_from=&price_to=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/06/23 21:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297436
+---
+2015/06/23 21:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+---
+2015/06/23 21:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+---
+2015/06/23 21:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "img".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/img/icon-t...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/img/icon-timestamp.png
+---

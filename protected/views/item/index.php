@@ -127,8 +127,7 @@ echo $model->building_number ?>" rel="sidebar" href="">Добавить в из�
 
 <h1><?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
 echo $model->building_number ?></h1>
-<p class="timestamp"><?php list($date, $time) = explode(' ', $model->date_add);
-            echo 'Добавлен ' . date('d.m.Y', strtotime($date)) ?></p> 
+<p class="timestamp"><?php echo dateTimeAgo($model->date_add); ?></p> 
 <p class="breadcrumbs" id='adres'>Санкт-Петербург / <a href="">аренда квартир</a> / <a href=""><?php echo 'м. ' . $model->ObjectsMetro->ObjectsDovMetro->name ?></a> / №<?php echo $model->id_object ?></p>
 
 <div class="info-box">

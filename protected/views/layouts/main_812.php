@@ -160,7 +160,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <!--             <option value="50000">50.000 руб.</option> -->
 <!--         </select> -->
 
-        <input type="submit" id="--search-submit" value="Искать">
+        <input type="submit" id="--search-submit" value="Поиск">
     </form>
 
 </div>
@@ -344,10 +344,28 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 		</script>
 		<?php //////////////////////////////// Районы ////////////////////////////////?>
         <div class="col col_popup">
-			<?php foreach($aArea as $k=>$name){?>
+				<?php
+				$i=1;
+				foreach($aArea as $k=>$name){?>
+				<?php
+		    		$act='';
+		    		$style='left top';
+		    		if(isset($_GET)){
+		    			if(isset($_GET['dictrict'])&&$_GET['dictrict']){
+		    				$dictrictIDS=explode(',',rtrim(strip_tags($_GET['dictrict']),','));
+		    			}else{
+		    				$dictrictIDS=array();
+		    			}	
+		    		}
+		    		if(in_array('ch'.$i,$dictrictIDS)){
+		    			$act='act';
+		    			$style='left bottom';
+		    		}
+		    		$i++;
+		    	?>
     			<label class="checkbox_in">
-        		<input class="dis" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
-        		<span id="sp<?=$k?>" style="background-position: left top;"></span>
+        		<input class="dis <?php echo $act?>" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
+        		<span id="sp<?=$k?>" style="background-position: <?php echo $style?>;"></span>
         		<?=$name?>
     			</label>
 		<?php } ?>

@@ -34,7 +34,7 @@ body {
 #item h1 {font: 700 28px/30px "PT Sans"; color: black; text-align: left; padding-top: 30px;}
 #item .breadcrumbs {color: #9B9B9B; margin-bottom: 30px;}
 #item .breadcrumbs a {color: #4579A6;}
-#item .timestamp {color: #9B9B9B; /*background: url(img/icon-timestamp.png) no-repeat left center;*/ padding-left: 25px; float: right;}
+#item .timestamp {color: #9B9B9B; background: url(/img/icon-timestamp.png) no-repeat left center; padding-left: 25px; float: right;}
 
 #item .info-box {background: #FBFAF6; overflow: hidden;}
 #item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey;}

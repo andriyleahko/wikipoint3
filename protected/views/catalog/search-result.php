@@ -85,6 +85,7 @@
         <?php endif; ?>
             <div class="info">
 				<p class="price"><?php echo $item->price ?> &#x1D71; </p>
+				
             	<p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></a></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
                     <?php
@@ -98,7 +99,7 @@
                     <?php
                     if ($item->ObjectsDovStreets) {
                         echo $item->ObjectsDovStreets->name;
-                        echo $item->building_number;
+                       // echo $item->building_number;
                     }
                     ?> 	
                 </p>
@@ -127,10 +128,7 @@
         <?php endif; ?>
                     </div>
                 </div>
-                <p class="timestamp"><?php
-        list($date, $time) = explode(' ', $item->date_add);
-        echo 'Добавлен ' . date('d.m.Y', strtotime($date))
-        ?></p>
+                <p class="timestamp"><?php echo dateTimeAgo($item->date_add);  ?></p>
 
             </div>
         </div>
