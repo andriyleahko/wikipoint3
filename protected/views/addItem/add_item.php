@@ -38,7 +38,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 </style>
 
-<div class="wrapper">
+<div class="">
 
 
 
@@ -257,7 +257,8 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 	<textarea name="AddObjectForm[about_object]"><?php if (isset($_POST['AddObjectForm']['about_object'])): ?><?php echo $_POST['AddObjectForm']['about_object'] ?><?php endif;?></textarea>
 </p>
 
-<?php  $this->widget('CCaptcha'); ?> 
+<p><label class="wide-label"><span>Введите код с картинки:</span>
+<?php  $this->widget('CCaptcha',array('showRefreshButton'=>false, 'clickableImage'=>true , 'imageOptions'=>array('style'=>'border:none; background-color:#99FFCC;  vertical-align: middle;', 'height'=>'40px', 'alt'=>'Картинка с кодом валидации', 'title'=>'Чтобы обновить картинку, нажмите по ней'))); ?> 
 <?php echo CHtml::activeTextField($model,'verifyCode'); ?>
 
 <p>

@@ -2,7 +2,7 @@
 
 class SubscribeController extends Controller {
 
-    public $layout = 'page';
+    public $layout = 'item_page';
 
 
 
@@ -11,7 +11,10 @@ class SubscribeController extends Controller {
             // captcha action renders the CAPTCHA image displayed on the contact page
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0xFFFFFF,
+                'backColor' => 0xCCFFCC,
+            	'foreColor'=> 0x99CC00,
+            	'maxLength'=> 4,
+            	'minLength'=> 4,
                 'testLimit' => 1,
             ),
         );
@@ -21,6 +24,7 @@ class SubscribeController extends Controller {
     public function actionIndex() {
         $model = new Baza812Subscribe;
         $metroName = '';
+        $metroModel = ObjectsDovMetro::model()->findAll();
 
         if (Yii::app()->request->getPost('subscribe') == 1) {
             
@@ -66,7 +70,7 @@ class SubscribeController extends Controller {
                 // redirect кудись.... наприклад на пошук
             }
         }
-        $this->render('index', array('model' => $model, 'metroName' => $metroName));
+        $this->render('index', array('model' => $model, 'metroName' => $metroName, 'metroModel'=>$metroModel));
     }
     
     public function actionObjectForSending($subscriber_email)

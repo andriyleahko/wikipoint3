@@ -9,7 +9,10 @@ class AddItemController extends Controller {
             // captcha action renders the CAPTCHA image displayed on the contact page
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0xFFFFFF,
+				'backColor' => 0xCCFFCC,
+            	'foreColor'=> 0x99CC00,
+            	'maxLength'=> 4,
+            	'minLength'=> 4,
                 'testLimit' => 1,
             ),
         );

@@ -7,10 +7,12 @@
 
 <div id="subscribe">
 
-<h1>Подписка на рассылку<br/> новых объектов</h1>
+<h1 style='color: #4579a6;
+    font: 700 48px/60px "PT Sans";
+    text-align: center;'>Подписка на рассылку<br/> новых объектов</h1>
 
 
-<p class="subheader">под ваши запросы</p>
+<p class="subheader">самые свежие объявления с доставкой</p>
 
 
 
@@ -65,14 +67,8 @@
 <p>
     <label class="wide">
         <span>Подходящие станции метро:</span>
-        <?php 
-            $metroArr = array();
-            if (isset($metroName) && !empty($metroName)) {
-                $metroArr = explode(',', $metroName);
-            }
-        ?>
-	<a style="float: none" class="select-metro choose-metro"><?php if (count($metroArr)) : ?> Выбрано <?php echo count($metroArr) ?> станций <?php else : ?>Выбрать станции<?php endif; ?></a>
-	<input type="hidden" id="metro-field" name="Baza812Subscribe[metro]" value="<?php echo(isset($metroName)&&$metroName)?$metroName:'';?>">
+	<a style="float: none" class="select-metro choose-metro">Выбрать станции</a>
+	<input type="hidden" id="metro-field" name="Baza812Subscribe[metro]" value="">
        
 	<span class="extra-span"></span>
     </label>
@@ -84,10 +80,14 @@
 
 
 <p><label class="wide"><span>Ваше имя*:</span><input required type="text" name='Baza812Subscribe[subscriber_name]' value="<?php echo $model->subscriber_name;?>"></label></p>
-<p><label class="wide"><span>Телефон*:</span><input required type="text" name='Baza812Subscribe[subscriber_phone]' value="<?php echo $model->subscriber_phone;?>"></label><span class="extra-span"></span></p>
+<p><label class="wide"><span>Телефон*:</span><input class="phone" required type="text" name='Baza812Subscribe[subscriber_phone]' value="<?php echo $model->subscriber_phone;?>"></label><span class="extra-span"></span></p>
 <p><label class="wide"><span>Электронная почта*:</span><input required  type="text"  name='Baza812Subscribe[subscriber_email]' value="<?php echo $model->subscriber_email;?>"></label></p>
-
-
+<script type="text/javascript" src="/js/jquery.maskedinput.js" ></script>
+<script type="text/javascript">
+    $('document').ready(function() {
+        $(".phone").mask('(999)999-99-99');
+    })
+</script>
 
 
 <p>
@@ -145,9 +145,12 @@
 
 <p class="break-line">&nbsp;</p>
 
-<?php  $this->widget('CCaptcha'); ?> <br>
+<p><label class="wide"><span>Введите код с картинки:</span>
+<?php  ?>
+<?php  $this->widget('CCaptcha',array('showRefreshButton'=>false, 'clickableImage'=>true , 'imageOptions'=>array('style'=>'border:none; background-color:#99FFCC;  vertical-align: middle;', 'height'=>'40px', 'alt'=>'Картинка с кодом валидации', 'title'=>'Чтобы обновить картинку, нажмите по ней'))); ?> 
 <?php echo CHtml::activeTextField($model,'verifyCode'); ?>
-
+<?php 	?>
+</p>
 
 
 <p>
@@ -158,6 +161,7 @@
 <?php echo CHtml::hiddenField('subscribe', '1');?>
 <!--  <input type="hidden" name="subscribe" value="1"> -->
 <?php echo CHtml::endForm();?>
+
 
 
 

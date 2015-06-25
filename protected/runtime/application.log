@@ -8896,3 +8896,112 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/06/25 11:35:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/25 11:35:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/25 16:31:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/25 16:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/25 17:49:59 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php:204)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): SubscribeController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(69): SubscribeController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\baza812.loc\index.php(17): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\subscribe\index.php (204)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (69)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/25 17:52:01 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_main_812.php:289)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(76): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(308): SubscribeController->endWidget()
+#5 D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_page.php(6): SubscribeController->endContent()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(784): SubscribeController->renderFile()
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(69): SubscribeController->render()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(17): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_main_812.php (289)
+in D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_page.php (6)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (69)
+2015/06/25 17:55:06 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (30)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/25 17:56:30 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (30)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/25 18:43:39 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (31)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/25 18:43:48 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (31)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/25 18:44:53 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_main_812.php:291)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(76): SubscribeController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(308): SubscribeController->endWidget()
+#5 D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_page.php(6): SubscribeController->endContent()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): SubscribeController->renderInternal()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(784): SubscribeController->renderFile()
+#9 D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php(70): SubscribeController->render()
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): SubscribeController->actionIndex()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): SubscribeController->runAction()
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): SubscribeController->runActionWithFilters()
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): SubscribeController->run()
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\baza812.loc\index.php(17): CWebApplication->run()
+REQUEST_URI=/subscribe
+in D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_main_812.php (291)
+in D:\OpenServer\domains\baza812.loc\protected\views\layouts\item_page.php (6)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (70)

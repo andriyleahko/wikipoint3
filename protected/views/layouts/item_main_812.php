@@ -1,3 +1,10 @@
+<?php 
+$aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
+		7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
+		13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
+		19=>"Фрунзенский",20=>"Центральный",);
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -15,7 +22,8 @@
 <script src="/js/jquery.cookie.js" ></script>
  <script src="/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script  type="text/javascript" src="/js/baza812.js"></script>
-
+<link rel="stylesheet" type="text/css" href="/css/filter_main.css" />
+<link rel="stylesheet" type="text/css" href="/css/search.css" />
 	
 
 <style>
@@ -249,6 +257,79 @@ body {
 <?php echo $content; ?>
 
 </div>
-    
+     <div class="reveal-modal" id="metro" style="heigth: 100%;">
+            
+	<div class="p-regions" style="display: block; z-index: 20000; top: 41px; left: -473px; box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.5);height: 506px;">
+	    <span class="close"></span>
+
+    	<div class="clr"></div>
+		<div class="metro-map">
+		    <?php // New Metro Map (4-68)
+		    for( $i=4; $i<=68; $i++){ ?>
+		    	<?php
+		    		$act='';
+		    		if(isset($_GET)){
+		    			if(isset($_GET['metro'])&&$_GET['metro']){
+		    				$metroIDS=explode(',',rtrim(strip_tags($_GET['metro']),','));
+		    			}else{
+		    				$metroIDS=array();
+		    			}	
+		    		}
+		    		if(in_array('m_'.$i,$metroIDS)){
+		    			$act='active';
+		    		}
+		    	?>
+		        <a href="javascript:void(0)" id="m_<?=$i?>" class="st-name <?php echo $act;?>" onclick="selMetro(this,<?=$i?>)"></a>
+		    <?php }
+				$num=count($metroIDS);
+		    ?>
+		</div>
+		<script type="text/javascript">		
+			if (<?php echo $num?> > 0) {
+            	$('.choose-metro').text('Выбрано ' + '<?php echo $num?>' + ' станций')
+        	} else {
+            	$('.choose-metro').text('Выбрать станции')
+
+        	}
+		</script>
+		<?php //////////////////////////////// Районы ////////////////////////////////?>
+        <div class="col col_popup">
+				<?php
+				$i=1;
+				foreach($aArea as $k=>$name){?>
+				<?php
+		    		$act='';
+		    		$style='left top';
+		    		if(isset($_GET)){
+		    			if(isset($_GET['dictrict'])&&$_GET['dictrict']){
+		    				$dictrictIDS=explode(',',rtrim(strip_tags($_GET['dictrict']),','));
+		    			}else{
+		    				$dictrictIDS=array();
+		    			}	
+		    		}
+		    		if(in_array('ch'.$i,$dictrictIDS)){
+		    			$act='act';
+		    			$style='left bottom';
+		    		}
+		    		$i++;
+		    	?>
+    			<label class="checkbox_in">
+        		<input class="dis <?php echo $act?>" type="checkbox" name="district_<?=$k?>" id="ch<?=$k?>" onclick="selDistrict(this,<?=$k?>);">
+        		<span id="sp<?=$k?>" style="background-position: <?php echo $style?>;"></span>
+        		<?=$name?>
+    			</label>
+		<?php } ?>
+        </div>
+            
+            <input type="hidden" name="str_metros" value="" id="str_metros"/>
+            <input type="hidden" name="str_districts" value="" id="str_districts"/>
+			<div class="subm-btns">
+	            <input type="reset" value="Сбросить" class="reset" onclick="resMetro(this);selMetro('undefined');"/>
+	            <input type="button" value="Выбрать" class="send"/>
+            <div class="clr"></div>
+        </div>
+	</div>
+        
+		</div>
 </body>
 </html>
