@@ -84,7 +84,7 @@
             <?php endforeach; ?>
         <?php endif; ?>
             <div class="info">
-				<p class="price"><?php echo $item->price ?> &#x1D71; </p>
+				<p class="price"><?php echo $item->price ?> &#xa750; </p>
 				
             	<p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></a></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 

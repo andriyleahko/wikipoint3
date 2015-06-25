@@ -1,4 +1,3 @@
-
 <script type="text/javascript">
         
     var Data = '';
@@ -119,16 +118,16 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
     'Две комнаты в 5-ккв', 'Две комнаты в Многокомн. кв.');
 ?>
 
-<a class="back-to-search" href='/catalog/search'>← Вернуться к поиску</a>
+<a class="back-to-search" href="<?php echo Yii::app()->request->getUrlReferrer()?>">← Вернуться к поиску</a>
 <a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
-echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
+//echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
 
 
 
 <h1><?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
-echo $model->building_number ?></h1>
+//echo $model->building_number ?></h1>
 <p class="timestamp"><?php echo dateTimeAgo($model->date_add); ?></p> 
-<p class="breadcrumbs" id='adres'>Санкт-Петербург / <a href="">аренда квартир</a> / <a href=""><?php echo 'м. ' . $model->ObjectsMetro->ObjectsDovMetro->name ?></a> / №<?php echo $model->id_object ?></p>
+<p class="breadcrumbs" id='adres'>Санкт-Петербург / <a href="/catalog/search?rooms-amount[]=1&rooms-amount[]=2&rooms-amount[]=3&rooms-amount[]=4,5,6&search=1">аренда квартир</a> / <a href="/catalog/search?search=1&metro=m_<?php echo $model->ObjectsMetro->ObjectsDovMetro->id;?>"><?php echo 'м. ' . $model->ObjectsMetro->ObjectsDovMetro->name ?></a> / № <?php echo $model->id_object ?></p>
 
 <div class="info-box">
     <div class="left-column">
@@ -151,7 +150,7 @@ echo $model->building_number ?></h1>
         <div class="panorama" id='pano'></div>
     </div>
     <div class="right-column">
-        <p class="price"><?php echo $model->price ?> <span> в месяц</span></p>
+        <p class="price"><?php echo $model->price ?> &#xa750;<span> в месяц</span></p>
         <div class="features" style='padding-top: 17px; background: transparent; height: 70px;'>
             <div style='text-align: center; font: italic 14px/20px "PT Sans"; padding-top:5px;'>
                 <?php if ($model->ObjectsMoreinfo->furniture == 1): ?>
@@ -177,7 +176,7 @@ echo $model->building_number ?></h1>
             <p class="wrong-password">Этот пароль не подходит :(</p>
         </div>
         <div class="get-acces">
-            <a class="buy-password" href="">Купить пароль</a>
+            <a class="buy-password" href="/byAccess">Купить пароль</a>
             <a class="get-for-free" href="">Получить<br/> бесплатно</a>
         </div>
     </div>
@@ -199,13 +198,12 @@ echo $model->building_number ?></h1>
 
 
 <p class="password-note">Телефонный номер владельца квартиры скрыт. Для просмотра объявления вам нужен пароль для открытия контактов.</p>
-
 <p class="item-description">
 <?php echo $model->note; ?>
 </p>
 
 
-<a class="back-to-search" >← Вернуться к поиску</a>
+<a class="back-to-search" href="<?php echo Yii::app()->request->getUrlReferrer()?>">← Вернуться к поиску</a>
 <a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
 echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
 

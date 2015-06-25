@@ -1,3 +1,4 @@
+
 #main-search {
 	background: #FBFAF6;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
@@ -40,6 +41,11 @@
 	border-left: 1px solid #BCBCBC;
 	border-radius: 4px;
 }
+#main-search .room input[type="checkbox"] + label:nth-of-type(1):hover {
+    border-left: 1px solid #bcbcbc;
+    border-radius: 4px;
+   /*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
+}
 
 #main-search .room label:last-of-type {
 	border-right: 1px solid #BCBCBC;
@@ -74,9 +80,21 @@
 	border-radius: 4px 0px 0px 4px;
 }
 
+#main-search .rooms input[type="checkbox"] + label:nth-of-type(1):hover{
+	border-left: 1px solid #BCBCBC;
+	border-radius: 4px 0px 0px 4px;
+	/*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
+}
+
 #main-search .rooms label:last-of-type {
 	border-right: 1px solid #BCBCBC;
 	border-radius: 0px 4px 4px 0px;
+}
+
+#main-search .rooms label:last-of-type:hover {
+	border-right: 1px solid #BCBCBC;
+	border-radius: 0px 4px 4px 0px;
+	/*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
 }
 
 #main-search .rooms input[type="checkbox"]:checked + label {
