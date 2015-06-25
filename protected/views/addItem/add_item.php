@@ -38,7 +38,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 
 </style>
 
-<div class="wrapper">
+
 
 
 
@@ -270,5 +270,3 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 <?php echo CHtml::endForm();?>
 
 
-
-</div>
