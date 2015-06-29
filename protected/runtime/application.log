@@ -9021,3 +9021,159 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/06/27 13:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/27 13:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/27 13:29:47 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:40:40 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:41:03 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:43:09 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:44:24 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:52:03 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:53:49 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:54:35 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:54:50 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:56:17 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:59:18 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 13:59:39 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:04:10 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:05:56 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:09:03 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:33:30 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:43:59 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:46:56 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:48:35 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:49:38 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:49:49 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:50:17 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:50:59 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 14:51:15 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:03:45 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:04:12 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:05:51 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:18:26 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:19:14 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:19:14 [warning] [application] Не удалось присвоить небезопасный атрибут "dictrict" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:20:38 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:20:38 [warning] [application] Не удалось присвоить небезопасный атрибут "dictrict" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:20:53 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 15:20:53 [warning] [application] Не удалось присвоить небезопасный атрибут "dictrict" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (17)
+2015/06/27 17:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/27 17:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/29 10:39:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/29 10:39:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

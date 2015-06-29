@@ -69,6 +69,7 @@
         <span>Подходящие станции метро:</span>
 	<a style="float: none" class="select-metro choose-metro">Выбрать станции</a>
 	<input type="hidden" id="metro-field" name="Baza812Subscribe[metro]" value="">
+	<input id="dictrict-field" type="hidden" value="" name="Baza812Subscribe[dictrict]">
        
 	<span class="extra-span"></span>
     </label>

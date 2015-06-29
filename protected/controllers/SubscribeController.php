@@ -46,20 +46,10 @@ class SubscribeController extends Controller {
 
                 $metroIDS = array();
                 if (!empty($metroName)) {
-                    $metro = "'" . implode("','", array_map('trim', explode(',', rtrim($metroName, ',')))) . "'";
-                    $metroCriteria = new CDbCriteria();
-                    $metroCriteria->addCondition('name in (' . $metro . ')');
-                    $modelMetro = ObjectsDovMetro::model()->findAll($metroCriteria);
-                    if ($modelMetro) {
-                        foreach ($modelMetro as $metro) {
-                            $metroIDS[] = $metro['id'];
-                        }
-                    }
-                } else {
-                    $metroIDS[] = '';
+                	$model->metro=rtrim(str_replace('m_', '', $metroName),',');
                 }
 
-                $model->metro = implode(',', $metroIDS);
+               
             }
             
             

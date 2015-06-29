@@ -1,4 +1,4 @@
-<?php 
+<?php
 $aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
 		7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
 		13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
@@ -268,9 +268,9 @@ body {
 		    for( $i=4; $i<=68; $i++){ ?>
 		    	<?php
 		    		$act='';
-		    		if(isset($_GET)){
-		    			if(isset($_GET['metro'])&&$_GET['metro']){
-		    				$metroIDS=explode(',',rtrim(strip_tags($_GET['metro']),','));
+		    		if(isset($_POST)){
+		    			if(isset($_POST['Baza812Subscribe']['metro'])&&$_POST['Baza812Subscribe']['metro']){
+		    				$metroIDS=explode(',',rtrim(strip_tags($_POST['Baza812Subscribe']['metro']),','));
 		    			}else{
 		    				$metroIDS=array();
 		    			}	
@@ -300,9 +300,9 @@ body {
 				<?php
 		    		$act='';
 		    		$style='left top';
-		    		if(isset($_GET)){
-		    			if(isset($_GET['dictrict'])&&$_GET['dictrict']){
-		    				$dictrictIDS=explode(',',rtrim(strip_tags($_GET['dictrict']),','));
+		    		if(isset($_POST)){
+		    			if(isset($_POST['Baza812Subscribe']['dictrict'])&&$_POST['Baza812Subscribe']['dictrict']){
+		    				$dictrictIDS=explode(',',rtrim(strip_tags($_POST['Baza812Subscribe']['dictrict']),','));
 		    			}else{
 		    				$dictrictIDS=array();
 		    			}	
@@ -321,7 +321,7 @@ body {
 		<?php } ?>
         </div>
             
-            <input type="hidden" name="str_metros" value="" id="str_metros"/>
+
             <input type="hidden" name="str_districts" value="" id="str_districts"/>
 			<div class="subm-btns">
 	            <input type="reset" value="Сбросить" class="reset" onclick="resMetro(this);selMetro('undefined');"/>
