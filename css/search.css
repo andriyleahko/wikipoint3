@@ -30,6 +30,7 @@
 	//background: url(img/no.png) no-repeat;
 	background-size: cover;
 	display: block;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #search-results {
     background-color: #99aec2;

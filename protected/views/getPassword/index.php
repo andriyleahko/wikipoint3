@@ -43,6 +43,11 @@ $('#main-search').empty();
         margin-top: 8px;
     }
 
+    .button:hover {
+    	background: #4579A6;
+    	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
     .sidenote {
         float: left;
         width: 240px;
@@ -50,6 +55,11 @@ $('#main-search').empty();
     }
 
     .button-accent {background: #4579A6;}
+    
+    .button-accent:hover {
+    	background: #4579A6;
+    	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
 
 </style>
 
@@ -60,29 +70,29 @@ $('#main-search').empty();
 
 
 
-    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1.300 ₽</p>
+    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1300 &#xa750;</p>
     <p class="reward">∞<span class="icon-key">&nbsp;</span></p>
-    <a class="button button-accent" href="">Варианты оплаты</a>
+    <a class="button button-accent" href="/byAccess">Варианты оплаты</a>
 
     <p class="activity"><span>Сообщить о сдаваемой квартире</span> Максимум бесплатных ключей!</p>
     <p class="reward">3-10<span class="icon-key">&nbsp;</span></p>
-    <a class="button" href="">Сообщить о квартире</a>
+    <a class="button" href="/add-item">Сообщить о квартире</a>
 
 
     <p class="activity"><span>Поставить “лайк” Вконтакте</span> Простой способ получить один пароль.</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
-    <a class="button" href="">Рассказать друзьям</a>
+    <a class="button" href="/tellafriend">Рассказать друзьям</a>
 
 
     <p class="activity"><span>Подписаться на рассылку новых объявлений</span> Подпишитесь на рассылку свежих объявлений, пароль придет<br> на телефон, указанный в рассылке.</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
-    <a class="button" href="">Подписаться на рассылку</a>
+    <a class="button" href="/subscribe">Подписаться на рассылку</a>
 
     <p class="activity"><span>Привести друзей на сайт</span> Внизу письма из рассылки есть ссылка на вашу страницу baza812.ru/likeXXXXX за каждые 10 “лайков” вы получите один бесплатный пароль.</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <p class="sidenote">Для использования должна быть подключена рассылка. (см. выше)</p>
 
-    <p class="activity"><span>Написать отзыв Вконтакте</span> Неограниченный доступ на месяц за 1.300 ₽</p>
+    <p class="activity"><span>Написать отзыв Вконтакте</span> ???????Неограниченный доступ на месяц за 1300 &#xa750;</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <a class="button" href="">Написать отзыв</a>
 
@@ -94,7 +104,7 @@ $('#main-search').empty();
             <li>Пароли приходят только на указанный номер телефона.</li>
             <li>Никаких денег со счета списано не будет.</li>
             <li>Все бесплатные пароли действуют в течении полугода после получения.</li>
-            <li>Все способы получения пароля можно использовать только один раз, кроме "Сообщить о квартире" и "Приведи друзей на сайт".</li>
+            <li>Все бесплатные способы получения пароля можно использовать только один раз, кроме "Сообщить о квартире" и "Приведи друзей на сайт".</li>
         </ul>
     </fieldset>
 

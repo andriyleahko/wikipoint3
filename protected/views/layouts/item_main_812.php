@@ -9,6 +9,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <html>
 <head>
 <meta charset="utf-8">
+<script type="text/javascript" src="http://vk.com/js/api/share.js?91" charset="utf-8"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&language=ru"></script>
 <!-- <script type="text/javascript" -->
 <!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->

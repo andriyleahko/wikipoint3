@@ -177,7 +177,7 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
         </div>
         <div class="get-acces">
             <a class="buy-password" href="/byAccess">Купить пароль</a>
-            <a class="get-for-free" href="">Получить<br/> бесплатно</a>
+            <a class="get-for-free" href="/getpassword">Получить<br/> бесплатно</a>
         </div>
     </div>
 </div>
