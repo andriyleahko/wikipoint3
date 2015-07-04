@@ -36,17 +36,17 @@
     background-color: #99aec2;
 }
 
-.item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 8px;}
+.item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 15px;}
 .item .metro11 {font-size: 16px; padding-left: 37px; background: url() no-repeat left center; float: left;}
 
-.item .line-1 {color: #702785; background-image: url(/img/metro-line-1.png);}
-.item .line-2 {color: #702785; background-image: url(/img/metro-line-2.png);}
-.item .line-3 {color: #702785; background-image: url(/img/metro-line-3.png);}
-.item .line-4 {color: #702785; background-image: url(/img/metro-line-4.png);}
+.item .line-1 {color: #ff0000; background-image: url(/img/metro-line-1.png); }
+.item .line-2 {color: #0080ff; background-image: url(/img/metro-line-2.png);}
+.item .line-3 {color: #008000; background-image: url(/img/metro-line-3.png);}
+.item .line-4 {color: #ff8040; background-image: url(/img/metro-line-4.png);}
 .item .line-5 {color: #702785; background-image: url(/img/metro-line-5.png);}
 
 .item .address {color: #9B9B9B; font: 16px/30px "PT Sans"; /*margin-bottom: 30px;*/ float: left;}
-.item .price {color: #4579a6; font: 700 28px/30px "PT Sans"; float: right;  padding: 12px 15px 0px 0px}
+.item .price {color: #4579a6; font: 700 28px/30px "PT Sans"; float: right; padding: 15px 15px 0 0;}
 .item .features {
 	height: 60px;
 	width: 240px;

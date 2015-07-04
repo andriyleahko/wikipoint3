@@ -9,11 +9,11 @@
 		'комната 1(3)', 
 		'комната 1(4)', 
 		'комната 1(5)', 
-		'комната 1(МН)', 
+		'комната 1(>5)', 
 		'2 комнаты 2(3)',
 		 '2 комнаты 2(4)', 
 		'2 комнаты 2(5)', 
-		'2 комнаты 2(МН)');?>
+		'2 комнаты 2(>5)');?>
 <?php if (!$offset) : ?><p class="items-counter">Найдено <?php echo $total ?> объектов.</p> <?php endif; ?>
 <input type="hidden" name="offsetNext" value="<?php echo $offsetNext ?>" />
 <?php if (count($objects)) : ?>
@@ -84,7 +84,7 @@
             <?php endforeach; ?>
         <?php endif; ?>
             <div class="info">
-				<p class="price"><?php echo $item->price ?> &#xa750; </p>
+				<p class="price"><?php echo substr_replace($item->price, '.000', -3) ?> &#xa750; </p>
 				
             	<p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></a></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
@@ -98,8 +98,8 @@
                 <p class="address">&nbsp;
                     <?php
                     if ($item->ObjectsDovStreets) {
-                        echo $item->ObjectsDovStreets->name;
-                       // echo $item->building_number;
+                        echo $item->ObjectsDovStreets->name.',';
+                       	echo ' '.$item->building_number;
                     }
                     ?> 	
                 </p>

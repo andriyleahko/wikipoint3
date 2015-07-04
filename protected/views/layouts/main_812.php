@@ -98,22 +98,23 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
             <label for="r441"><span>комнату</span></label>
         </fieldset>
 
-        <p>квартиру</p>
+<!--         <p >квартиру</p> -->
 
         <fieldset class="rooms">
             <input type="checkbox" value="1" name="rooms-amount[]" id="r1" <?php echo $k1;?>>
-            <label for="r1"><span>1 комн.</span></label>
+            <label for="r1"><span>1 ККВ</span></label>
 
             <input type="checkbox" value="2" name="rooms-amount[]" id="r2" <?php echo $k2;?>>
-            <label for="r2"><span>2 комн.</span></label>
+            <label for="r2"><span>2 ККВ</span></label>
 
             <input type="checkbox" value="3" name="rooms-amount[]"  id="r3" <?php echo $k3;?>>
-            <label for="r3"><span>3 комн.</span></label>
+            <label for="r3"><span>3 ККВ</span></label>
 
             <input type="checkbox" value="4,5,6" name="rooms-amount[]" id="r4" <?php echo $k_more;?>>
-            <label for="r4"><span>4 комн. и более</span></label>
-            <?php /*<p style="color: #9B9B9B;">без агентов,</p>*/ ?>
+            <label for="r4"><span>4 ККВ и более</span></label>
+            <?php /*<p style="color: #9B9B9B;">без агентов,</p>
             <p>без агентов,</p>
+            */ ?>
         </fieldset>
 
         <p>рядом с метро</p>

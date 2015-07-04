@@ -87,14 +87,15 @@
         $('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
 
 
-        $('#scrollLeft').cycle({
-            fx: 'scrollHorz',
-            speed: 1000,
-            timeout: 5000,
-            prev: '#prev',
-            next: '#next'
-        });
+//         $('#scrollLeft').cycle({
+//             fx: 'scrollHorz',
+//             speed: 1000,
+//             timeout: 5000,
+//             prev: '#prev',
+//             next: '#next'
+//         });
 
+        
     	if($('#c1').attr('checked')){
    		 showphoto();
    		$('#c1').attr('checked','checked');	
@@ -109,6 +110,12 @@
     #pano{height: 540px; width: 620px;}
     #photo{height: 540px; width: 620px;}
     #control{top:10px !important;}
+    
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 10%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(/img/fancy_nav_left.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(/img/fancy_nav_right.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
 </style>
 
 <?php
@@ -120,12 +127,12 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
 
 <a class="back-to-search" href="<?php echo Yii::app()->request->getUrlReferrer()?>">← Вернуться к поиску</a>
 <a class="add-to-favorites" title="<?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
-//echo $model->building_number ?>" rel="sidebar" href="">Добавить в избранное</a>
+echo $model->building_number; ?>" rel="sidebar" href="">Добавить в избранное</a>
 
 
 
 <h1><?php echo $aObjectType2[$model->ObjectsDovType->id] ?>, <?php echo $model->ObjectsDovStreets->name . ', ';
-//echo $model->building_number ?></h1>
+echo $model->building_number ?></h1>
 <p class="timestamp"><?php echo dateTimeAgo($model->date_add); ?></p> 
 <p class="breadcrumbs" id='adres'>Санкт-Петербург / <a href="/catalog/search?rooms-amount[]=1&rooms-amount[]=2&rooms-amount[]=3&rooms-amount[]=4,5,6&search=1">аренда квартир</a> / <a href="/catalog/search?search=1&metro=m_<?php echo $model->ObjectsMetro->ObjectsDovMetro->id;?>"><?php echo 'м. ' . $model->ObjectsMetro->ObjectsDovMetro->name ?></a> / № <?php echo $model->id_object ?></p>
 
@@ -134,15 +141,17 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
         <div id="map_canvas"></div>
         <div class="photos" id='photo'>
             <?php if (isset($model->Pictures) && $model->Pictures) { ?>
-                <div id="scrollLeft">
+                <div class="cycle-slideshow"  data-cycle-fx=scrollHorz data-cycle-timeout=0>
+                <div class="cycle-prev"></div>
+    			<div class="cycle-next"></div>
                 <?php foreach ($model->Pictures as $pic): ?>
                         <img style='height: 540px; width: 620px; text-align:center;' src="<?php echo 'http://grandprime.info/' . $pic['file']; ?>" />
-    <?php endforeach; ?>
+   				 <?php endforeach; ?>
                 </div>
-                <div id='control'>
-                    <a href="#"><span id="prev">Prev</span></a> 
-                    <a href="#"><span id="next">Next</span></a>
-                </div>
+<!--                 <div id='control'> -->
+<!--                     <a href="#"><span id="prev">Prev</span></a>  -->
+<!--                     <a href="#"><span id="next">Next</span></a> -->
+<!--                 </div> -->
                 <?php } else { ?>
                 <img style='height: 540px; width: 620px; text-align:center;' src="http://grandprime.info/images/no-photo.jpg" />
                 <?php } ?>
@@ -150,7 +159,7 @@ $aObjectType2 = array(1 => 'Однокомн. кв.', 'Двухкомн. кв.',
         <div class="panorama" id='pano'></div>
     </div>
     <div class="right-column">
-        <p class="price"><?php echo $model->price ?> &#xa750;<span> в месяц</span></p>
+        <p class="price"><?php echo substr_replace($model->price, '.000', -3) ?> &#xa750;<span> в месяц</span></p>
         <div class="features" style='padding-top: 17px; background: transparent; height: 70px;'>
             <div style='text-align: center; font: italic 14px/20px "PT Sans"; padding-top:5px;'>
                 <?php if ($model->ObjectsMoreinfo->furniture == 1): ?>

@@ -45,8 +45,8 @@ body {
 #item .breadcrumbs a {color: #4579A6;}
 #item .timestamp {color: #9B9B9B; background: url(/img/icon-timestamp.png) no-repeat left center; padding-left: 25px; float: right;}
 
-#item .info-box {background: #FBFAF6; overflow: hidden;}
-#item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey;}
+#item .info-box {background: /*#FBFAF6*/ white; overflow: hidden;}
+#item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey; box-shadow: 0px 0px 10px rgba(0,0,0,0.5);}
 #item .info-box .right-column {width: 300px; text-align: center; display: block; float: left; padding: 30px 0px 30px 20px}
 
 #item .info-box .price {font: 700 42px/60px "PT Sans"; color: #4579A6;}
