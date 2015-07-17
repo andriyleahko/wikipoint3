@@ -66,7 +66,8 @@
     function showpan() {
         $('#pano').attr("style", "visibility: visible; height:540px; width:620px;");
         $('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
-        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px;")
+        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
+        $('#photo').attr('style','display:none');
         pan();
     }
     function showmap() {

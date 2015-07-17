@@ -1,21 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "baza812_type_pasword".
+ * This is the model class for table "baza812_user_buy_orders".
  *
- * The followings are the available columns in table 'baza812_type_pasword':
+ * The followings are the available columns in table 'baza812_user_buy_orders':
  * @property integer $id
- * @property string $name
- * @property string $price
+ * @property integer $id_user
+ * @property integer $id_user_access
+ * @property integer $id_type_pasword
+ * @property integer $status
  */
-class Baza812TypePasword extends CActiveRecord
+class Baza812UserBuyOrders extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'baza812_type_pasword';
+		return 'baza812_user_buy_orders';
 	}
 
 	/**
@@ -26,11 +28,11 @@ class Baza812TypePasword extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name', 'required'),
-			array('name', 'length', 'max'=>100),
+			array('id_user, id_user_access, id_type_pasword, status', 'required'),
+			array('id_user, id_user_access, id_type_pasword, status', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name', 'safe', 'on'=>'search'),
+			array('id, id_user, id_user_access, id_type_pasword, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -42,7 +44,6 @@ class Baza812TypePasword extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'Baza812UserAccess'=>array(self::HAS_MANY, 'Baza812UserAccess', 'type_pasword'),
 		);
 	}
 
@@ -53,7 +54,10 @@ class Baza812TypePasword extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'id_user' => 'Id User',
+			'id_user_access' => 'Id User Access',
+			'id_type_pasword' => 'Id Type Pasword',
+			'status' => 'Status',
 		);
 	}
 
@@ -76,7 +80,10 @@ class Baza812TypePasword extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
+		$criteria->compare('id_user',$this->id_user);
+		$criteria->compare('id_user_access',$this->id_user_access);
+		$criteria->compare('id_type_pasword',$this->id_type_pasword);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -87,7 +94,7 @@ class Baza812TypePasword extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Baza812TypePasword the static model class
+	 * @return Baza812UserBuyOrders the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

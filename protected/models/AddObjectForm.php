@@ -33,6 +33,7 @@ class AddObjectForm extends CFormModel {
     public $street;
     public $email;
     public $about_object;
+    public $from_baza812;
 
     /**
      * @todo must be attributes
@@ -46,7 +47,7 @@ class AddObjectForm extends CFormModel {
         // will receive user inputs.
         return array(
             array('house_no, room_flat, district, street, time_to_metro, metro, floor, floor_max, phone, user, area_full, area_kitchen, area_live, price, email', 'required'), // є ще поле param
-            array('district, street, rooms, flat, metro_to, area_full, area_kitchen, metro, frige, furniture, washer, net, area_live, floor, floor_max, time_to_metro, price', 'numerical'),
+            array('district, street, rooms, flat, metro_to, area_full, area_kitchen, metro, frige, furniture, washer, net, area_live, floor, floor_max, time_to_metro, price, from_baza812', 'numerical'),
       		array('time_to_metro', 'numerical', 'min'=>0, 'max'=>60),
             array('phone, phone_my, house_no, address, room_flat, user, photo, about_me, about_object, email', 'length', 'max' => 255), // є ще поле param
        		array('email', 'email'), // є ще поле param

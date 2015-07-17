@@ -86,7 +86,7 @@
             <div class="info">
 				<p class="price"><?php echo substr_replace($item->price, '.000', -3) ?> &#xa750; </p>
 				
-            	<p class="type"><a href="/item/show?itemId=<?php echo $item->id_object ?>"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></a></p>
+            	<p class="type"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
                     <?php
                     if ($item->ObjectsMetro->ObjectsDovMetro->name) {
@@ -94,6 +94,7 @@
                     }
                     ?>
                 </p>
+                <a class="showmoreinfo" href="/item/show?itemId=<?php echo $item->id_object ?>">Подробнее</a>
                 <br/>
                 <p class="address">&nbsp;
                     <?php

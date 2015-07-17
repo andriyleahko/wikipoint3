@@ -25,14 +25,16 @@
 
 #payment-methods h3 {margin-top: 30px;}
 
-
+#submit:hover{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 </style>
 
 
 <div id="payment-methods">
 
 
-<form>
+<?php echo CHtml::beginForm('/byAccess/buy', 'post'); ?>
 
 
 <h1 style='color: #4579a6; font: 700 48px/60px "PT Sans";  text-align: center;'>Покупка пароля к базе</h1>
@@ -41,16 +43,14 @@
 <h3>1. Тариф</h3>
 
 <fieldset class="radio-box">
-	<input type="radio" name="tarif" id="t1" checked>
-	<label for="t1"><span>доступ на 30 дней</span></label>
+	<?php $i=1; foreach ($model as $mod):?>
+	<input type="radio" value="<?php echo $mod->id;?>" name="tarif" id="t<?php echo $i;?>" <?php echo ($_POST['tarif']==$mod->id)?'checked':'';?>>
+	<label for="t<?php echo $i?>"><span><?php echo $mod->name?></span></label>
 	
-	<input type="radio" name="tarif" id="t2">
-	<label for="t2"><span>доступ на 15 дней</span></label>
-
-	<input type="radio" name="tarif" id="t3">
-	<label for="t3"><span>пароль на 25 контактов</span></label>
+	<?php $i++; endforeach;?>
+	
 </fieldset>
-
+<?php echo (isset($not_tarif)&$not_tarif!='')?'<p style="color:red">'.$not_tarif.'</p>':'';?>
 
 <h3>2. Способ платы - без комиссии</h3>
 
@@ -58,18 +58,25 @@
 <h3>3. Ваш номер телефона</h3>
 
 <p>На этот номер будет отправлен пароль доступа к базе.</p>
-<input class="phone" type="text">
+<input class="phone" type="text" name='phone' value="<?php echo ($_POST['phone'])?$_POST['phone']:'';?>">	
+<?php echo (isset($not_phone)&$not_phone!='')?'<p style="color:red">'.$not_phone.'</p>':'';?>
 
+<script type="text/javascript">
+    $('document').ready(function() {
+        $(".phone").mask('(999)999-99-99');
+    })
+</script>
 
 <p class="break-line">&nbsp;</p>
 
-<input type="submit" value="Перейти к оплате">
+<input type="submit" id='submit' value="Перейти к оплате">
 
 
-</form>
+<?php echo CHtml::endForm();?>
 
 <p class="sidenote">Обычно сообщение с паролем приходит за 10 минут.<br> Если у вас возникли сложности — обратитесь в службу поддержки<br> +7 (812) 123-45-67, support@baza812.ru</p>
 
 
 
 </div>
+

@@ -72,6 +72,7 @@ class AddItemController extends Controller {
                 $object->id_condition = 1;
                 $object->id_contractType = 1;
                 $object->id_typeRealty = 1;
+                $object->from_baza812=2;
                 $object->id_owner = $owner->id_owner;
                 $object->price = $modelAddForm->price;
                 $object->source_url = 'Baza 812';
@@ -92,6 +93,7 @@ class AddItemController extends Controller {
                         $picture->id_object = $object->id_object;
                         $picture->file = $photo;
                         $picture->entity_pk = '-1';
+                        $picture->entity='temp';
                         $picture->num = $key;
                         $picture->save(false);
                     }

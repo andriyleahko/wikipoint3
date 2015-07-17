@@ -164,11 +164,17 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         <input type="submit" id="--search-submit" value="Поиск">
     </form>
 
-</div>
+		</div>
             <?php echo $content; ?>
 
-
+        <p class="break-line">&nbsp;</p>
+        <div id='paysto_verification-form'>
+			<!-- begin paysto verification --> 
+			<a href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
+			<!-- end paysto verification -->
+		</div>
         </div>
+
         
         <div class="reveal-modal" id="metro" style="heigth: 100%;">
 <?php /*?>
@@ -381,7 +387,11 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         </div>
 	</div>
         
+
+		
 		</div>
+		
+
         
     </body>
 </html>

@@ -195,3 +195,27 @@
 	border-radius: 4px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+.showmoreinfo{
+ 	background: #4579a6 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 46px;
+    margin: 10px 1px 0px 280px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.showmoreinfo:hover{
+ 	background: #4579a6 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 46px;
+    margin: 10px 1px 0px 280px;
+    padding: 0 20px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

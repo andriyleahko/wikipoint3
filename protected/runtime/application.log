@@ -9302,3 +9302,214 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/07/05 11:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/05 11:41:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/05 16:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/05 16:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/05 16:56:45 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "AddObjectForm.from_baza812".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\validators\CRequiredValidator.php(58): CComponent->__get('from_baza812')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(AddObjectForm), 'from_baza812')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModel.php(159): CValidator->validate(Object(AddObjectForm), NULL)
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\AddItemController.php(40): CModel->validate(NULL, false)
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): AddItemController->actionAdd()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('add')
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('AddItem/add')
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/add-item
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/07/06 12:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/06 12:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/16 14:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/16 14:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/16 15:46:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "pay_paysto_check_url".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('pay_paysto_chec...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('pay_paysto_chec...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccess/pay_pa...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/byAccess/pay_paysto_check_url
+---
+2015/07/16 15:51:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "pay_callback_fail".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('pay_callback_fa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('pay_callback_fa...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccess/pay_ca...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/byAccess/pay_callback_fail
+---
+2015/07/16 16:42:33 [error] [php] include(Paysto.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\OpenServer\domains\baza812.loc\framework\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(13): spl_autoload_call()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionPay_paysto_check_url()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess/pay_paysto_check_url
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (13)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 16:43:39 [error] [php] include(Paysto.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\OpenServer\domains\baza812.loc\framework\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(13): spl_autoload_call()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionPay_paysto_check_url()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess/pay_paysto_check_url
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (13)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 18:10:08 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\framework\framework\db\schema\CDbCommandBuilder.php:673)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionIndex()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (8)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 18:10:47 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\framework\framework\db\schema\CDbCommandBuilder.php:673)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionIndex()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (8)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 20:14:02 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 20:14:02 [warning] [application] Не удалось присвоить небезопасный атрибут "dictrict" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/16 21:27:06 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.paysto".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(105): CComponent->__get('paysto')
+#1 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(17): CModule->__get('paysto')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('buy')
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccess/buy')
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/byAccess/buy
+---
+2015/07/16 21:34:05 [error] [exception.CException] exception 'CException' with message 'В классе Paysto и его поведениях не найден метод или замыкание с именем "init".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(394): CComponent->__call('init', Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(394): Paysto->init()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(103): CModule->getComponent('paysto')
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(17): CModule->__get('paysto')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('buy')
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccess/buy')
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/byAccess/buy
+---
+2015/07/16 21:34:24 [error] [exception.CException] exception 'CException' with message 'В классе Paysto и его поведениях не найден метод или замыкание с именем "init".' in D:\OpenServer\domains\baza812.loc\framework\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(394): CComponent->__call('init', Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(394): Paysto->init()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\base\CModule.php(103): CModule->getComponent('paysto')
+#3 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(17): CModule->__get('paysto')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('buy')
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccess/buy')
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/byAccess/buy
+---

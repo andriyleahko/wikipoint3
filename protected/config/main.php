@@ -40,6 +40,12 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+			
+		'paysto' => array(
+				'class' => 'Paysto',
+				'shop_id' => 22523,
+				'secret_key' =>'95RNZ793k4kpjCL9V266Wf',
+		),
 
 		// uncomment the following to enable URLs in path-format
 		
