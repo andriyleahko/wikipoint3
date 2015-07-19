@@ -28,6 +28,14 @@
 #submit:hover{
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+#pr {
+	float: right;
+    font: 700 27px/60px "PT Sans";
+    margin-right: 260px;
+    color: #393939;
+}
+
 </style>
 
 
@@ -45,10 +53,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 <fieldset class="radio-box">
 	<?php $i=1; foreach ($model as $mod):?>
 	<input type="radio" value="<?php echo $mod->id;?>" name="tarif" id="t<?php echo $i;?>" <?php echo ($_POST['tarif']==$mod->id)?'checked':'';?>>
-	<label for="t<?php echo $i?>"><span><?php echo $mod->name?></span></label>
-	
+	<label for="t<?php echo $i?>"><span><?php echo $mod->name?></span></label> 
+	<input id="p<?php echo $i?>" type='hidden' value="<?php echo $mod->price;?> &#xa750;">
 	<?php $i++; endforeach;?>
-	
+	<div id='pr'></div>
 </fieldset>
 <?php echo (isset($not_tarif)&$not_tarif!='')?'<p style="color:red">'.$not_tarif.'</p>':'';?>
 
@@ -64,6 +72,15 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 <script type="text/javascript">
     $('document').ready(function() {
         $(".phone").mask('(999)999-99-99');
+    	$('#t1').on('change', function () {
+    		$('#pr').text($('#p1').val());
+    		});
+    	$('#t2').on('change', function () {
+    		$('#pr').text($('#p2').val());
+    		});
+    	$('#t3').on('change', function () {
+    		$('#pr').text($('#p3').val());
+    		});
     })
 </script>
 
@@ -74,7 +91,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 <?php echo CHtml::endForm();?>
 
-<p class="sidenote">Обычно сообщение с паролем приходит за 10 минут.<br> Если у вас возникли сложности — обратитесь в службу поддержки<br> +7 (812) 123-45-67, support@baza812.ru</p>
+<p class="sidenote">Обычно сообщение с паролем приходит за 10 минут.
 
 
 

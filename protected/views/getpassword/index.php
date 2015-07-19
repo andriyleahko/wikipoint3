@@ -70,7 +70,7 @@ $('#main-search').empty();
 
 
 
-    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1300 &#xa750;</p>
+    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1200 &#xa750;</p>
     <p class="reward">∞<span class="icon-key">&nbsp;</span></p>
     <a class="button button-accent" href="/byAccess">Варианты оплаты</a>
 
@@ -92,7 +92,7 @@ $('#main-search').empty();
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <p class="sidenote">Для использования должна быть подключена рассылка. (см. выше)</p>
 
-    <p class="activity"><span>Написать отзыв Вконтакте</span> ???????Неограниченный доступ на месяц за 1300 &#xa750;</p>
+    <p class="activity"><span>Написать отзыв Вконтакте</span> Вы получете один бесплатный пароль</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <a class="button" href="">Написать отзыв</a>
 
@@ -108,6 +108,8 @@ $('#main-search').empty();
         </ul>
     </fieldset>
 
+<?php /*
 
     <div id="support-footnote">Если у вас возникли сложности — обратитесь в службу поддержки<br>
         +7 (812) 123-45-67, support@baza812.ru</div>
+*/?>

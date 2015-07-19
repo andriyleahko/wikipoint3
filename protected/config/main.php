@@ -46,6 +46,9 @@ return array(
 				'shop_id' => 22523,
 				'secret_key' =>'95RNZ793k4kpjCL9V266Wf',
 		),
+		'smsc' => array(
+				'class' => 'Smsc',
+		),
 
 		// uncomment the following to enable URLs in path-format
 		

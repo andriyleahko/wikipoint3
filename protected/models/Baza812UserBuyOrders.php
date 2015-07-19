@@ -44,7 +44,9 @@ class Baza812UserBuyOrders extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		);
+				'Baza812TypePasword'=>array(self::BELONGS_TO, 'Baza812TypePasword', 'id_type_pasword'),
+				'Baza812User' => array(self::BELONGS_TO, 'Baza812User', 'id_user'),
+		);	
 	}
 
 	/**

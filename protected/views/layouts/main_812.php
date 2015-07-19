@@ -41,7 +41,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 ?>
 <html>
     <head>
-
+<!-- <link href="/img/logo.png" rel="shortcut icon"> -->
         <meta charset="utf-8">
         <style>
             @import url(/css/style.css);
@@ -78,7 +78,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         
         <script type="text/javascript" src="/js/jquery.maskedinput.js" ></script>
         <script  type="text/javascript" src="/js/baza812.js"></script>
-        
+        <title>Аренда квартир и комнат</title>
     </head>
     <body>
         <div class="wrapper">
@@ -86,7 +86,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
             <div id="main-menu">
                 <a class="logo" href="/"></a>
                 <a class="menu-option" href="/howitworks/">Принцип работы</a>
-                <a class="menu-option" href="">Документы</a>
+                <a class="menu-option" href="/getpassword">Документы</a>
                 <a class="menu-option" href="/byAccess">Оплата</a>
                 <a class="add-item" href="/add-item">Сообщить о квартире</a>
             </div>
@@ -172,6 +172,22 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 			<!-- begin paysto verification --> 
 			<a href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
 			<!-- end paysto verification -->
+			<br>
+			<a target="_blank" href="http://www.megastock.ru/">
+				<img border="0" alt="www.megastock.ru" src="/img/acc_blue_on_transp_ru.png">
+			</a>
+			<img border="0" src="/img/mastercard8831_s1.png">
+			<img border="0" src="/img/visa8831_s1.png">
+			<a target="_blank" href="http://www.money.yandex.ru">
+				<img border="0" src="/img/yandex8831_s1.png">
+			</a>
+		</div>
+		<div style="float:right; margin-top: -55px; line-height: 20px;">
+			<b style="font-size:14px;">
+				Если у вас возникли сложности — обратитесь в службу поддержки:
+				<br>
+				+7 (812) 123-45-67, support@baza812.ru
+			</b>
 		</div>
         </div>
 

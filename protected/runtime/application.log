@@ -9513,3 +9513,202 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/byAccess/buy
 ---
+2015/07/17 13:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/17 13:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/17 16:52:56 [error] [php] Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\baza812.loc\protected\components\Paysto.php:28) (D:\OpenServer\domains\baza812.loc\framework\framework\web\CHttpRequest.php:860)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(91): ByAccessController->redirect()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess/buy
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (91)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/17 16:54:41 [error] [php] Invalid argument supplied for foreach() (D:\OpenServer\domains\baza812.loc\protected\views\byAccess\index.php:46)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): ByAccessController->renderFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): ByAccessController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(91): ByAccessController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess/buy
+in D:\OpenServer\domains\baza812.loc\protected\views\byAccess\index.php (46)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (91)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/17 16:55:32 [error] [php] strpos() expects parameter 1 to be string, array given (D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:706)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(867): ByAccessController->getViewFile()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): ByAccessController->renderPartial()
+#2 D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php(92): ByAccessController->render()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): ByAccessController->actionBuy()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): ByAccessController->runAction()
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): ByAccessController->runActionWithFilters()
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): ByAccessController->run()
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/byAccess/buy
+in D:\OpenServer\domains\baza812.loc\protected\controllers\ByAccessController.php (92)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/07/17 21:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/17 21:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/17 21:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/17 21:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/19 10:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/19 10:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/19 10:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/visa8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/visa8831_s...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/visa8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/acc_blue_on_transp_ru.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/acc_blue_o...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/acc_blue_on_transp_ru.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/mastercard8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/mastercard...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/mastercard8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/yandex8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/yandex8831...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/yandex8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/mastercard8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/mastercard...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/mastercard8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/acc_blue_on_transp_ru.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/acc_blue_o...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/acc_blue_on_transp_ru.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/visa8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/visa8831_s...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/visa8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 10:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "mien/yandex8831_s1.png".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('mien/yandex8831...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/mien/yandex8831_s1.png
+HTTP_REFERER=http://baza812.loc/
+---
+2015/07/19 11:48:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "sdf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('sdf')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdf
+---
+2015/07/19 11:52:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "srt".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('srt')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/srt
+---

@@ -1,6 +1,6 @@
 <?php
 
-class GetPasswordController extends Controller {
+class GetpasswordController extends Controller {
 
     public $layout = 'page';
 

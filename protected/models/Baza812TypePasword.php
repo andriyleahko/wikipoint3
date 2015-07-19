@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $name
  * @property string $price
+ * @property string $pasword
  */
 class Baza812TypePasword extends CActiveRecord
 {
@@ -27,7 +28,7 @@ class Baza812TypePasword extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('name', 'length', 'max'=>100),
+			array('name', 'length', 'pasword', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name', 'safe', 'on'=>'search'),

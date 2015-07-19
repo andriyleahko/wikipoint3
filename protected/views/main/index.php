@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 	<div id="vk_groups"></div>
 	<script type="text/javascript">
-		VK.Widgets.Group("vk_groups", {mode: 0, width: "620", height: "270", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 55603717);
+		VK.Widgets.Group("vk_groups", {mode: 0, width: "620", height: "270", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 90622364);
 	</script>
 	<div id="vk_comments"></div> 
 	<script type="text/javascript"  async="async"> 

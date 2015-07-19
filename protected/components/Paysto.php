@@ -19,7 +19,7 @@ class Paysto extends CApplicationComponent
 		
 	
 	
-		echo "<form target='_blank' id='pay-form-pay' accept-charset='UTF-8' method='POST' action='https://paysto.com/ru/pay'>
+		echo "<form target='_balnk' id='pay-form-pay' accept-charset='UTF-8' method='POST' action='https://paysto.com/ru/pay'>
 		<input type='hidden' name='PAYSTO_SHOP_ID' value='{$this->shop_id}'>
 		<input type='hidden' name='PAYSTO_SUM' value='{$data['summ']}'>
 		<input type='hidden' name='PAYSTO_INVOICE_ID' value='{$data['order_id']}'>
@@ -44,6 +44,10 @@ class Paysto extends CApplicationComponent
 			$temp[] = "$param=$val";
 		$temp[] = $this->secret_key;
 		$my_hash = strtoupper(md5(implode('&', $temp)));
+		
+		//file_put_contents('test_my_hash', $my_hash);
+		//file_put_contents('test_callback_hash', $hash);
+		
 	
 	
 		if ($my_hash !== $hash) {
@@ -55,7 +59,7 @@ class Paysto extends CApplicationComponent
 	}
 	
 	public function check_paid(){
-	
+		
 		return $this->check_hash();
 	}
 }

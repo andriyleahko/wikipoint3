@@ -73,9 +73,10 @@ class ItemController extends Controller {
     }
     
     private function _checkAssess($model,$obectId){
+    	$dif=time()-(int)($model->when_get_pasword);
     	switch ($model->type_pasword) {
-    		case 1: // pasword was bought for 30 days
-    			if(time()-($model->when_get_pasword)<30*24*60*60){
+    		case 1: // pasword was bought for 30 days 
+    			if($dif<30*24*60*60){
 					$this->_workWithIds($model,$obectId);
     				return true;
     			}else{
@@ -85,14 +86,13 @@ class ItemController extends Controller {
     			
     			
     		case 7: // pasword was bought for 15 days
-    			if(time()-($model->when_get_pasword)<15*24*60*60){
+    			if($dif<15*24*60*60){
     				$this->_workWithIds($model,$obectId);
     				return true;
     			}else{
     				return false;
     			}
     			break;
-    			
     			
    			case 8: // pasword was bought for 25 contacts
    				if($model->number_opened_phone_allowed>0){
@@ -105,7 +105,7 @@ class ItemController extends Controller {
     			
     			
     		default: // free pasword. It expiried after half year
-    			if(time()-($model->when_get_pasword)<6*31*24*60*60&&$model->number_opened_phone_allowed>0){
+    			if($dif<6*31*24*60*60&&$model->number_opened_phone_allowed>0){
     			   	$this->_workWithIds($model,$obectId);
     				return true;
     			}else{
@@ -119,7 +119,7 @@ class ItemController extends Controller {
     		$UserModel=Baza812User::model()->findByPk($model->user_id);
     		
     		// look ids of opened objects
-			If(!$ids=unserialize($UserModel->ids_object))
+			if(!$ids=unserialize($UserModel->ids_object))
 			{
    				$ids=array();
    			};
@@ -129,7 +129,7 @@ class ItemController extends Controller {
    			{
    				$ids[]=$obectId;
    				$UserModel->ids_object=serialize($ids);
-   				$UserModel->save();
+   				$UserModel->save(false);
 	   			$model->number_opened_phone_allowed = $model->number_opened_phone_allowed-1;
 	   			$model->save();
    			}

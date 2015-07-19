@@ -20,13 +20,12 @@ class ByAccessController extends Controller {
 				'condition' => 'price<>:price',
 				'params' => array (':price' => 0) 
 		) );
-		if ($_POST) {
-			
-			
-			$tarif = strip_tags ( $_POST ['tarif'] ); // id from table Baza812TypePasword
-			$phone = strip_tags ( $_POST ['phone'] );
 		
-			if (! isset ( $phone ) || ! $phone) {
+		if ($_POST) {
+			$tarif = strip_tags ( $_POST ['tarif'] ); // id from table Baza812TypePasword
+			$phone = strip_tags ( $_POST ['phone'] ); // phone user
+		
+			if (! isset ( $phone ) || ! $phone) {  // phone validation
 				$this->render ( 'index', array (
 						'model' => $modelTypePasword,
 						'not_phone' => 'введите телефон' 
@@ -34,7 +33,7 @@ class ByAccessController extends Controller {
 				exit ();
 			}
 			
-			$modelUser = Baza812User::model ()->with ( 'Baza812UserAccess' )->findAll ( array (
+			$modelUser = Baza812User::model ()->find ( array (
 					'select' => '*',
 					'condition' => 'phone=:phone',
 					'params' => array (':phone' => $phone) 
@@ -45,6 +44,7 @@ class ByAccessController extends Controller {
 				if ($mod->id==$tarif){
 					$test_for_tarif=TRUE;
 					$price=$mod->price;
+					$description=$mod->name; // tarif (type pasword) description
 				}
 			}
 
@@ -56,23 +56,39 @@ class ByAccessController extends Controller {
 				exit();
 			}
 
-			if (! $modelUser) { // New User
-				// реєструвати юзера і вернути його ід
-			} else {
+			if ($modelUser) { 
 				// тут ми просто маємо його ід
-			}
+					$id_user = $modelUser->id;
+				} else { // New User
+					// реєструвати юзера і вернути його ід
+					$user = new Baza812User();
+					$user->name = '';
+					$user->phone = $phone;
+					$user->email = '';
+					$user->about_me = '';
+					$user->ids_object='';
+					$user->save(false);
+					$id_user = $user->id;
+				
+				}
 			
 			// тут ми маємо ід юзера і ід тип пароля (тариф)
 			// це все пишемо в таблицю ордерів і статус 0 .... і дістаємо ід
-			
+			$modelOrder = new Baza812UserBuyOrders();
+			$modelOrder->id_user = $id_user;
+			$modelOrder->id_type_pasword = $tarif;
+			$modelOrder->status = 0;
+			$modelOrder->pasword = 0; 
+			$modelOrder->save(false);
+			$order_id=$modelOrder->id;
+				
 			$data = array(
-					'summ' => $price, // витягнеш з бази по тарифах
-					'order_id' => 12, // id ордера
-					'description' => 'Sraka chlen' // .....
+					'summ' => $price, // з бази по тарифах
+					'order_id' => $order_id, // id ордера
+					'description' => $description // .....
 			);
 			
 			Yii::app()->paysto->genere_form($data);
-			
 		}
 	}
 	
@@ -86,23 +102,82 @@ class ByAccessController extends Controller {
 		
 		if ($id_order = Yii::app()->paysto->check_paid()) {
 			// по ід ми дістаємо наш ордер з бд
+			$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order); 
 			
-			// робиш перевірку чи статус дорівнює 0 то важливо
+			
+			if ($modelOrders->status == 0){
+			// перевіркa чи статус дорівнює 0. важливо
 			// міняємо статус в таблиці ордерів
-			
+				$modelOrders->status = 1;
+				$pas=$this->_generatepasword();
+				$id_type_pasword=$modelOrders->id_type_pasword;
+				$modelOrders->pasword = $pas;
+				$user_id=$modelOrders->id_user;
+				$modelOrders->save(false);
+				/*$model = new Baza812UserBuyOrders();
+				$model->findByPk($id_order);
+				$user_id=$model->user_id;
+				$id_type_pasword->$model->id_type_pasword;
+				$model->status = 1;
+				$pas=_generatepasword();
+				$model->pasword = $pas;
+				$model->save(false);*/
 			// заповняємо таблицю доступів
+				$modelUserAccess = new Baza812UserAccess();
+				$modelUserAccess->user_id = $user_id;
+				$modelUserAccess->pasword = $pas;
+				$modelUserAccess->when_get_pasword = time();
+				$modelUserAccess->type_pasword = $id_type_pasword;
+				if ($id_type_pasword==8){
+					$modelUserAccess->number_opened_phone_allowed = 25;
+				}else{
+					$modelUserAccess->number_opened_phone_allowed = 0;
+				}
+				$modelUserAccess->save(false);
+				
+				/// відправити смс
+
+			}
+			
 		}
 	}
 	
 	public function actionPay_callback_success() {
 		
 		$id_order = $_POST['PAYSTO_INVOICE_ID'];
-		// витянеш ордер з бд і перевіриш статус якщо 0 значить щось було не так і виводиш повідомлення 
-		//якщо 1 тоді виводиш все гуд 
+		// ордер з бд і перевірити статус якщо 0 значить щось було не так і вивести повідомлення
+		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
+		list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms($modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
+		list($status, $time) = Yii::app()->smsc->get_status($sms_id, $modelOrders->Baza812User->phone);
+		if ($modelOrders->status == 1){
+			//якщо 1 тоді все гуд
+			$ok='ok';	
+		}else{
+			$ok='not_ok';
+		}
+		$this->render('view', array('ok'=>$ok, 'model'=>$modelOrders, 'smsstatus'=>$status));
+ 
 	}
 	
 	public function actionPay_callback_fail() {
 		$id_order = $_POST['PAYSTO_INVOICE_ID'];
+		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
+		$modelOrders->status=-1;
+		$modelOrders->save(false);
+		$this->render('view', array('ok'=>'abort', 'model'=>$modelOrders));
 		// ставиш статус -1 і 
+	}
+	private function _generatepasword()
+	{
+		$pas=rand(10000, 99999);
+		while (Baza812UserAccess::model()->find(array(
+				'select'=>'pasword',
+				'condition'=>'pasword=:pas',
+				'params'=>array(':pas'=>$pas)
+		)))
+		{
+			$pas=rand(10000, 99999);
+		}
+		return $pas;
 	}
 }
