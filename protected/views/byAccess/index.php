@@ -54,9 +54,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	<?php $i=1; foreach ($model as $mod):?>
 	<input type="radio" value="<?php echo $mod->id;?>" name="tarif" id="t<?php echo $i;?>" <?php echo ($_POST['tarif']==$mod->id)?'checked':'';?>>
 	<label for="t<?php echo $i?>"><span><?php echo $mod->name?></span></label> 
-	<input id="p<?php echo $i?>" type='hidden' value="<?php echo $mod->price;?> &#xa750;">
+	<input id="p<?php echo $i?>" type='hidden' value="<?php echo $mod->price;?>">
 	<?php $i++; endforeach;?>
-	<div id='pr'></div>
+	<div style='  margin-left: 620px; position: absolute;'>
+	<span id='pr'></span><span><img id='r' style='float:right; margin-right:-80px; margin-top:20px; display:none;' src='/img/p-buy.png'></span>
+	</div>
 </fieldset>
 <?php echo (isset($not_tarif)&$not_tarif!='')?'<p style="color:red">'.$not_tarif.'</p>':'';?>
 
@@ -73,12 +75,16 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     $('document').ready(function() {
         $(".phone").mask('(999)999-99-99');
     	$('#t1').on('change', function () {
+        	$('#r').css('display','block');
     		$('#pr').text($('#p1').val());
+    		$('#pr').html()
     		});
     	$('#t2').on('change', function () {
+    		$('#r').css('display','block');
     		$('#pr').text($('#p2').val());
     		});
     	$('#t3').on('change', function () {
+    		$('#r').css('display','block');
     		$('#pr').text($('#p3').val());
     		});
     })

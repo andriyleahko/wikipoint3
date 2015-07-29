@@ -275,7 +275,7 @@ body {
 		</div>
 		<div style="float:right; margin-top: -55px; line-height: 20px;">
 			<b style="font-size:14px;">
-				Если у вас возникли сложности — обратитесь в службу поддержки:
+				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
 				+7 (812) 123-45-67, support@baza812.ru
 			</b>

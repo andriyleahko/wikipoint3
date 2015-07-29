@@ -84,7 +84,7 @@
             <?php endforeach; ?>
         <?php endif; ?>
             <div class="info">
-				<p class="price"><?php echo substr_replace($item->price, '.000', -3) ?> &#xa750; </p>
+				<p class="price"><?php echo substr_replace($item->price, '.000', -3) ?><img style='margin-top:1px;' src='/img/p.png'></p>
 				
             	<p class="type"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 

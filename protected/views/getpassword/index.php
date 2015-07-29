@@ -70,7 +70,7 @@ $('#main-search').empty();
 
 
 
-    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1200 &#xa750;</p>
+    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1200 <img style='margin-top:1px;' src='/img/p-pass.png'></p>
     <p class="reward">∞<span class="icon-key">&nbsp;</span></p>
     <a class="button button-accent" href="/byAccess">Варианты оплаты</a>
 
@@ -94,7 +94,7 @@ $('#main-search').empty();
 
     <p class="activity"><span>Написать отзыв Вконтакте</span> Вы получете один бесплатный пароль</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
-    <a class="button" href="">Написать отзыв</a>
+    <a class="button" href="http://vk.com/topic-90622364_31995394" target="_blank">Написать отзыв</a>
 
 
 

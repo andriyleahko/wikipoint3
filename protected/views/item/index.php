@@ -160,7 +160,7 @@ echo $model->building_number ?></h1>
         <div class="panorama" id='pano'></div>
     </div>
     <div class="right-column">
-        <p class="price"><?php echo substr_replace($model->price, '.000', -3) ?> &#xa750;<span> в месяц</span></p>
+        <p class="price"><?php echo substr_replace($model->price, '.000', -3) ?> <img style='margin-top:1px;' src='/img/p-item.png'><span> в месяц</span></p>
         <div class="features" style='padding-top: 17px; background: transparent; height: 70px;'>
             <div style='text-align: center; font: italic 14px/20px "PT Sans"; padding-top:5px;'>
                 <?php if ($model->ObjectsMoreinfo->furniture == 1): ?>

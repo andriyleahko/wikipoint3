@@ -52,18 +52,18 @@ class Baza812User extends CActiveRecord
 		);
 	}
 
-	/**
+	/** 
 	 * @return array customized attribute labels (name=>label)
 	 */
 	public function attributeLabels()
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'phone' => 'Phone',
-			'email' => 'Email',
-			'about_me' => 'About me',
-			'ids_object'=>'Id objects'
+			'name' => 'Имя',
+			'phone' => 'телефон',
+			'email' => 'email',
+			'about_me' => 'описания',
+			'ids_object'=>'объекты'
 		);
 	}
 

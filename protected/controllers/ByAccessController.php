@@ -14,7 +14,7 @@ class ByAccessController extends Controller {
 	}
 	
 	public function actionBuy() {
-
+		Yii::app()->session['order_id'] = '';
 		$modelTypePasword = Baza812TypePasword::model ()->findAll ( array (
 				'select' => '*',
 				'condition' => 'price<>:price',
@@ -88,6 +88,8 @@ class ByAccessController extends Controller {
 					'description' => $description // .....
 			);
 			
+			
+			Yii::app()->session['order_id'] = $order_id;
 			Yii::app()->paysto->genere_form($data);
 		}
 	}
@@ -147,8 +149,10 @@ class ByAccessController extends Controller {
 		$id_order = $_POST['PAYSTO_INVOICE_ID'];
 		// ордер з бд і перевірити статус якщо 0 значить щось було не так і вивести повідомлення
 		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
-		list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms($modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
-		list($status, $time) = Yii::app()->smsc->get_status($sms_id, $modelOrders->Baza812User->phone);
+		
+		list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms('7'.$modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
+		list($status, $time) = Yii::app()->smsc->get_status($sms_id, '7'.$modelOrders->Baza812User->phone);
+		
 		if ($modelOrders->status == 1){
 			//якщо 1 тоді все гуд
 			$ok='ok';	
@@ -160,7 +164,8 @@ class ByAccessController extends Controller {
 	}
 	
 	public function actionPay_callback_fail() {
-		$id_order = $_POST['PAYSTO_INVOICE_ID'];
+		$id_order = Yii::app()->session['order_id'];
+		Yii::app()->session['order_id'] ='';
 		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
 		$modelOrders->status=-1;
 		$modelOrders->save(false);

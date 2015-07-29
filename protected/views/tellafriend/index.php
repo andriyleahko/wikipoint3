@@ -6,13 +6,23 @@
 
 <ol>
 	<li>Нажмите на кнопку: 
-<?php /************************************************?>
-		<div style='   float: right; margin-right: 54%; margin-top: 5px;'>
-			<script type="text/javascript">
-				document.write(VK.Share.button(false,{type: "round", text: "Рассказать друзьям вконтакте"}));
-			</script>
+<?php ?>
+		<div style='   float: right; margin-right: 60%; margin-top: 5px;'>
+<script type="text/javascript">
+document.write(VK.Share.button({
+	  	url: 'http://baza812.ru',
+	  	title: 'База812. Аренда квартир и комнат',
+	  	description: 'Самая полная, актуальная база по аренде квартир и комнат',
+	  	image: 'http://baza812.ru/img/logo.png',
+	  	noparse: true
+  	},{
+		type:'round',
+  		text: 'Рассказать друзьям vk'
+  	}
+  	));
+</script>
 		</div>
-<?php **************************************************/?>
+<?php?>
 	</li>
 	<li>Убедитесь, что на вашей странице появилась запись "База 812". </li>
 	<li>Напишите <a href="http://vk.com/write203960482" target='balnk'>личное сообщение</a> администратору: "Рассказал друзьям" + ваш номер телефона.</li>

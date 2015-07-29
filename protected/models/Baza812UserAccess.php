@@ -47,7 +47,7 @@ class Baza812UserAccess extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'Baza812User'=>array(self::BELONGS_TO, 'Baza812UserAccess', 'user_id'),
+				'Baza812User'=>array(self::BELONGS_TO, 'Baza812User', 'user_id'),
 				'Baza812TypePasword'=>array(self::BELONGS_TO, 'Baza812TypePasword', 'type_pasword'),
 		);
 	}
