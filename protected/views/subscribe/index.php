@@ -50,6 +50,8 @@
 <p>
 	<label class="wide">
 		<span>Рассчитываю снять на сумму до:</span>
+		<input type="text" name='Baza812Subscribe[price_max]' value="<?php echo $model->price_max;?>">		
+		<?php /*
 		<select name="Baza812Subscribe[price_max]">
 			<option value="15000" <?php echo($model->price_max==15000)?'selected':'';?>>15 000</option>
 			<option value="20000" <?php echo(!isset($model->price_max)||$model->price_max==20000)?'selected':'';?>>20 000</option>
@@ -60,6 +62,8 @@
 			<option value="45000" <?php echo($model->price_max==45000)?'selected':'';?>>45 000</option>
 			<option value="50000" <?php echo($model->price_max==50000)?'selected':'';?>>50 000</option>
 		</select>
+		*/?>
+		
 	</label>
 </p>
 
@@ -91,6 +95,8 @@
 </script>
 
 
+
+<?php /*
 <p>
 	<label class="wide">
 		<span>Кто будет проживать:</span>
@@ -142,7 +148,7 @@
 
 <p><label class="wide"><span>Расскажите о себе:</span><textarea name='Baza812Subscribe[about_me]'><?php echo (isset($model->about_me)&&$model->about_me)?$model->about_me:'';?></textarea></p>
 <p><label class="wide"><span>Присылать варианты за 50%:</span><input type="text" name='Baza812Subscribe[variant]' value="<?php echo (isset($model->variant)&&$model->variant)?$model->variant:'';?>"></label></p>
-
+*/?>
 
 <p class="break-line">&nbsp;</p>
 

@@ -20,11 +20,7 @@ h1 {
 	margin-bottom: 60px;
 }
 
-.wrapper {
-	width: 940px;
-	/*background: rgba(0, 255, 255, 0.62);*/
-	margin: auto;
-}
+.wrapper {width: 940px; background: white /*#fbfaf6*/; margin: auto; overflow: hidden;  padding: 10px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5); margin-bottom:10px; margin-top:1px;}
 
 
 #search-box {

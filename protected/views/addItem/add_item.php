@@ -1,5 +1,6 @@
 <script>
 $('#main-search').empty();
+$('#main-search').attr('style','display:none');
 </script>
 
 <style>
@@ -69,12 +70,12 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 <p class="wide-label">
 	<span>Количество комнат:</span>
 	<select id="sel-flat" data-type="flat" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'flat') : ?> style="display:none" <?php endif;?><?php endif;?> name="AddObjectForm[flat]">
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '1') : ?> selected="selected" <?php endif;?><?php endif;?> value="1">1 комнотна</option>
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '2') : ?> selected="selected" <?php endif;?><?php endif;?> value="2">2 комнотна</option>
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '3') : ?> selected="selected" <?php endif;?><?php endif;?> value="3">3 комнотна</option>
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '4') : ?> selected="selected" <?php endif;?><?php endif;?> value="4">4 комнотна</option>
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '5') : ?> selected="selected" <?php endif;?><?php endif;?> value="5">5 комнотна</option>
-            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '6') : ?> selected="selected" <?php endif;?><?php endif;?> value="6">много комнотна</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '1') : ?> selected="selected" <?php endif;?><?php endif;?> value="1">1 ККВ</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '2') : ?> selected="selected" <?php endif;?><?php endif;?> value="2">2 ККВ</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '3') : ?> selected="selected" <?php endif;?><?php endif;?> value="3">3 ККВ</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '4') : ?> selected="selected" <?php endif;?><?php endif;?> value="4">4 ККВ</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '5') : ?> selected="selected" <?php endif;?><?php endif;?> value="5">5 ККВ</option>
+            <option <?php if (isset($_POST['AddObjectForm']['flat'])): ?><?php if ($_POST['AddObjectForm']['flat'] == '6') : ?> selected="selected" <?php endif;?><?php endif;?> value="6">Многокомн.</option>
                 
 	</select>
 	<select id="sel-room" <?php if (isset($_POST['AddObjectForm']['room_flat'])): ?><?php if ($_POST['AddObjectForm']['room_flat'] == 'room') : ?> style="display:none" <?php endif;?><?php else: ?>style="display:none"<?php endif;?> data-type="room" name="AddObjectForm[rooms]">
@@ -102,21 +103,64 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 	<span  class="wide-label">Район:</span>
         <select name="AddObjectForm[district]">
                 <?php foreach ($district as $d): ?>
-                    <option <?php if (isset($_POST['AddObjectForm']['district'])): ?><?php if ($_POST['AddObjectForm']['district'] == $d->id) : ?> selected="selected" <?php endif;?><?php endif;?> value="<?php echo $d->id ?>"><?php echo $d->name?></option>
-                <?php endforeach;?>
-		
-	</select>
-	
+                    <option id="<?php echo 'DD'.$d->id?>" <?php if (isset($_POST['AddObjectForm']['district'])): ?><?php if ($_POST['AddObjectForm']['district'] == $d->id) : ?> selected="selected" <?php endif;?><?php endif;?> value="<?php echo $d->id ?>"><?php echo $d->name?></option>
+                <?php endforeach;?>		
+	   </select>
 </p>
+
+<?php // Убрать опцию ниизвестний район?>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#DD1000').attr('style','display:none');
+	})
+</script>
+
 
 <p class="wide-label">
 	<span>Улица:</span>
-        <select name="AddObjectForm[street]">
+	                <?php
+                // Streets 
+                $this->widget('zii.widgets.jui.CJuiAutoComplete', array(
+                    'id' => 'street_name',
+                    'name' => 'Allstreets',
+                   // 'value' => (isset($_POST['AddObjectForm']['street'])&&$_POST['AddObjectForm']['street'])?'':"",
+                    'source' => '/addItem/autocompleteStreets',
+                    'options' => array(
+                        'showAnim' => 'fold',
+                       // 'class' => 'full-width',
+                    		'select'=>'js:function( event, ui ) {
+                    		 	$.ajax({
+        							url: "/addItem/getStreetId?namestr="+ui.item.value, 
+        							type: "GET",
+        							success: function (data) {
+                    					dataJS = JSON.parse(data);
+										if (dataJS.error==1){
+                    						alert("Такой улицы не найдено!");
+										}else{
+											$("#street-field").val(dataJS.idStreet);
+										}
+        							}
+    							});
+           						return true;
+        					}',
+                    ),
+                    'htmlOptions' => array(
+                        'placeholder' => 'Улица',
+                    	
+                    ),
+                ));
+                
+                ?>
+
+                <input id="street-field" type='hidden' name="AddObjectForm[street]" value=''/>
+	<?php /*
+      <select name="AddObjectForm[street]">
                 <?php foreach ($street as $s): ?>
                     <?php if ($s->truename) : ?><option <?php if (isset($_POST['AddObjectForm']['street'])): ?><?php if ($_POST['AddObjectForm']['street'] == $s->id) : ?> selected="selected" <?php endif;?><?php endif;?> value="<?php echo $s->id ?>"><?php echo $s->truename?></option><?php endif;?>
                 <?php endforeach;?>
 		
 	</select>
+	*/?>
 	
 </p>
 
@@ -200,7 +244,7 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 	<input type="text" name="AddObjectForm[email]" value="<?php if (isset($_POST['AddObjectForm']['email'])): ?><?php echo $_POST['AddObjectForm']['email'] ?><?php endif;?>" />
 </p>
 
-<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="/js/jquery.maskedinput.js" ></script>
 <script type="text/javascript">
     $('document').ready(function() {
         $(".phone").mask('(999)999-99-99');
@@ -247,10 +291,13 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
         <input style="border: none" type="file" name="AddObjectForm[photoes][]" multiple="multiple"/>
 </p>
 
+<?php /*
 <p class="wide-label">
 	<span>Расскажите о себе:</span>
 	<textarea name="AddObjectForm[about_me]"><?php if (isset($_POST['AddObjectForm']['about_me'])): ?><?php echo $_POST['AddObjectForm']['about_me'] ?><?php endif;?></textarea>
 </p>
+*/?>
+
 
 <p class="wide-label">
 	<span>Расскажите об объекте:</span>

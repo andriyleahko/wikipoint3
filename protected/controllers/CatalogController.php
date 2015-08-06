@@ -3,7 +3,7 @@
 class CatalogController extends Controller
 {
         public $layout='page';
-        private $limit = 25;
+        private $limit = 10;
         
         
 	public function actionIndex()
@@ -25,6 +25,32 @@ class CatalogController extends Controller
                 				'ObjectsDovDistrict'
                               );
                 $where = ' t.status = 1 ';
+                
+                switch (Yii::app()->request->getParam('days')) {
+                	case 7:
+                		$where .=' AND (t.date_add >= "' . date('Y-m-d',time()-7*24*60*60).' 00:00:01' . '")';
+                		break;
+                	case 3:
+                		$where .=' AND (t.date_add >= "' . date('Y-m-d',time()-3*24*60*60).' 00:00:01' . '")';
+                		break;
+                	case 1:
+                		$where .=' AND (t.date_add >= "' . date('Y-m-d',time()).' 00:00:01' . '")';
+                		break;
+                	case -1:
+                		$dayFrom=Yii::app()->request->getParam('dayFrom');
+                		$dayTo=Yii::app()->request->getParam('dayTo');
+                		if(isset($dayFrom)&&$dayFrom){
+                			$where .=' AND (t.date_add >= "' . $dayFrom.' 00:00:01' . '")';
+                		}
+                		if(isset($dayTo)&&$dayTo){
+                			$where .=' AND (t.date_add <= "' . $dayTo.' 23:59:59' . '")';
+                		}
+                		break;
+                	default:
+                		$where .=' AND (t.date_add >= "' . date('Y-m-d H:i:s',time()-7*24*60*60) . '")';
+                		break;
+                }
+                
                 $rooms = array();
                 if (Yii::app()->request->getParam('rooms-amount')){
                     foreach (Yii::app()->request->getParam('rooms-amount') as $room)
@@ -66,6 +92,9 @@ class CatalogController extends Controller
                 if (!empty($distrist)) {
                 	$where .= " AND (ObjectsDovDistrict.id in(" . rtrim($distrist,',') . "))";
                 }
+				
+                
+
                 
                 
                 $criteria->addCondition($where);

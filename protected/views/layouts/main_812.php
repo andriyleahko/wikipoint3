@@ -33,6 +33,22 @@ if(isset($_GET)){
 	}else{
 		$roomsamount=array();
 	}
+	if(isset($_GET['days'])){
+		$days=strip_tags($_GET['days']);
+	}else{
+		$days=7;
+	}
+	if(isset($_GET['dayFrom'])){
+		$dayFrom=strip_tags($_GET['dayFrom']);
+	}else{
+		$dayFrom=date('Y-m-d',time()-7*24*60*60);
+	}
+	if(isset($_GET['dayTo'])){
+		$dayTo=strip_tags($_GET['dayTo']);
+	}else{
+		$dayTo=date('Y-m-d',time());
+	}
+	//var_dump($_GET['days']); exit;
 } 
 $aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
 7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
@@ -77,11 +93,54 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
         <script src="/js/jquery.cookie.js" ></script>
         
-        <script type="text/javascript" src="/js/jquery.maskedinput.js" ></script>
+       
         <script  type="text/javascript" src="/js/baza812.js"></script>
+
+<link rel="stylesheet"	href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script "text/javascript">
+$(document).ready(function(){
+	$.datepicker.regional['ru'] = {
+			closeText: 'Закрыть',
+			prevText: '&#x3c;Пред',
+			nextText: 'След&#x3e;',
+			currentText: 'Сегодня',
+			monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+			'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+			'Июл','Авг','Сен','Окт','Ноя','Дек'],
+			dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+			dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+			dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+			dateFormat: 'dd.mm.yy',
+			firstDay: 1,
+			isRTL: false
+			};
+	$(function() {
+		$.datepicker.setDefaults($.datepicker.regional['ru']);
+		$(".datepicker").datepicker({
+			dateFormat: 'yy-mm-dd',
+
+			});
+	});
+
+	
+  });
+</script>
+<style>
+        .ui-widget {
+  font-size:10px;
+}        
+#ui-datepicker-div {
+font: 62.5% sans-serif;
+}
+        </style>
+
         <title>Аренда квартир и комнат</title>
     </head>
-    <body>
+    <body style='background-color:#00CCFF'>
         <div class="wrapper">
 
             <div id="main-menu">
@@ -127,20 +186,6 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         <p>по цене от </p>
 		<input class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_from;?>">
 <!--         <select name="price_from"> -->
-<!--             <option value="0" selected="selected">любой</option> -->
-<!--             <option value="15000">15.000 руб.</option> -->
-<!--             <option value="16000">16.000 руб.</option> -->
-<!--             <option value="17000">17.000 руб.</option> -->
-<!--             <option value="18000">18.000 руб.</option> -->
-<!--             <option value="19000">19.000 руб.</option> -->
-<!--             <option value="20000">20.000 руб.</option> -->
-<!--             <option value="21000">21.000 руб.</option> -->
-<!--             <option value="25000">25.000 руб.</option> -->
-<!--             <option value="28000">28.000 руб.</option> -->
-<!--             <option value="30000">30.000 руб.</option> -->
-<!--             <option value="33000">33.000 руб.</option> -->
-<!--             <option value="35000">35.000 руб.</option> -->
-<!--             <option value="40000">40.000 руб.</option> -->
 <!--             <option value="45000">45.000 руб.</option> -->
 <!--             <option value="50000">50.000 руб.</option> -->
 <!--         </select> -->
@@ -150,19 +195,36 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         <input class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_to;?>">
 <!--         <select name="price_to"> -->
 <!--             <option value="0" selected="selected">любой</option> -->
-<!--             <option value="20000">20.000 руб.</option> -->
-<!--             <option value="21000">21.000 руб.</option> -->
-<!--             <option value="25000">25.000 руб.</option> -->
-<!--             <option value="28000">28.000 руб.</option> -->
-<!--             <option value="30000">30.000 руб.</option> -->
-<!--             <option value="33000">33.000 руб.</option> -->
-<!--             <option value="35000">35.000 руб.</option> -->
-<!--             <option value="40000">40.000 руб.</option> -->
-<!--             <option value="45000">45.000 руб.</option> -->
-<!--             <option value="50000">50.000 руб.</option> -->
 <!--         </select> -->
 
         <input type="submit" id="--search-submit" value="Поиск">
+        <br>
+			<div class="checkboxes-wrapper">
+                <div id='d-7' class="radioss <?php echo($days=='7')?'acti':'';?>">
+                    <span></span>
+                    <input type="radio" value="7" name="days" <?php echo($days=='7')?'checked':"";?>><label>за 7 дней</label>
+                </div>
+                <div id='d-3' class="radioss <?php echo($days=='3')?'acti':'';?>">
+                    <span></span>
+                    <input type="radio" value="3" name="days" <?php echo($days=='3')?'checked':"";?>><label>за 3 дня</label>
+                </div>
+				<div id='d-0' class="radioss <?php echo($days=='1')?'acti':'';?>">
+                    <span></span>
+                    <input type="radio" value="1" name="days" <?php echo($days=='1')?'checked':"";?>><label>за сегодня</label>
+                </div>
+               	<div id='d-f-t' class="radioss <?php echo($days=='-1')?'acti':'';?>">
+                    <span></span>
+                    <input type="radio" value="-1" <?php echo($days=='-1')?'checked':"";?> name="days"><label>с</label>
+                    <input	id='dayFrom' maxlength="19" name='dayFrom' value="<?php echo $dayFrom?>" style='display: block;  margin-left: 52px; width: 140px;' class='datepicker'>
+                    <label style='margin-left:175px;'>по</label>
+                    <input	id='dayTo' maxlength="19" name='dayTo' value="<?php echo $dayTo?>" style='display: block;  margin-left: 252px; width: 140px;' class='datepicker'>
+                </div>	
+			
+            </div>
+            
+            
+     
+        
     </form>
 
 		</div>
@@ -187,7 +249,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 			<b style="font-size:14px;">
 				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
-				+7 (812) 123-45-67, support@baza812.ru
+				+7 (965) 035-63-02, 6425123@gmail.com
 			</b>
 		</div>
         </div>

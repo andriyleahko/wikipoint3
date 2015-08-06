@@ -21,8 +21,8 @@
         <?php $first = null; ?>
         <div class="item">
             <?php if ($item->Pictures) : ?>
-                <?php foreach ($item->Pictures as $k => $pic) : ?>
-                    <?php if (!$k) $first = "http://grandprime.info/" . $pic->file ?>
+                <?php foreach ($item->Pictures as $k => $pic) : ?> 
+                    <?php if (!$k) $first = Yii::app()->params['imgDomain']."/" . $pic->file ?>
                 <?php endforeach; ?>
             <?php endif; ?>
             <div class="image" style="overflow: hidden">
@@ -80,7 +80,7 @@
             </div>
             <?php if ($item->Pictures) : ?>
                 <?php foreach ($item->Pictures as $k => $pic) : ?>
-                    <?php if ($k): ?><a class="fancy" rel="example_group<?php echo $item->id_object ?>" style="display:none" href="http://grandprime.info/<?php echo $pic->file ?>"> </a><?php endif; ?>
+                    <?php if ($k): ?><a class="fancy" rel="example_group<?php echo $item->id_object ?>" style="display:none" href="<?php echo Yii::app()->params['imgDomain'];?>/<?php echo $pic->file ?>"> </a><?php endif; ?>
             <?php endforeach; ?>
         <?php endif; ?>
             <div class="info">

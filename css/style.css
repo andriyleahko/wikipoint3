@@ -6,7 +6,7 @@ h2 {font: 700 36px/60px "PT Sans"; color: #393939; text-align: center; margin-bo
 h3 {font: 700 24px/30px "PT Sans"; color: #393939; margin-bottom: 30px;}
 .subheader {font: italic 29px/60px "PT Sans"; color: #4A4A4A; text-align: center; margin-bottom: 40px;}
 /*.wrapper {width: 940px; background: rgba(0, 255, 255, 0.62); margin: auto; overflow: hidden;}*/
-.wrapper {width: 940px; background: white /*#fbfaf6*/; margin: auto; overflow: hidden;  padding: 10px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);}
+.wrapper {width: 940px; background: white /*#fbfaf6*/; margin: auto; overflow: hidden;  padding: 10px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5); margin-bottom:10px; margin-top:1px;}
 
 
 /* Формы */
@@ -135,9 +135,39 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 
 
 
+.radioss{
+    display: inline-block;
+    line-height: 16px;
+    min-width: 86px;
+    padding-left: 30px;
+    position: relative;
+}
+.radioss input {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: -20px;
+}
+.radioss span {
+    background: rgba(0, 0, 0, 0) url("/img/checkbox-radio.png") repeat scroll 0 0;
+}
+.radioss label {
+    cursor: pointer;
+}
 
+.checkboxes-wrapper {
+}
 
-
-
+.radioss span {
+    cursor: pointer;
+    height: 16px;
+    left: 6px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+.radioss.acti span {
+    background-position: 0 -16px;
+}
 
 

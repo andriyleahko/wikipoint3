@@ -146,7 +146,7 @@ echo $model->building_number ?></h1>
                 <div class="cycle-prev"></div>
     			<div class="cycle-next"></div>
                 <?php foreach ($model->Pictures as $pic): ?>
-                        <img style='height: 540px; width: 620px; text-align:center;' src="<?php echo 'http://grandprime.info/' . $pic['file']; ?>" />
+                        <img style='height: 540px; width: 620px; text-align:center;' src="<?php echo Yii::app()->params['imgDomain'].'/' . $pic['file']; ?>" />
    				 <?php endforeach; ?>
                 </div>
 <!--                 <div id='control'> -->
@@ -154,7 +154,7 @@ echo $model->building_number ?></h1>
 <!--                     <a href="#"><span id="next">Next</span></a> -->
 <!--                 </div> -->
                 <?php } else { ?>
-                <img style='height: 540px; width: 620px; text-align:center;' src="http://grandprime.info/images/no-photo.jpg" />
+                <img style='height: 540px; width: 620px; text-align:center;' src=<?php echo Yii::app()->params['imgDomain']?>"/images/no-photo.jpg" />
                 <?php } ?>
         </div>
         <div class="panorama" id='pano'></div>

@@ -244,7 +244,7 @@ body {
 </style>
 <title>Аренда квартир и комнат</title>
 </head>
-<body>
+<body style='background-color:#00CCFF'>
 
 
 <div id="item" class="wrapper">
@@ -277,7 +277,7 @@ body {
 			<b style="font-size:14px;">
 				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
-				+7 (812) 123-45-67, support@baza812.ru
+				+7 (965) 035-63-02, 6425123@gmail.com
 			</b>
 		</div>
 </div>

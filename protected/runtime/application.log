@@ -9856,3 +9856,476 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/08/05 16:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/05 16:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/05 18:06:03 [error] [exception.CException] exception 'CException' with message 'В классе CJuiDateTimePicker должны быть заданы значения свойств "model" и "attribute", либо значение "name".' in D:\OpenServer\domains\baza812.loc\framework\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\extensions\CJuiDateTimePicker\CJuiDateTimePicker.php(26): CJuiInputWidget->resolveNameID()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(181): CJuiDateTimePicker->run()
+#2 D:\OpenServer\domains\baza812.loc\protected\views\layouts\main_812.php(169): CBaseController->widget('CJuiDateTimePic...', Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('???<div id="sea...')
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('???<div id="sea...')
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#10 D:\OpenServer\domains\baza812.loc\protected\views\layouts\page.php(6): CBaseController->endContent()
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#14 D:\OpenServer\domains\baza812.loc\protected\controllers\MainController.php(10): CController->render('index', Array)
+#15 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): MainController->actionIndex()
+#16 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('')
+#20 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/08/05 18:43:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ui-lightness/jquery-ui-1.7.2.custom.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ui-lightnes...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui-lightness/jquery-ui-1.7.2.custom.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 18:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ui-lightness/jquery-ui-1.7.2.custom.css".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ui-lightnes...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui-lightness/jquery-ui-1.7.2.custom.css
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 21:48:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "byAccesstrg".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('byAccesstrg')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/byAccesstrg
+---
+2015/08/05 22:17:59 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:17:58))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:17:59 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:17:58))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:17:58)).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:17:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:17:58))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:17:58))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(93): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=7&dayFrom=&dayTo=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 22:19:05 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:19:05))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:19:05 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:19:05))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:19:05)).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:19:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:19:05))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (date_add >= 2015-07-29 22:19:05))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(93): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=7&dayFrom=&dayTo=
+---
+2015/08/05 22:20:19 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:20:19))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:20:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:20:19))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:20:19)).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (93)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:20:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:20:19))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:20:19))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(93): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=7&dayFrom=&dayTo=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 22:22:04 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:22:04))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (95)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:22:04 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:22:04))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:22:04)).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (95)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:22:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:22:04))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:22:04))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(95): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=7&dayFrom=&dayTo=
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 22:40:30 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:40:30))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (96)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:40:30 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:40:30))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:40:30)).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (96)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:40:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:40:30))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= 2015-07-29 22:40:30))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(96): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=7&dayFrom=&dayTo=
+HTTP_REFERER=http://baza812.loc/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-04-01&dayTo=2015-08-05
+---
+2015/08/05 22:42:42 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-05-04 00:00:01"))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (96)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:42:42 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59>= t.date_add >= "2015-05-04 00:00:01"))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-05-04 00:00:01")).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (96)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:42:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59>= t.date_add >= "2015-05-04 00:00:01"))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-05-04 00:00:01"))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(96): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-05-04&dayTo=2015-08-31
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 22:44:57 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-06-01 00:00:01"))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (97)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:44:57 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59>= t.date_add >= "2015-06-01 00:00:01"))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-06-01 00:00:01")).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (97)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 22:44:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59>= t.date_add >= "2015-06-01 00:00:01"))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (2015-08-31 23:59:59>= t.date_add >= "2015-06-01 00:00:01"))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(97): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-06-01&dayTo=2015-08-31
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/05 23:29:59 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-04-01 00:00:01") AND (t.date_add <=  23:59:59"))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (101)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 23:29:59 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':59:59"))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-04-01 00:00:01") AND (t.date_add <=  23:59:59")).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (101)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 23:29:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':59:59"))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-04-01 00:00:01") AND (t.date_add <=  23:59:59"))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(101): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-04-01&dayTo=
+HTTP_REFERER=http://baza812.loc/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-04-01&dayTo=
+---
+2015/08/05 23:53:59 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-07-01 00:00:01") AND (t.date_add <= 2015-08-05 23:59:59"))
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (101)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 23:53:59 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59"))' at line 1. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-07-01 00:00:01") AND (t.date_add <= 2015-08-05 23:59:59")).
+in D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php (101)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/05 23:53:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23:59:59"))' at line 1. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id_object`) FROM `objects` `t`  LEFT OUTER JOIN `objects_metro` `ObjectsMetro` ON (`ObjectsMetro`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `owners` `Owners` ON (`t`.`id_owner`=`Owners`.`id_owner`) LEFT OUTER JOIN `objects_appartment` `ObjectsAppartment` ON (`ObjectsAppartment`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_type` `ObjectsDovType` ON (`t`.`id_objectType`=`ObjectsDovType`.`id`) LEFT OUTER JOIN `pictures` `Pictures` ON (`Pictures`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_streets` `ObjectsDovStreets` ON (`t`.`id_street`=`ObjectsDovStreets`.`id`) LEFT OUTER JOIN `objects_moreinfo` `ObjectsMoreinfo` ON (`ObjectsMoreinfo`.`id_object`=`t`.`id_object`) LEFT OUTER JOIN `objects_dov_district` `ObjectsDovDistrict` ON (`t`.`id_district`=`ObjectsDovDistrict`.`id`) WHERE ( t.status = 1  AND (t.date_add >= "2015-07-01 00:00:01") AND (t.date_add <= 2015-08-05 23:59:59"))' in D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 D:\OpenServer\domains\baza812.loc\protected\controllers\CatalogController.php(101): CActiveRecord->count(Object(CDbCriteria))
+#5 [internal function]: CatalogController->actionSearch(1)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CatalogController), Array)
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogController), Object(ReflectionMethod), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('search')
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog/search')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/catalog/search?metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2015-07-01&dayTo=2015-08-05
+HTTP_REFERER=http://baza812.loc/
+---
+2015/08/06 11:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/06 11:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/06 13:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "vk.com/images/icons/darr.gif".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('vk.com/images/i...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/vk.com/images/icons/darr.gif
+HTTP_REFERER=http://baza812.loc/getpassword
+---
+2015/08/06 13:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "vk.com/images/icons/darr.gif".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('vk.com/images/i...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/vk.com/images/icons/darr.gif
+---
+2015/08/06 14:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "docs".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('docs')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs?oid=-90622364
+HTTP_REFERER=http://baza812.loc/getpassword
+---
+2015/08/06 14:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "autocompleteStreet".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('autocompleteStr...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('autocompleteStr...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/autocom...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/autocompleteStreet?term=%D0%90
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 14:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "autocompleteStreet".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('autocompleteStr...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('autocompleteStr...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/autocom...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/autocompleteStreet?term=%D0%90%D0%B1
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 14:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "autocompleteStreet".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('autocompleteStr...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('autocompleteStr...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/autocom...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/autocompleteStreet?term=%D0%90%D0%B1%D0%BB
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 14:52:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "autocompleteStreet".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('autocompleteStr...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('autocompleteStr...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/autocom...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/autocompleteStreet?term=%D0%90
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 14:54:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "autocompleteStreet".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('autocompleteStr...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('autocompleteStr...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/autocom...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/autocompleteStreet?term=%D0%90%D0%B1
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 16:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "getStreetId".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('getStreetId')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('getStreetId')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('addItem/getStre...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/addItem/getStreetId?namestr=ui.item.value
+HTTP_REFERER=http://baza812.loc/add-item
+---
+2015/08/06 16:38:00 [error] [exception.CException] exception 'CException' with message 'В классе CJuiAutoComplete должны быть заданы значения свойств "model" и "attribute", либо значение "name".' in D:\OpenServer\domains\baza812.loc\framework\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\zii\widgets\jui\CJuiAutoComplete.php(75): CJuiInputWidget->resolveNameID()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(181): CJuiAutoComplete->run()
+#2 D:\OpenServer\domains\baza812.loc\protected\views\addItem\add_item.php(145): CBaseController->widget('zii.widgets.jui...', Array)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('add_item', Array, true)
+#7 D:\OpenServer\domains\baza812.loc\protected\controllers\AddItemController.php(136): CController->render('add_item', Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(49): AddItemController->actionAdd()
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('add')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('AddItem/add')
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\OpenServer\domains\baza812.loc\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/add-item
+---
+2015/08/06 16:42:02 [error] [php] Only variables should be passed by reference (D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php:116)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): AddItemController->runAction()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): AddItemController->runActionWithFilters()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): AddItemController->run()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/add-item
+in D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php (116)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\AddItemController.php (48)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/06 16:46:24 [error] [php] Only variables should be passed by reference (D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php:116)
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): AddItemController->runAction()
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): AddItemController->runActionWithFilters()
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): AddItemController->run()
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\OpenServer\domains\baza812.loc\index.php(20): CWebApplication->run()
+REQUEST_URI=/add-item
+in D:\OpenServer\domains\baza812.loc\protected\models\AddObjectForm.php (116)
+in D:\OpenServer\domains\baza812.loc\protected\controllers\AddItemController.php (48)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/06 17:51:14 [warning] [application] Не удалось присвоить небезопасный атрибут "rooms-amount" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (20)
+2015/08/06 17:51:14 [warning] [application] Не удалось присвоить небезопасный атрибут "dictrict" класса "Baza812Subscribe".
+in D:\OpenServer\domains\baza812.loc\protected\controllers\SubscribeController.php (34)
+in D:\OpenServer\domains\baza812.loc\index.php (20)

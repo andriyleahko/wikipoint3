@@ -6,8 +6,8 @@
 </div>
 <div id="main-page">
 
-	<h1>Аренда квартир и комнат </h1>
-	<p class="subheader">без посредников</p>
+	<h1>Снять квартиру и комнату</h1>
+	<p class="subheader">без комиссии</p>
 	<div id="statistics">
 		<p>Сейчас в базе <strong><?php echo $NumberObjects?></strong> объектов.</p>
 		<p><a href="/catalog/search?rooms-amount[]=1&search=1&price_from=8000&price_to=30000">1-комнатные квартиры,</a> <a href="/catalog/search?rooms-amount[]=7,8,9,10,11,12,13,14,15&search=1&price_from=8000&price_to=30000">комнаты</a> <span class="pricerange">8.000–30.000</span> <img style='margin-top:1px;' src='/img/p-main.png'></p>

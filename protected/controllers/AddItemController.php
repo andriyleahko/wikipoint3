@@ -136,5 +136,27 @@ class AddItemController extends Controller {
         $this->render('add_item', array('metro' => $metro, 'model' => $modelAddForm, 'district' => $district, 'street' => $street));
     }
 
+    public function actionAutocompleteStreets() {
+    	$res = array();
+    	if (isset($_GET['term']) && $_GET['term']) {
+    		$qtxt ="SELECT name FROM objects_dov_streets WHERE name LIKE :name AND status=1 LIMIT 15";
+    		$command =Yii::app()->db->createCommand($qtxt);
+    		$street = stripslashes($_GET['term']);
+    		$command->bindValue(":name", $street.'%', PDO::PARAM_STR);// hacking protected
+    		$res =$command->queryColumn();
+    	}
+    	echo CJSON::encode($res);
+    	Yii::app()->end();
+    }
+    
+    public function actionGetStreetId($namestr='Абросимова Ул.'){
 
+    		if( $model=ObjectsDovStreets::model()->find('name=:name',array(':name'=>$namestr))){
+    			echo json_encode(array('idStreet' => $model->id));
+    			exit;
+    		}else{
+    			echo json_encode(array('error' => 1));
+    		}
+    	
+    }
 }

@@ -4,11 +4,11 @@
 	<div class="col-6">
 		<p><span>Адрес офиса:</span> 4-я линия В.О., 17</p>
 		<p><span>Время работы:</span> понедельник - пятница (с 10:00 до 19:00)</p>
-		<p><br/><span>Телефон:</span> (812) 123-45-67</p>
+		<p><br/><span>Телефон:</span> +7 (965) 035-63-02</p>
 	</div>
 	<div class="col-6">
-		<p><span>Тех. поддержка:</span> support@baza812.ru</p>
-		<p><span>Рекламный отдел:</span> sale@baza812.ru</p>
+		<p><span>Тех. поддержка:</span> 6425123@gmail.com, support@baza812.ru</p>
+		<p><span>Рекламный отдел:</span> 6425123@gmail.com</p>
 	</div>
 </div>
 

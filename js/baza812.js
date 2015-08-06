@@ -23,6 +23,21 @@ function selDistrict(el,district_id){
 }
 
 $(document).ready(function () {
+
+	//$('#d-7').find("input").attr('checked','checked');
+	// 7, 3, today, from ... to
+	$('.radioss').on('click', function () {
+		var id=$(this).attr('id');
+		$('.radioss').each(function(){
+			if ($(this).hasClass('acti')){
+				$(this).removeClass('acti');
+				$(this).find("input").removeAttr('checked');
+			}
+		});
+		$('#'+id).addClass('acti');
+		$('#'+id).find("input").attr('checked','checked');
+	});
+
 	
 	// reset metro and district
 	$('.reset').on('click', function () {
@@ -220,6 +235,11 @@ $(document).ready(function () {
 
     initMetro();
 
+    
+    if($('#flat').attr('checked','checked')){
+    	$('#sel-flat').css('display','inline-block');
+    	$('#sel-room').css('display','none');
+    }
 })
 
 function initMetro() {
