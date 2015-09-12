@@ -19,12 +19,12 @@ class Paysto extends CApplicationComponent
 		
 	
 	
-		echo "<form target='_balnk' id='pay-form-pay' accept-charset='UTF-8' method='POST' action='https://paysto.com/ru/pay'>
+		echo "<form id='pay-form-pay' accept-charset='UTF-8' method='POST' action='https://paysto.com/ru/pay'>
 		<input type='hidden' name='PAYSTO_SHOP_ID' value='{$this->shop_id}'>
 		<input type='hidden' name='PAYSTO_SUM' value='{$data['summ']}'>
 		<input type='hidden' name='PAYSTO_INVOICE_ID' value='{$data['order_id']}'>
 		<input type='hidden' name='PAYSTO_DESC' value='{$data['description']}'>
-		<input type='hidden' name='PayerEMail' value='{$this->shop_id}'>
+		<input type='hidden' name='PayerEMail' value='your@email.com'>
 		</form><script type='text/javascript'>document.getElementById('pay-form-pay').submit()</script>";
 	
 	}

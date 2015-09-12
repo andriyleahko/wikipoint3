@@ -84,7 +84,6 @@
             <?php endforeach; ?>
         <?php endif; ?>
             <div class="info">
-				<p class="price"><?php echo substr_replace($item->price, '.000', -3) ?><img style='margin-top:1px;' src='/img/p.png'></p>
 				
             	<p class="type"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
@@ -105,28 +104,37 @@
                     ?> 	
                 </p>
 				<br/>
+				<p class="price"><?php echo substr_replace($item->price, ' 000', -3) ?></p>
                 <div class="features">
                     <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
                         <?php if ($item->ObjectsMoreinfo): ?>
-                            <?php if ($item->ObjectsMoreinfo->internet == 1): ?>
+                            <?php if ($item->ObjectsMoreinfo->internet == 1){ ?>
                                 <img  title='Интернет' src='/img/internet.png'> 
-                            <?php endif; ?>
+                            <?php }else{ ?>
+                            	<img  title='нет интернета' src='/img/no-internet.png'>
+                            <?php }?>
                         <?php endif; ?>
                         <?php if ($item->ObjectsMoreinfo): ?>    
-                            <?php if ($item->ObjectsMoreinfo->washer == 1): ?>
+                            <?php if ($item->ObjectsMoreinfo->washer == 1){ ?>
                                 <img title='Стиральная Машинка' src='/img/pralka.png'> 
-                            <?php endif; ?>
+                            <?php }else{ ?>
+                                <img title='нет стиральной машинки' src='/img/no-pralka.png'>
+                            <?php }?>
                         <?php endif; ?>
                         <?php if ($item->ObjectsMoreinfo): ?>    
-                            <?php if ($item->ObjectsMoreinfo->fridge == 1): ?>
+                            <?php if ($item->ObjectsMoreinfo->fridge == 1){ ?>
                                 <img title='Холодильник' src='/img/holod.png'>
-                            <?php endif; ?>
+                            <?php }else{ ?>
+                            	<img title='нет холодильника' src='/img/no-holod.png'>
+                            <?php }?>
                         <?php endif; ?>
                         <?php if ($item->ObjectsMoreinfo): ?>
-                            <?php if ($item->ObjectsMoreinfo->furniture == 1): ?>
+                            <?php if ($item->ObjectsMoreinfo->furniture == 1){ ?>
                                 <img  title='Мебель' src='/img/mebel.png'>  
-            <?php endif; ?>
-        <?php endif; ?>
+            				<?php }else{ ?>
+            				    <img  title='неь мебели' src='/img/no-mebel.png'>
+            				<?php }?>
+        				<?php endif; ?>
                     </div>
                 </div>
                 <p class="timestamp"><?php echo dateTimeAgo($item->date_add);  ?></p>

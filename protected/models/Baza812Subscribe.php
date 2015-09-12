@@ -37,7 +37,7 @@ class Baza812Subscribe extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('subscriber_name, subscriber_email, rooms_amount, price_max, subscriber_phone, animals, kids', 'required'), // є ще поле param
+			array('subscriber_name, subscriber_email, rooms_amount, price_max, subscriber_phone', 'required'), // є ще поле param
 			array('subscriber_email', 'email'),
 			array('subscriber_email, subscriber_phone', 'unique'),
 			array('price_max, animals, kids', 'numerical', 'integerOnly'=>true),

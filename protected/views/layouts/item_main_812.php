@@ -29,9 +29,8 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
 <style>
 @import url(/css/style.css);
-
       html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
+      body { height: 100%; margin: 0; padding: 0 ; background-image: url("/img/St-Petersburg.jpg")}
       #map_canvas { height: 540px; width: 620px; }
 
 body {
@@ -40,28 +39,35 @@ body {
 
 
 #item {}
-#item h1 {font: 700 28px/30px "PT Sans"; color: black; text-align: left; padding-top: 30px;}
-#item .breadcrumbs {color: #9B9B9B; margin-bottom: 30px;}
+#item h1 {font: 700 28px/30px "Fira Sans"; color: black; text-align: left; padding-top: 30px;}
+#item .breadcrumbs {color: #9B9B9B; margin-bottom: 10px;}
 #item .breadcrumbs a {color: #4579A6;}
-#item .timestamp {color: #9B9B9B; background: url(/img/icon-timestamp.png) no-repeat left center; padding-left: 25px; float: right;}
+#item .timestamp {
+	color: #9B9B9B; 
+	background: url(/img/icon-timestamp.png) no-repeat left center; 
+	float: right;
+    margin-right: 15px;
+    padding-left: 27px;
+    margin-top: 63px;
+    }
 
 #item .info-box {background: /*#FBFAF6*/ white; overflow: hidden;}
 #item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey; box-shadow: 0px 0px 10px rgba(0,0,0,0.5);}
 #item .info-box .right-column {width: 300px; text-align: center; display: block; float: left; padding: 30px 0px 30px 20px}
 
-#item .info-box .price {font: 700 42px/60px "PT Sans"; color: #4579A6;}
-#item .info-box .price span {font: 500 italic 24px/30px "PT Sans"; color: #4579A6; display: block;}
+#item .info-box .price {font: 700 50px/60px "Fira Sans"; color: black;}
+#item .info-box .price span {font: 500 16px/30px "Fira Sans"; color: #4579A6; display: block;}
 #item .info-box .features {width: 240px; height: 90px; display: block; background: lightgray; margin: auto;}
-#item .info-box .owner-name {font: italic 18px/30px "PT Sans"; color: #4A4A4A;}
-#item .info-box .owner-phone {font: 700 28px/60px "PT Sans"; color: #4A4A4A; color: #4A4A4A;}
-#main-menu .add-item:hover {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #4579A6; margin-top: 8px;}
+#item .info-box .owner-name {font: 500 18px/30px "Fira Sans"; color: #4579a6; margin-top: -10px;}
+#item .info-box .owner-phone {font: 700 28px/60px "Fira Sans"; color: #4A4A4A; color: #4A4A4A;}
+
 
 #item .info-box form {}
 
 
 
 #item .info-box form input {
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	box-sizing: border-box;
 	height: 45px;
 	text-align: center;
@@ -70,7 +76,7 @@ body {
 }
 
 #item .info-box form div {
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	box-sizing: border-box;
 	height: 45px;
 	text-align: center;
@@ -82,6 +88,7 @@ body {
 	border: 1px solid #4579A6; 
 	border-radius: 4px;
 	margin-bottom: 15px;
+	width: 260px;
 }
 
 #item .info-box div input[type="text"] {
@@ -89,6 +96,7 @@ body {
 	border-radius: 4px;
 	margin-bottom: 15px;
 	text-align:center;
+	width: 260px;
 }
 
 #item .info-box form input[type="submit"] {
@@ -116,19 +124,24 @@ body {
 }
 
 #item .info-box div input[type="button"] {
-	border: 1px solid #4579A6; 
+	/*border: 1px solid #4579A6;*/ 
 	border-radius: 4px;
 	background: #4579A6;
 	color: white;
 	cursor: pointer;
+	background:#8ec549 ;
+	font: 700 18px/44px "Fira Sans";
+	width: 260px;
 }
 #item .info-box div input[type="button"]:hover {
-	border: 1px solid #4579A6; 
+	/*border: 1px solid #4579A6;*/ 
 	border-radius: 5px;
 	background: #4579A6;
 	color: white;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	cursor: pointer;
+	background:#8abf47;
+	font: 700 18px/44px "Fira Sans";
 }
 
 
@@ -155,7 +168,7 @@ body {
 }
 
 .get-for-free {
-	font: italic 16px/20px "PT Sans";
+	font: italic 16px/20px "Fira Sans";
 	color: #4A4A4A;
 	display: block;
 	text-align: left;
@@ -164,7 +177,7 @@ body {
 }
 
 
-.photo-map-panorama {margin: 8px 0px 8px 138px;}
+.photo-map-panorama {margin: -10px 0 8px 138px;}
 .photo-map-panorama input[type="radio"] {display: none;}
 .photo-map-panorama input[type="radio"] + label { 
 	display: block;
@@ -178,25 +191,33 @@ body {
 	cursor: pointer;
 	display: block;
 	box-sizing: border-box;
+	background-color: #8b8b8b;
+	color:white;
 }
 
 .photo-map-panorama label:nth-of-type(1) {
 	border-radius: 4px 0px 0px 4px;
+	background-color: #8b8b8b;
+	color:white;
 }
 
 .photo-map-panorama label:last-child {
 	border-right: 1px solid #BCBCBC;
 	border-radius: 0px 4px 4px 0px;
+	background-color: #8b8b8b;
+	color:white;
 }
 .photo-map-panorama input[type="radio"]:checked + label {
 	background: #f9f9f9;
 	box-shadow: inset 0px 1px 3px 0px rgba(115, 77, 77, 1);
+	background: #4579a6 none repeat scroll 0 0;
+	color:white;
 }
 
 
 .item-description {
 	width: 620px;
-	font-family: "Georgia";
+	font-family: "Fira Sans";
 	color: #4A4A4A;
 	padding-top: 30px;
 	margin: 0px 20px 60px 0px;
@@ -209,14 +230,28 @@ body {
 	margin-top: -30px;
 	color: #4579A6;
 	font-style: italic;
+	margin-right: 10px;
+	line-height: 25px;
+	font-size: 14px;
 }
 
 
 
-.back-to-search, .add-to-favorites {
+.back-to-search {
+	text-decoration: none;
+	color: #4579a6;
+	border: 1px solid;
+	line-height: 46px;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 7px 22px 7px 0px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+.add-to-favorites {
 	text-decoration: none;
 	color: white;
-	background: #4579A6;
+	background:#8b8b8b;
 	line-height: 46px;
 	display: inline-block;
 	padding: 0px 20px;
@@ -225,6 +260,7 @@ body {
 	cursor:pointer;
 }
 
+/*
 .back-to-search:hover, .add-to-favorites:hover {
 	text-decoration: none;
 	color: white;
@@ -236,15 +272,17 @@ body {
 	border-radius: 4px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+*/
 /* .add-to-favorites { */
 /* 	background: #9B9B9B; */
 /* } */
 
 
 </style>
+<link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
 <title>Аренда квартир и комнат</title>
 </head>
-<body style='background-color:#00CCFF'>
+<body>
 
 
 <div id="item" class="wrapper">
@@ -258,10 +296,10 @@ body {
 
 <?php echo $content; ?>
 
-        <p class="break-line">&nbsp;</p>
+
         <div id='paysto_verification-form'>
 			<!-- begin paysto verification --> 
-			<a href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
+			<a style='text-decoration: none; color: #5e5e5e; font-size:14px;' href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
 			<!-- end paysto verification -->
 			<br>
 			<a target="_blank" href="http://www.megastock.ru/">
@@ -273,13 +311,14 @@ body {
 				<img border="0" src="/img/yandex8831_s1.png">
 			</a>
 		</div>
-		<div style="float:right; margin-top: -55px; line-height: 20px;">
-			<b style="font-size:14px;">
-				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
+		<div style="float:right; margin-top: -55px; line-height: 20px; width: 235px; text-align: right; color: #5e5e5e">
+			<b style="font-size:13px;">
+				<a style="font-size:14px; text-decoration: none; color: #5e5e5e" href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
 				+7 (965) 035-63-02, 6425123@gmail.com
 			</b>
 		</div>
+        </div>
 </div>
      <div class="reveal-modal" id="metro" style="heigth: 100%;">
             
@@ -356,4 +395,5 @@ body {
         
 		</div>
 </body>
+    
 </html>

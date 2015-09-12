@@ -1,5 +1,9 @@
 #search-results {}
-#search-results .items-counter {text-align: center; color: white; font: italic 20px/60px "PT Sans"; padding-top: 20px;}
+#search-results .items-counter {
+	text-align: center; 
+	color: #5c80a4; 
+	font: 700 35px/60px "Fira Sans"; 
+	padding-top: 20px;}
 
 #mapspb  a:hover{
     background: #dedede none repeat scroll 0 0;
@@ -12,7 +16,7 @@
     border: 1px solid;
 }
 .item {
-	background: white;
+	background: #e3e3e3;
 	height: 240px;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
 	border-radius: 2px;
@@ -33,7 +37,9 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #search-results {
-    background-color: #99aec2;
+    background-color: white;
+       margin-left: -10px;
+    width: 960px;
 }
 
 .item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 15px;}
@@ -45,13 +51,27 @@
 .item .line-4 {color: #ff8040; background-image: url(/img/metro-line-4.png);}
 .item .line-5 {color: #702785; background-image: url(/img/metro-line-5.png);}
 
-.item .address {color: #9B9B9B; font: 16px/30px "PT Sans"; /*margin-bottom: 30px;*/ float: left; margin-top: -50px; width: 220px;}
-.item .price {color: #4579a6; font: 700 28px/30px "PT Sans"; float: right; padding: 15px 15px 0 0;}
+.item .address {
+	color: #5c80a4; 
+	font: 700 16px/30px "Fira Sans"; /*margin-bottom: 30px;*/ 
+	float: left; margin-top: -100px; width: 350px;
+	margin-left: -9px;
+	}
+.item .price {
+	color: balck; 
+	font: 700 50px/30px "Fira Sans"; 
+	margin-bottom: 20px;
+    width:210px;
+    margin-left:474px;
+    margin-top: -70px;
+    
+	}
 .item .features {
 	height: 60px;
 	width: 240px;
 	/*background: #efefef;*/
 	float: left;
+	 margin-left: -13px;
 }
 .item .button {
 	color: #4579A6;

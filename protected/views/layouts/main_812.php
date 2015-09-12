@@ -66,13 +66,8 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
             #main-menu {overflow: hidden; margin-bottom: 30px;}
             #main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(/img/logo.png) no-repeat center center; background-size: 200px;}
-            #main-menu .menu-option {font: 700 italic 24px/60px "PT Sans"; text-decoration: none; color: #4579A6; margin-right: 20px;}
-/*             #main-menu .menu-option:hover {font: 700 italic 24px/60px "PT Sans"; text-decoration: none; color: #5945a6; margin-right: 20px;} */
-            #main-menu .add-item {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #9B9B9B; margin-top: 8px;}
-            #main-menu .add-item:hover {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #4579A6; margin-top: 8px;}
-            body {
-              /*  background: #99aec2 none repeat scroll 0 0;*/
-            }
+            #main-menu .menu-option {font: 600 22px/60px "Fira Sans"; text-decoration: none; color: white; margin-right: 20px;}
+            
         </style>
 
         
@@ -98,7 +93,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 
 <link rel="stylesheet"	href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
+<link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
 
 <script "text/javascript">
 $(document).ready(function(){
@@ -134,13 +129,13 @@ $(document).ready(function(){
   font-size:10px;
 }        
 #ui-datepicker-div {
-font: 62.5% sans-serif;
+	font-size: 16px;
 }
         </style>
 
         <title>Аренда квартир и комнат</title>
     </head>
-    <body style='background-color:#00CCFF'>
+    <body>
         <div class="wrapper">
 
             <div id="main-menu">
@@ -171,7 +166,7 @@ font: 62.5% sans-serif;
             <label for="r3"><span>3 ККВ</span></label>
 
             <input type="checkbox" value="4,5,6" name="rooms-amount[]" id="r4" <?php echo $k_more;?>>
-            <label for="r4"><span>4 ККВ и более</span></label>
+            <label for="r4" style='width:133px;'><span>4 ККВ и более</span></label>
             <?php /*<p style="color: #9B9B9B;">без агентов,</p>
             <p>без агентов,</p>
             */ ?>
@@ -183,22 +178,23 @@ font: 62.5% sans-serif;
         <input type="hidden" name="search" value="1">
         <a class="choose-metro" href="#">Выбрать станции</a>
         
-        <p>по цене от </p>
-		<input class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_from;?>">
+        <p style='margin-left:18px;'>По цене от </p>
+		<input style='margin-left:-10px;' class='priceinput' type='text' name=price_from size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_from;?>">
 <!--         <select name="price_from"> -->
 <!--             <option value="45000">45.000 руб.</option> -->
 <!--             <option value="50000">50.000 руб.</option> -->
 <!--         </select> -->
 
-        <p>до</p>
+        <p style='margin-left:-21px;'>до</p>
 
-        <input class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_to;?>">
+        <input style='margin-left:-11px;' class='priceinput' type='text' name=price_to size="8px;" pattern="^[ 0-9]+$" maxlength="10" value="<?php echo $price_to;?>">
 <!--         <select name="price_to"> -->
 <!--             <option value="0" selected="selected">любой</option> -->
 <!--         </select> -->
 
-        <input type="submit" id="--search-submit" value="Поиск">
-        <br>
+        
+        <br/>
+        <br/>
 			<div class="checkboxes-wrapper">
                 <div id='d-7' class="radioss <?php echo($days=='7')?'acti':'';?>">
                     <span></span>
@@ -213,15 +209,16 @@ font: 62.5% sans-serif;
                     <input type="radio" value="1" name="days" <?php echo($days=='1')?'checked':"";?>><label>за сегодня</label>
                 </div>
                	<div id='d-f-t' class="radioss <?php echo($days=='-1')?'acti':'';?>">
-                    <span></span>
-                    <input type="radio" value="-1" <?php echo($days=='-1')?'checked':"";?> name="days"><label>с</label>
-                    <input	id='dayFrom' maxlength="19" name='dayFrom' value="<?php echo $dayFrom?>" style='display: block;  margin-left: 52px; width: 140px;' class='datepicker'>
-                    <label style='margin-left:175px;'>по</label>
-                    <input	id='dayTo' maxlength="19" name='dayTo' value="<?php echo $dayTo?>" style='display: block;  margin-left: 252px; width: 140px;' class='datepicker'>
+                    <span style='margin-left:42px;'></span>
+                    <input type="radio" value="-1" <?php echo($days=='-1')?'checked':"";?> name="days">
+                    <label style='margin-left:33px;'>с</label>
+                    <input	id='dayFrom' maxlength="19" name='dayFrom' value="<?php echo $dayFrom?>" style='display: block;  margin-left: 90px; width: 140px;' class='datepicker'>
+                    <label style='margin-left:146px;'>по</label>
+                    <input	id='dayTo' maxlength="19" name='dayTo' value="<?php echo $dayTo?>" style='display: block;  margin-left: 260px; width: 140px;' class='datepicker'>
                 </div>	
 			
             </div>
-            
+            <input type="submit" id="--search-submit" value="Поиск">
             
      
         
@@ -230,10 +227,10 @@ font: 62.5% sans-serif;
 		</div>
             <?php echo $content; ?>
 
-        <p class="break-line">&nbsp;</p>
+        
         <div id='paysto_verification-form'>
 			<!-- begin paysto verification --> 
-			<a href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
+			<a style='text-decoration: none; color: #5e5e5e; font-size:14px;' href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
 			<!-- end paysto verification -->
 			<br>
 			<a target="_blank" href="http://www.megastock.ru/">
@@ -245,9 +242,9 @@ font: 62.5% sans-serif;
 				<img border="0" src="/img/yandex8831_s1.png">
 			</a>
 		</div>
-		<div style="float:right; margin-top: -55px; line-height: 20px;">
-			<b style="font-size:14px;">
-				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
+		<div style="float:right; margin-top: -55px; line-height: 20px; width: 235px; text-align: right; color: #5e5e5e">
+			<b style="font-size:13px;">
+				<a style="font-size:14px; text-decoration: none; color: #5e5e5e" href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
 				+7 (965) 035-63-02, 6425123@gmail.com
 			</b>
@@ -473,4 +470,5 @@ font: 62.5% sans-serif;
 
         
     </body>
+
 </html>

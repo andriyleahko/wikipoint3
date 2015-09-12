@@ -1,0 +1,766 @@
+#search-results {}
+#search-results .items-counter {text-align: center; color: white; font: italic 20px/60px "PT Sans"; padding-top: 20px;}
+
+#mapspb  a:hover{
+    background: #dedede none repeat scroll 0 0;
+    opacity: 0.6;
+    border: 1px solid;
+}
+.active{
+    background: #dedede none repeat scroll 0 0;
+    opacity: 0.6;
+    border: 1px solid;
+}
+.item {
+	background: white;
+	height: 240px;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
+	border-radius: 2px;
+	margin: 20px;
+	cursor: pointer;
+	overflow: hidden;
+	padding:5px;
+}
+
+.item .image {
+	width: 450px;
+	height: 240px;
+	margin-right: 30px;
+	float: left;
+	//background: url(img/no.png) no-repeat;
+	background-size: cover;
+	display: block;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#search-results {
+    background-color: #99aec2;
+}
+
+.item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 15px;}
+.item .metro11 {font-size: 16px; padding-left: 37px; background: url() no-repeat left center; float: left;  margin-top: 10px;}
+
+.item .line-1 {color: #ff0000; background-image: url(/img/metro-line-1.png); }
+.item .line-2 {color: #0080ff; background-image: url(/img/metro-line-2.png);}
+.item .line-3 {color: #008000; background-image: url(/img/metro-line-3.png);}
+.item .line-4 {color: #ff8040; background-image: url(/img/metro-line-4.png);}
+.item .line-5 {color: #702785; background-image: url(/img/metro-line-5.png);}
+
+.item .address {color: #9B9B9B; font: 16px/30px "PT Sans"; /*margin-bottom: 30px;*/ float: left; margin-top: -50px; width: 220px;}
+.item .price {color: #4579a6; font: 700 28px/30px "PT Sans"; float: right; padding: 15px 15px 0 0;}
+.item .features {
+	height: 60px;
+	width: 240px;
+	/*background: #efefef;*/
+	float: left;
+}
+.item .button {
+	color: #4579A6;
+	width: 160px;
+	height: 44px;
+	margin: 8px 20px 0px 0px;
+	line-height: 44px;
+	text-align: center;
+	float: right;
+	display: block;
+	border: 2px solid #4579A6;
+	border-radius: 2px;
+	box-sizing: border-box;
+	
+}
+.item .timestamp {float: right; margin: 30px 20px 0px 0px; color: #99AEC2;}
+
+.metro {
+    width: 123px;
+    height: 37px;
+    background-image: url("/img/m.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: block;
+    float: left;
+    margin-right: 16px;
+    line-height: 37px;
+    padding-left: 54px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #4680b8;
+    margin-top: 20px;
+}
+.metro:hover {
+    background-position: 0 -37px;
+    cursor: pointer;
+}
+.metro.metro-act {
+    background-position: -177px 0 !important;
+}
+#metro {
+    width: 1150px !important;
+    margin-left: -580px !important;
+    padding: 0 !important;
+    top: 30px !important;
+    position: absolute !important;
+    /*display: none;*/
+}
+#metro #mapspb {
+    background-image: url("/img/metro_map.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 800px;
+    height: 501px;
+    list-style: none;
+    margin: 10px 25px 10px;
+    position: relative;
+}
+#metro .rightrez2 {
+    width: 100%;
+    //background-image: url("/img/blue_waves.png");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-position: top;
+    padding-bottom: 0;
+    padding-top: 8px;
+}
+#metro .rightrez2 .inside {
+    //background-image: url("/img/blue_patt.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    padding: 10px 46px 10px 48px;
+}
+#metro .rightrez2 .inside .stations {
+    float: left;
+    width: 714px;
+    
+}
+.metro {
+    text-decoration: none;
+    color: #fff;
+}
+.metro:hover {
+    color: #fff;
+}
+
+#mapspb li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#mapspb li a {
+    position: absolute;
+    display: block;
+    /*background: url(../images/0.gif);*/
+    text-decoration: none;
+    color: #333;
+}
+
+#mapspb a.Starder {
+    height: 16px;
+    left: 159px;
+    top: 28px;
+    width: 88px;
+}
+#mapspb a.Komendantskiy {
+    height: 23px;
+    left: 158px;
+    top: 3px;
+    width: 85px;
+}
+#mapspb a.Komendantskiy span {
+    height: 23px;
+}
+#mapspb a.Krestovskiy {
+    height: 16px;
+    left: 158px;
+    top: 43px;
+    width: 110px;
+}
+#mapspb a.Krestovskiy span {
+    height: 16px;
+}
+#mapspb a.Chkalovskaya {
+    height: 14px;
+    left: 159px;
+    top: 60px;
+    width: 65px;
+}
+#mapspb a.Chkalovskaya span {
+    height: 14px;
+}
+#mapspb a.Sport {
+    height: 16px;
+    left: 159px;
+    top: 75px;
+    width: 67px;
+}
+#mapspb a.Parnas {
+    height: 14px;
+    left: 308px;
+    top: 5;
+    width: 42px;
+}
+#mapspb a.Parnas span {
+    height: 14px;
+}
+#mapspb a.Prosvesz {
+    height: 25px;
+    left: 307px;
+    top: 25px;
+    width: 75px;
+}
+#mapspb a.Prosvesz span {
+    height: 23px;
+}
+#mapspb a.Ozerki {
+    height: 14px;
+    left: 307px;
+    top: 49px;
+    width: 70px;
+}
+#mapspb a.Ydalnaya {
+    height: 14px;
+    left: 307px;
+    top: 64px;
+    width: 70px;
+}
+#mapspb a.Pionerskaya {
+    height: 14px;
+    left: 307px;
+    top: 80px;
+    width: 70px;
+}
+#mapspb a.Chornayareka {
+    height: 14px;
+    left: 307px;
+    top: 95px;
+    width: 81px;
+}
+#mapspb a.Petrohradskaya {
+    height: 16px;
+    left: 307px;
+    top: 110px;
+    width: 84px;
+}
+#mapspb a.Horkovskaya {
+    height: 14px;
+    left: 307px;
+    top: 127px;
+    width: 70px;
+}
+#mapspb a.Nevskiy {
+    height: 15px;
+    left: 308px;
+    top: 171px;
+    width: 97px;
+}
+#mapspb a.Nevskiy span {
+    height: 15px;
+}
+#mapspb a.Hostinnui {
+    height: 15px;
+    left: 308px;
+    top: 197px;
+    width: 89px;
+}
+#mapspb a.Hostinnui span {
+    height: 15px;
+}
+#mapspb a.Franzenskaya {
+    height: 14px;
+    left: 307px;
+    top: 343px;
+    width: 72px;
+}
+#mapspb a.Borovaya {
+    height: 14px;
+    left: 357px;
+    top: 361px;
+    width: 50px;
+}
+#mapspb a.Moskovskievorota {
+    height: 15px;
+    left: 309px;
+    top: 380px;
+    width: 108px;
+}
+#mapspb a.Moskovskievorota span {
+    height: 15px;
+}
+#mapspb a.Zavstavskaya {
+    height: 15px;
+    left: 226px;
+    top: 380px;
+    width: 67px;
+}
+#mapspb a.Zavstavskaya span {
+    height: 15px;
+}
+#mapspb a.Bronevaya {
+    height: 15px;
+    left: 217px;
+    top: 413px;
+    width: 56px;
+}
+#mapspb a.Bronevaya span {
+    height: 15px;
+}
+#mapspb a.Elektrosila {
+    height: 15px;
+    left: 307px;
+    top: 405px;
+    width: 74px;
+}
+#mapspb a.Parkpobedu {
+    height: 15px;
+    left: 307px;
+    top: 422px;
+    width: 73px;
+}
+#mapspb a.Moskovskaya {
+    height: 14px;
+    left: 307px;
+    top: 439px;
+    width: 68px;
+}
+#mapspb a.Zvezdnaya {
+    height: 14px;
+    left: 307px;
+    top: 456px;
+    width: 60px;
+}
+#mapspb a.Kypchino {
+    height: 14px;
+    left: 307px;
+    top: 473px;
+    width: 50px;
+}
+#mapspb a.Deviatkino {
+    height: 14px;
+    left: 447px;
+    top: 9px;
+    width: 62px;
+}
+#mapspb a.Hrazsdan {
+    height: 23px;
+    left: 447px;
+    top: 26px;
+    width: 89px;
+}
+#mapspb a.Hrazsdan span {
+    height: 23px;
+}
+#mapspb a.Akadem {
+    height: 14px;
+    left: 447px;
+    top: 51px;
+    width: 89px;
+}
+#mapspb a.Politeh {
+    height: 14px;
+    left: 447px;
+    top: 67px;
+    width: 96px;
+}
+#mapspb a.Myzh {
+    height: 15px;
+    left: 447px;
+    top: 83px;
+    width: 107px;
+}
+#mapspb a.Lesnaya {
+    height: 14px;
+    left: 447px;
+    top: 100px;
+    width: 43px;
+}
+#mapspb a.Vuborh {
+    height: 15px;
+    left: 447px;
+    top: 116px;
+    width: 66px;
+}
+#mapspb a.Lenina {
+    height: 14px;
+    left: 447px;
+    top: 132px;
+    width: 94px;
+}
+#mapspb a.Black {
+    height: 14px;
+    left: 447px;
+    top: 148px;
+    width: 76px;
+}
+#mapspb a.Vostaniya {
+    height: 15px;
+    left: 453px;
+    top: 164px;
+    width: 104px;
+}
+#mapspb a.Vostaniya span {
+    height: 15px;
+}
+#mapspb a.Mayakovska {
+    height: 14px;
+    left: 454px;
+    top: 180px;
+    width: 67px;
+}
+#mapspb a.Mayakovska span {
+    height: 14px;
+}
+#mapspb a.Obvodnui {
+    height: 14px;
+    left: 413px;
+    top: 335px;
+    width: 99px;
+}
+#mapspb a.Obvodnui2 {
+    height: 14px;
+    left: 413px;
+    top: 349px;
+    width: 99px;
+}
+#mapspb a.Volkovska {
+    height: 14px;
+    left: 454px;
+    top: 391px;
+    width: 65px;
+}
+#mapspb a.Byharestska {
+    height: 14px;
+    left: 454px;
+    top: 407px;
+    width: 77px;
+}
+#mapspb a.Mezhdynarod {
+    height: 14px;
+    left: 453px;
+    top: 422px;
+    width: 93px;
+}
+#mapspb a.Prospslavu {
+    height: 14px;
+    left: 454px;
+    top: 438px;
+    width: 91px;
+}
+#mapspb a.Dynaiska {
+    height: 14px;
+    left: 454px;
+    top: 454px;
+    width: 63px;
+}
+#mapspb a.Shyshru {
+    height: 14px;
+    left: 454px;
+    top: 472px;
+    width: 51px;
+}
+#mapspb a.Elizarov {
+    top: 410px;
+    left: 359px;
+    width: 75px;
+    height: 14px;
+}
+#mapspb a.Lomonosov {
+    height: 14px;
+    left: 585px;
+    top: 391px;
+    width: 84px;
+}
+#mapspb a.Proletar {
+    height: 14px;
+    left: 585px;
+    top: 414px;
+    width: 78px;
+}
+#mapspb a.Obyhovo {
+    height: 14px;
+    left: 585px;
+    top: 437px;
+    width: 50px;
+}
+#mapspb a.Ribackoe {
+    height: 14px;
+    left: 585px;
+    top: 460px;
+    width: 56px;
+}
+#mapspb a.Newcherkas {
+    height: 16px;
+    left: 708px;
+    top: 289px;
+    width: 90px;
+}
+#mapspb a.Ladozhska {
+    height: 14px;
+    left: 708px;
+    top: 311px;
+    width: 65px;
+}
+#mapspb a.Prbolshevik {
+    height: 23px;
+    left: 708px;
+    top: 334px;
+    width: 80px;
+}
+#mapspb a.Prbolshevik span {
+    height: 24px;
+}
+#mapspb a.Dubenko {
+    height: 14px;
+    left: 708px;
+    top: 368px;
+    width: 85px;
+}
+#mapspb a.Nevskii1 {
+    height: 16px;
+    left: 584px;
+    top: 215px;
+    width: 180px;
+}
+#mapspb a.Nevskii1 span {
+    height: 16px;
+}
+#mapspb a.Nevskii2 {
+    height: 17px;
+    left: 587px;
+    top: 232px;
+    width: 177px;
+}
+#mapspb a.Nevskii2 span {
+    height: 16px;
+}
+#mapspb a.Luhovskii {
+    top: 294px;
+    left: 271px;
+    width: 59px;
+    height: 23px;
+}
+#mapspb a.Luhovskii span {
+    height: 16px;
+}
+#mapspb a.Vladimirska {
+    top: 263px;
+    left: 195px;
+    width: 71px;
+    height: 10px;
+}
+#mapspb a.Vladimirska span {
+    height: 16px;
+}
+#mapspb a.Dostoevska {
+    top: 274px;
+    left: 195px;
+    width: 68px;
+    height: 10px;
+}
+#mapspb a.Dostoevska span {
+    height: 16px;
+}
+#mapspb a.Pyshkinska {
+    height: 13px;
+    left: 360px;
+    top: 280px;
+    width: 70px;
+}
+#mapspb a.Pyshkinska span {
+    height: 16px;
+}
+#mapspb a.Zvinigorodska {
+    height: 14px;
+    left: 362px;
+    top: 296px;
+    width: 89px;
+}
+#mapspb a.Zvinigorodska span {
+    height: 16px;
+}
+#mapspb a.Vasileostrovska {
+    height: 15px;
+    left: 42px;
+    top: 184px;
+    width: 103px;
+}
+#mapspb a.Primorska {
+    height: 14px;
+    left: 55px;
+    top: 119px;
+    width: 70px;
+}
+#mapspb a.Admiralterska {
+    height: 14px;
+    left: 178px;
+    top: 207px;
+    width: 93px;
+}
+#mapspb a.Senna {
+    height: 15px;
+    left: 199px;
+    top: 256px;
+    width: 96px;
+}
+#mapspb a.Senna span {
+    height: 15px;
+}
+#mapspb a.Spaskaya {
+    height: 13px;
+    left: 310px;
+    top: 221px;
+    width: 53px;
+}
+#mapspb a.Spaskaya span {
+    height: 16px;
+}
+#mapspb a.Sadova {
+    height: 16px;
+    left: 239px;
+    top: 240px;
+    width: 54px;
+}
+#mapspb a.Sadova span {
+    height: 15px;
+}
+#mapspb a.Teatralna {
+    height: 16px;
+    left: 119px;
+    top: 233px;
+    width: 75px;
+}
+#mapspb a.Teatralna span {
+    height: 15px;
+}
+#mapspb a.Tehnology1 {
+    height: 16px;
+    left: 138px;
+    top: 286px;
+    width: 155px;
+}
+#mapspb a.Tehnology1 span {
+    height: 16px;
+}
+#mapspb a.Tehnology2 {
+    height: 16px;
+    left: 138px;
+    top: 302px;
+    width: 155px;
+}
+#mapspb a.Tehnology2 span {
+    height: 16px;
+}
+#mapspb a.Baltiska {
+    height: 14px;
+    left: 77px;
+    top: 353px;
+    width: 66px;
+}
+#mapspb a.Narvska {
+    height: 14px;
+    left: 88px;
+    top: 378px;
+    width: 55px;
+}
+#mapspb a.Kirovsky {
+    height: 16px;
+    left: 46px;
+    top: 419px;
+    width: 95px;
+}
+#mapspb a.Kirovsky span {
+    height: 16px;
+}
+#mapspb a.Putilovskaya {
+    height: 16px;
+    left: 68px;
+    top: 436px;
+    width: 71px;
+}
+#mapspb a.Putilovskaya span {
+    height: 16px;
+}
+#mapspb a.Ugozapadnaya {
+    height: 16px;
+    left: -4px;
+    top: 460px;
+    width: 82px;
+}
+#mapspb a.Ugozapadnaya span {
+    height: 16px;
+}
+#mapspb a.Avtovo {
+    height: 14px;
+    left: 154px;
+    top: 456px;
+    width: 44px;
+}
+#mapspb a.Leninsky {
+    height: 16px;
+    left: 154px;
+    top: 471px;
+    width: 111px;
+}
+#mapspb a.Leninsky span {
+    height: 16px;
+}
+#mapspb a.Veteranov {
+    height: 15px;
+    left: 154px;
+    top: 488px;
+    width: 112px;
+}
+#mapspb a.Veteranov span {
+    height: 16px;
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url(/img/reval_bg.png) repeat;
+    z-index: 105;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.reveal-modal {
+    //visibility: hidden;
+    display: none;
+    top: 70px;
+    left: 50%;
+    padding: 19px 15px 0 15px;
+    margin-left: -235px;
+    background: #fff;
+    width: 440px;
+    position: fixed;
+    top: 100px;
+    z-index: 106;
+}
+
+.map-modal {
+    padding: 27px 15px 0 15px;
+    margin-left: -470px;
+    width: 940px;
+    height: 560px;
+    position: fixed;
+    top: 60px;
+}
+.reveal-modal #map2 {
+    width: 940px;
+    height: 550px;
+}
+.close-reveal-modal {
+    width: 12px;
+    height: 12px;
+    background-image: url("/img/cls.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: block;
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    cursor: pointer;
+}
+.close-reveal-modal:hover {
+    background-image: url("/img/cls2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+

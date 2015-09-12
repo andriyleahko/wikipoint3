@@ -6,35 +6,54 @@ $('#main-search').attr('style','display:none');
 
 
     .activity {
-        color: #BCBCBC;
-        font-style: italic;
+        color: #5c80a4;
         float: left;
-        width: 540px;
+        width: 460px;
         margin-bottom: 60px;
+        font-size: 15px;
+        text-align: right;
+         margin-right: 30px;
     }
 
     .activity span {
-        color: #4579A6;
-        font: 24px/30px "PT Sans";
+        color: black;
+        font: 600 24px/30px "Fira Sans";
         display: block;
     }
 
     .reward {
         color: #4579A6;
-        font: 36px/60px "PT Sans";
+        font: 36px/60px "Fira Sans";
         margin-bottom: 60px;
-        width: 160px;
+        width: 130px;
         float: left;
     }
 
-    .reward .icon-key {
-        width: 40px;
+    .reward .icon-key1 {
+        width: 102px;
+        height:111px;
         display: inline-block;
-        background: url(img/icon-key.png) no-repeat 5px center;
+        background: url(img/icon-key1.png) no-repeat 0px center / 107px auto;
+        margin-top: -26px;
+    }
+    .reward .icon-key2 {
+        width: 105px;
+        height:111px;
+        display: inline-block;
+        background: url(img/icon-key2.png) no-repeat 0px center / 110px auto;
+        margin-top: -26px;
+    }
+    .reward .icon-key3 {
+        width: 105px;
+        height:111px;
+        display: inline-block;
+        background: url(img/icon-key3.png) no-repeat 0px center / 110px auto;
+        margin-top: -26px;
     }
 
+
     .button {
-        font: 18px/44px "PT Sans";
+        font: 700 18px/44px "Fira Sans";
         float: left;
         text-decoration: none;
         color: white;
@@ -45,7 +64,7 @@ $('#main-search').attr('style','display:none');
     }
 
     .button:hover {
-    	background: #4579A6;
+    	background: #8abf48;
     	box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     
@@ -55,165 +74,55 @@ $('#main-search').attr('style','display:none');
         color: #BCBCBC;
     }
 
-    .button-accent {background: #4579A6;}
+    .button-accent {background: #8ec549;}
     
     .button-accent:hover {
-    	background: #4579A6;
+    	background: #8abf48;
     	box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     
     
-.clear {
-    clear: both;
-    float: left;
-    font-family: tahoma,arial,verdana,sans-serif,Lucida Sans;
-    font-size: 11px;
-    width: 180px;
-     margin-top: 15px;
-}    
-.module_header {
-    background: #f1f1f1 none repeat scroll 0 0;
-    display: block;
-}
-.module_header a {
-    color: #2b587a;
-    cursor: pointer;
-    text-decoration: none;
-}
-  .clear_fix::after {
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-    height: 0;
-}
-.module_header .header_top {
-    text-decoration: none;
-}
-.module_header .header_top {
-    background: #dee5eb none repeat scroll 0 0;
-    color: #45688e;
-    font-weight: bold;
-    outline: medium none;
-    overflow: hidden;
-    padding: 4px 8px;
-}  
-.p_header_bottom {
-    background: #f1f1f1 none repeat scroll 0 0;
-    border-bottom: 1px solid #f1f1f1;
-    color: #666;
-    padding: 0px 8px;
-}
-
-#group .narrow_column .module_body {
-    border-left: 1px solid #f1f1f1;
-}
-.module_body {
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-.clear_fix {
-    display: block;
-}
-
-.page_doc {
-    display: block;
-    padding: 10px 8px 0;
-}
-
-.module a {
-    color: #2b587a;
-    cursor: pointer;
-    text-decoration: none;
-}
-.page_doc_icon {
-    background: #e1e7ed url("http://vk.com/images/icons/darr.gif") no-repeat scroll 6px 12px;
-    border-radius: 3px;
-    color: #6a839e;
-    display: block;
-    height: 29px;
-    margin-left: -7px;
-    overflow: hidden;
-    padding: 0 0 0 17px;
-    position: absolute;
-    text-overflow: ellipsis;
-    width: 27px;
-}
-.module a {
-    color: #2b587a;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.page_doc_cont {
-    padding: 2px 5px 0 52px;
-}
-.page_doc_name {
-    font-weight: bold;
-}
-.page_doc_cont a {
-    color: #2b587a;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-    
 </style>
 
-<div id="group_docs" class="module clear docs_module">
-  	<a class="module_header">
-	  	<div class="header_top clear_fix">
-	    	<span class="right_link fl_r"></span>
-	    	Документи
-	  	</div>
-	  	<div class="p_header_bottom">
-	    	<span class="fl_r"></span>
-	    	1 документ
-	  	</div>
-	</a>
-  	<div class="module_body clear_fix">
-    	<div class="page_doc">
-  			<a title="doc" target="_blank" href="/img/dogovor_arendy.doc" class="page_doc_icon">
-    			doc
-  			</a>
-  			<div class="page_doc_cont">
-    			<a target="_blank" href="/img/dogovor_arendy.doc" class="page_doc_name">Dogovor_arendy.doc</a>
-  			</div>
-		</div>
-  	</div>
-</div>
 
+<div style="margin-left:-10px; width:960px; background-color:white; padding:10px;">
+	<div style='text-align:center; float: left;  margin-top: 42px; width: 93px; line-height: 12px; margin-left: 20px;'>
+		<a style='text-decoration: none; color:#5e5e5e' target="_blank" href="/img/dogovor_arendy.doc">
+			<img width=30px; src='/img/dogovor.png'> <br/>			
+			<span style='font-size: 12px;'>Скачать договор аренды</span>
+		</a>
+	</div>
     <h1>Как получить доступ<br> к базе контактов</h1>
-    <p class="subheader">шесть вариантов на выбор</p>
+    <p class="subheader"><span style='margin-left: 130px;' class="sh">Пять вариантов на выбор</span></p>
 
 
 
 
-    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1200 <img style='margin-top:1px;' src='/img/p-pass.png'></p>
-    <p class="reward">∞<span class="icon-key">&nbsp;</span></p>
+    <p class="activity"><span>Купить неограниченный доступ</span> Неограниченный доступ на месяц за 1200 рублей</p>
+    <p class="reward"><span class="icon-key1">&nbsp;</span></p>
     <a class="button button-accent" href="/byAccess">Варианты оплаты</a>
 
     <p class="activity"><span>Сообщить о сдаваемой квартире</span> Максимум бесплатных ключей!</p>
-    <p class="reward">3-10<span class="icon-key">&nbsp;</span></p>
+    <p class="reward"><span class="icon-key2">&nbsp;</span></p>
     <a class="button" href="/add-item">Сообщить о квартире</a>
 
 
     <p class="activity"><span>Поставить “лайк” Вконтакте</span> Простой способ получить один пароль.</p>
-    <p class="reward">1<span class="icon-key">&nbsp;</span></p>
+    <p class="reward"><span class="icon-key3">&nbsp;</span></p>
     <a class="button" href="/tellafriend">Рассказать друзьям</a>
 
 
     <p class="activity"><span>Подписаться на рассылку новых объявлений</span> Подпишитесь на рассылку свежих объявлений, пароль придет<br> на телефон, указанный в рассылке.</p>
-    <p class="reward">1<span class="icon-key">&nbsp;</span></p>
+    <p class="reward"><span class="icon-key3">&nbsp;</span></p>
     <a class="button" href="/subscribe">Подписаться на рассылку</a>
-
+<?php /*
     <p class="activity"><span>Привести друзей на сайт</span> Внизу письма из рассылки есть ссылка на вашу страницу baza812.ru/likeXXXXX за каждые 10 “лайков” вы получите один бесплатный пароль.</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <p class="sidenote">Для использования должна быть подключена рассылка. (см. выше)</p>
-
+*/ ?>
     <p class="activity"><span>Написать отзыв Вконтакте</span> Вы получете один бесплатный пароль</p>
-    <p class="reward">1<span class="icon-key">&nbsp;</span></p>
+    <p class="reward"><span class="icon-key3">&nbsp;</span></p>
     <a class="button" href="http://vk.com/topic-90622364_31995394" target="_blank">Написать отзыв</a>
 
 
@@ -224,7 +133,7 @@ $('#main-search').attr('style','display:none');
             <li>Пароли приходят только на указанный номер телефона.</li>
             <li>Никаких денег со счета списано не будет.</li>
             <li>Все бесплатные пароли действуют в течении полугода после получения.</li>
-            <li>Все бесплатные способы получения пароля можно использовать только один раз, кроме "Сообщить о квартире" и "Приведи друзей на сайт".</li>
+            <li>Все бесплатные способы получения пароля можно использовать только один раз, кроме "Сообщить о квартире".</li>
         </ul>
     </fieldset>
 
@@ -233,3 +142,4 @@ $('#main-search').attr('style','display:none');
     <div id="support-footnote">Если у вас возникли сложности — обратитесь в службу поддержки<br>
         +7 (812) 123-45-67, support@baza812.ru</div>
 */?>
+</div>

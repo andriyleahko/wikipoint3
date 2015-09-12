@@ -20,7 +20,7 @@ function dateTimeAgo($dateTime) { //define days, month, days and time from date 
 		}else{
 			$da=-(int)$day+(int)date("j");
 			if($da>0){
-				return $da. ' дней назад ';
+				return $da. ' дн. назад ';
 			}else{
 				$ho=-(int)$hour+(int)date("G");
 				if($ho>0){

@@ -1,29 +1,59 @@
 @import url(reset.css);
 
-body {font: 18px/30px "PT Sans"; /* background: url(bg.png) repeat-y center top;*/}
-h1 {font: 700 48px/60px "PT Sans"; color: #4579A6; text-align: center;}
-h2 {font: 700 36px/60px "PT Sans"; color: #393939; text-align: center; margin-bottom: 30px;}
-h3 {font: 700 24px/30px "PT Sans"; color: #393939; margin-bottom: 30px;}
-.subheader {font: italic 29px/60px "PT Sans"; color: #4A4A4A; text-align: center; margin-bottom: 40px;}
+body {background-image: url("/img/St-Petersburg.jpg"); background-attachment: fixed; font: 18px/30px "Fira Sans"; font-family: "Fira Sans";font-weight: 700;}
+h1 {font: 700 44px/60px "Fira Sans"; color: #4579A6; text-align: center; font-family: 'Fira Sans';}
+h2 {font: 700 36px/60px "Fira Sans"; color: #393939; text-align: center; margin-bottom: 30px;font-family: 'Fira Sans';}
+h3 {font: 700 24px/30px "Fira Sans"; color: #393939; margin-bottom: 30px;font-family: 'Fira Sans';}
+.subheader {
+	font: 22px/60px "Fira Sans"; 
+	background: white; 
+	text-align: center; 
+	margin-bottom: 40px;
+	font-family: 'Fira Sans';
+	width:960px;
+	margin-left:-10px; 
+}
+.sh{background: #5c80a4 none repeat scroll 0 0; border-radius: 4px;  padding: 10px; color:white;}
 /*.wrapper {width: 940px; background: rgba(0, 255, 255, 0.62); margin: auto; overflow: hidden;}*/
-.wrapper {width: 940px; background: white /*#fbfaf6*/; margin: auto; overflow: hidden;  padding: 10px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5); margin-bottom:10px; margin-top:1px;}
-
+.wrapper {width: 940px; background: #5c80a4 /*#fbfaf6*/; margin: auto; overflow: hidden;  padding: 10px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5); margin-bottom:10px; margin-top:1px;}
+.objaavlen{font-family: "Fira Sans"; border-radius: 10px; border:2px solid #4579a6;margin-left: 30%;width: 440px; margin-bottom: 30px; color: #4579a6;}
 
 /* Формы */
 
 
-input {border: 1px solid #BCBCBC; font: 18px/30px "PT Sans"; height: 45px; border-radius: 4px; padding: 0px 10px; box-sizing: border-box; margin-left: -4px; display: inline-block;}
-input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6; color: white; border: none; padding: 0px 20px 0px 20px; cursor: pointer; }
+input {border: 1px solid #BCBCBC; font: 18px/30px "Fira Sans"; height: 45px; border-radius: 4px; padding: 0px 10px; box-sizing: border-box; margin-left: -9px; display: inline-block;}
+input[type="submit"] {
+	margin-top: 8px; 
+	margin-bottom: 30px; 
+	background: #8ec549; 
+	color: white; 
+	border: none; 
+	padding: 0px 20px 0px 20px; 
+	cursor: pointer; 
+	font: 700 22px/30px "Fira Sans";}
 
 .break-line {border-bottom: 1px solid #BCBCBC; box-sizing: border-box; line-height: 29px; color: #BCBCBC; margin-bottom: 30px;}
 
 /* Главное меню */
 
 
-#main-menu {overflow: hidden;} #main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(/img/logo.jpg) no-repeat center center; background-size: 200px;}
-#main-menu .menu-option { font: 700 italic 24px/60px "PT Sans"; text-decoration: none; color: #4579A6; margin-right: 20px;}
-#main-menu .add-item { font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #9B9B9B; margin-top: 8px;} 
-
+#main-menu {overflow: hidden;} #main-menu .logo {width: 200px; height: 60px; display: block; float: left; margin-right: 20px; background: url(/img/logo.png) no-repeat center center; background-size: 200px;}
+#main-menu .menu-option { font: 600 22px/60px "Fira Sans"; text-decoration: none; color: white; margin-right: 20px;}
+#main-menu .add-item { font: 600 18px/44px "Fira Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.png) no-repeat 15px center; background-color: #8ec549; margin-top: 8px;} 
+#main-menu .add-item:hover {
+	font: 600 18px/44px "Fira Sans"; 
+	text-decoration: none; 
+	color: white; 
+	border-radius: 4px; 
+	display: block; 
+	padding-left: 50px; 
+	text-align: right; 
+	padding-right: 15px; 
+	float: right; 
+	background: url(/img/note.png) no-repeat 15px center; 
+	background-color: #8abf47; 
+	margin-top: 8px;
+	box-shadow: 0 0 10px rgba(255,255,255,0.3);}
 
 /* Главный поиск */
 
@@ -37,8 +67,9 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 
 /* Главная страница */
 
-#main-page {text-align: center;}
-#main-page #statistics {color: #4A4A4A; font: 26px/45px "PT Sans"; text-align: left; margin: auto; width: 620px;}
+#main-page {text-align: center; background-color: white; width: 960px; margin-left: -10px; padding-top: 20px; padding-bottom: 10px;}
+#main-page #statistics {color: black/*#4A4A4A*/; font: 22px/45px "Fira Sans"; text-align: left; margin: auto; width: 620px;}
+#statistics a {font: 22px/45px "Fira Sans"}
 #main-page #statistics strong {font-weight: 700;}
 #main-page #statistics a {color: #558DB5;}
 #main-page #statistics .pricerange {padding-left: 20px;}
@@ -49,16 +80,38 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 /* Радио-кнопки */
 
 .radio-box input[type="radio"] {display: none;}
-.radio-box input[type="radio"] + label {display: block; float: left; line-height: 44px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; border-left: none; cursor: pointer; margin: 8px 0px;}
+.radio-box input[type="radio"] + label {
+	display: block; 
+	float: left; 
+	line-height: 44px; 
+	padding: 0px 20px 0px 20px; 
+	border: 1px solid #BCBCBC; 
+	border-left: none; 
+	cursor: pointer; 
+	margin: 8px 0px;
+	background-color:#8b8b8b;
+	}
 .radio-box input[type="radio"] + label:nth-of-type(1){border-left: 1px solid #BCBCBC; border-radius: 4px 0px 0px 4px;}
 .radio-box label:last-child {border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px;}
-.radio-box input[type="radio"]:checked + label {background: rgba(0, 0, 0, 0.07); box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);}
+.radio-box input[type="radio"]:checked + label {
+	background: rgba(0, 0, 0, 0.07); 
+	box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
+	background-color:#5c80a4;
+	}
 
 
 /* Чекбокс-кнопки */
 
 .checkbox-box input[type="checkbox"] {display: none;}
-.checkbox-box input[type="checkbox"] + label {display: block; float: left; line-height: 44px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; border-left: none; cursor: pointer; margin: 8px 0px;}
+.checkbox-box input[type="checkbox"] + label {
+	display: block;
+	float: left; 
+	line-height: 44px;
+	padding: 0px 20px 0px 20px;
+	border: 1px solid #BCBCBC;
+	border-left: none;
+	cursor: pointer;
+	margin: 8px 0px;}
 .checkbox-box input[type="checkbox"] + label:nth-of-type(1){border-left: 1px solid #BCBCBC; border-radius: 4px 0px 0px 4px;}
 .checkbox-box label:last-child {border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px;}
 .checkbox-box input[type="checkbox"]:checked + label {background: rgba(0, 0, 0, 0.07); box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);}
@@ -67,31 +120,69 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 
 /* Обратите внимание */
 .pay-attention {width: 760px; margin: auto; border: 1px solid #4579A6; padding: 30px;}
-.pay-attention legend {text-align: center; padding: 0px 20px; color: #4579A6; font-weight: 700;}
+.pay-attention legend {
+	text-align: center;
+	padding: 0px 20px;
+	background: red none repeat scroll 0 0;
+    color: white;
+    font-weight: 700;
+    margin-left: 230px;}
 .pay-attention ul {list-style: disc; padding-left: 40px; color: #4A4A4A;}
+
+.pay-attention ul li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .pay-attention p {margin-bottom: 30px;}
 .pay-attention p:last-of-type {margin-bottom: 0px;}
 
 
-#support-footnote {text-align: center; color: #979797; font: italic 18px/30px "PT Sans"; margin: 30px 0px}
+#support-footnote {text-align: center; color: #979797; font: italic 18px/30px "Fira Sans"; margin: 30px 0px}
 
 
 
 
 /* Принцип работы */
-
+#how-it-works{
+	margin-left:50px;
+}
 #how-it-works li {width: 640px;	background: url() no-repeat 80px top; padding-left: 220px; margin-bottom: 30px;}
-#how-it-works li::first-line {font: 700 24px/60px "PT Sans"; display: block;}
-#how-it-works #one {background-image: url(img/icon-how-it-works-1.png);}
-#how-it-works #two {background-image: url(img/icon-how-it-works-2.png);}
-#how-it-works #three {background-image: url(img/icon-how-it-works-3.png);}
-#how-it-works #four {background-image: url(img/icon-how-it-works-4.png);}
+#how-it-works li::first-line {font: 700 24px/60px "Fira Sans"; display: block;}
+#how-it-works #one {
+	background-image: url(/img/icon-how-it-works-1.png);
+	width: 500px;
+	}
+#how-it-works span {
+	color: #5c80a4;
+	}
+#how-it-works #two {
+	background-image: url(/img/icon-how-it-works-2.png);     
+	margin-left: 80px;
+    width: 500px;}
+#how-it-works #three {
+	background-image: url(/img/icon-how-it-works-3.png);
+	width: 500px;
+	}
+#how-it-works #four {
+	background-image: url(/img/icon-how-it-works-4.png);
+	margin-left: 80px;
+    width: 500px;
+	}
 
 
 
 /* Как нас найти */
 
-#contacts {overflow: hidden; margin: 30px 0px}
+#contacts {
+	overflow: hidden; 
+	margin: 0 0 30px -10px;
+	background:white;
+	width:960px;
+	padding-bottom: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
 #contacts .col-6 {width: 460px; float: left; margin-right: 20px;}
 #contacts .col-6:last-child {margin-right: 0px;}
 #contacts .col-6 span {font-weight: 700;}
@@ -104,7 +195,7 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 #tell-a-friend ol {padding-left: 105px; list-style: decimal; margin-bottom: 60px; color: #4A4A4A;}
 #tell-a-friend ol li {margin-bottom: 30px;}
 #tell-a-friend fieldset {width: 760px; margin: auto; border: 1px solid #4579A6; padding: 30px;}
-#tell-a-friend fieldset legend {text-align: center; padding: 0px 20px; color: #4579A6; font-weight: 700;}
+#tell-a-friend fieldset legend {text-align: center; padding: 0px 20px; color: white; font-weight: 700;}
 #tell-a-friend fieldset ul {list-style: disc; padding-left: 40px; color: #4A4A4A;}
 
 
@@ -119,19 +210,56 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 /* Подписка на рассылку */
 
 
-#subscribe .wide {line-height: 60px; } #subscribe .wide span {width: 270px; display: inline-block; text-align: right; margin-right: 30px; }
-#subscribe input {border: 1px solid #BCBCBC; font: 18px/30px "PT Sans"; height: 45px; border-radius: 4px; padding: 0px 10px; box-sizing: border-box; margin: 0px; }
-#subscribe textarea {vertical-align: top; margin-top: 8px; margin-bottom: 8px; border: none; border: 1px solid #BCBCBC; font: 18px/30px "PT Sans"; min-height: 134px; min-width: 400px; padding: 0px 10px; border-radius: 4px; box-sizing: border-box; margin-left: 0px; }
-#subscribe input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; background: #4579A6; color: white; border: none; padding: 0px 20px 0px 20px; cursor: pointer; }
+#subscribe .wide {line-height: 60px; } 
+#subscribe .wide span {
+	width: 270px; 
+	display: inline-block; 
+	text-align: right;
+	margin-right: 30px; 
+	font-size:16px;}
+#subscribe input {border: 1px solid #BCBCBC; font: 18px/30px "Fira Sans"; height: 45px; border-radius: 4px; padding: 0px 10px; box-sizing: border-box; margin: 0px; }
+#subscribe textarea {vertical-align: top; margin-top: 8px; margin-bottom: 8px; border: none; border: 1px solid #BCBCBC; font: 18px/30px "Fira Sans"; min-height: 134px; min-width: 400px; padding: 0px 10px; border-radius: 4px; box-sizing: border-box; margin-left: 0px; }
+#subscribe input[type="submit"] {
+	margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
+    background: #8ec549 none repeat scroll 0 0;
+    border: medium none;
+    color: white;
+    cursor: pointer;
+    font: 700 22px/30px "Fira Sans";	 
+	}
+#subscribe input[type="submit"]:hover{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} 
 #subscribe .extra-span {padding-left: 20px; display: block; float: right; width: 400px; line-height: 30px; text-align: left; margin-right: 0px; }
 #subscribe .break-line {border-bottom: 1px solid #BCBCBC; box-sizing: border-box; line-height: 29px; color: #BCBCBC; margin-bottom: 30px; }
-#subscribe select {height: 44px; font: 18px/30px "PT Sans"; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; box-sizing: border-box; margin: 0px; margin-left: -4px; background: white; }
-#subscribe .select-metro {border: 1px solid #BCBCBC; font: 18px/44px "PT Sans"; border-radius: 4px; padding: 0px 20px; box-sizing: border-box; display: inline-block; cursor: pointer; margin-left: -4px; }
+#subscribe select {height: 44px; font: 18px/30px "Fira Sans"; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; box-sizing: border-box; margin: 0px; margin-left: -4px; background: white; }
+#subscribe .select-metro {border: 1px solid #BCBCBC; font: 18px/44px "Fira Sans"; border-radius: 4px; padding: 0px 20px; box-sizing: border-box; display: inline-block; cursor: pointer; margin-left: -4px; }
 #subscribe .what-property input[type="radio"] {display: none; }
-#subscribe .what-property input[type="radio"] + label {display: block; float: left; line-height: 42px; padding: 0px 20px 0px 20px; border: 1px solid #BCBCBC; box-sizing: border-box; border-left: none; cursor: pointer; margin: 8px 0px; }
-#subscribe .what-property input[type="radio"] + label:nth-of-type(1){border-left: 1px solid #BCBCBC; border-radius: 4px 0px 0px 4px; }
-#subscribe .what-property label:last-child {border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px; }
-#subscribe .what-property input[type="radio"]:checked + label {background: rgba(0, 0, 0, 0.07); box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50); } 
+#subscribe .what-property input[type="radio"] + label {
+	display: block; 
+	float: left; 
+	line-height: 42px; 
+	padding: 0px 20px 0px 20px; 
+	border: 1px solid #BCBCBC; 
+	box-sizing: border-box; 
+	border-left: none; 
+	cursor: pointer; 
+	margin: 8px 0px; 
+	background-color: #8b8b8b;
+	color:white;}
+#subscribe .what-property input[type="radio"] + label:nth-of-type(1){
+	border-left: 1px solid #BCBCBC; 
+	border-radius: 4px 0px 0px 4px; 
+	color:white;
+	}
+#subscribe .what-property label:last-child {
+	border-right: 1px solid #BCBCBC; 
+	border-radius: 0px 4px 4px 0px;
+	color:white;
+	 }
+#subscribe .what-property input[type="radio"]:checked + label {
+	background-color: #5c80a4; 
+	box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50); } 
 
 
 
@@ -139,7 +267,7 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
     display: inline-block;
     line-height: 16px;
     min-width: 86px;
-    padding-left: 30px;
+    padding-left: 40px;
     position: relative;
 }
 .radioss input {
@@ -153,9 +281,11 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
 }
 .radioss label {
     cursor: pointer;
+    margin-left: -12px;
 }
 
 .checkboxes-wrapper {
+	margin-top: 17px;
 }
 
 .radioss span {
@@ -170,4 +300,10 @@ input[type="submit"] {margin-top: 8px; margin-bottom: 30px; background: #4579A6;
     background-position: 0 -16px;
 }
 
-
+#paysto_verification-form{
+    background-color: #e3e3e3;
+    margin-bottom: -20px;
+    margin-left: -10px;
+    padding: 10px;
+    width: 960px;
+}

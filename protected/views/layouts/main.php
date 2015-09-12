@@ -25,6 +25,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <script  type="text/javascript" src="/js/baza812.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/filter_main.css" />
 <link rel="stylesheet" type="text/css" href="/css/search.css" />
+<link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
 	
 
 <style>
@@ -35,12 +36,13 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
       #map_canvas { height: 540px; width: 620px; }
 
 body {
-   /* background: #99aec2 none repeat scroll 0 0;*/
+   /*background-color:#CCFFFF*/
+   background-image: url("/img/St-Petersburg.jpg")
 }
 
 
 #item {}
-#item h1 {font: 700 28px/30px "PT Sans"; color: black; text-align: left; padding-top: 30px;}
+#item h1 {font: 700 28px/30px "Fira Sans"; color: black; text-align: left; padding-top: 30px;}
 #item .breadcrumbs {color: #9B9B9B; margin-bottom: 30px;}
 #item .breadcrumbs a {color: #4579A6;}
 #item .timestamp {color: #9B9B9B; background: url(/img/icon-timestamp.png) no-repeat left center; padding-left: 25px; float: right;}
@@ -49,19 +51,18 @@ body {
 #item .info-box .left-column {width: 620px; height: 540px; display: block; float: left; background: grey; box-shadow: 0px 0px 10px rgba(0,0,0,0.5);}
 #item .info-box .right-column {width: 300px; text-align: center; display: block; float: left; padding: 30px 0px 30px 20px}
 
-#item .info-box .price {font: 700 42px/60px "PT Sans"; color: #4579A6;}
-#item .info-box .price span {font: 500 italic 24px/30px "PT Sans"; color: #4579A6; display: block;}
+#item .info-box .price {font: 700 42px/60px "Fira Sans"; color: #4579A6;}
+#item .info-box .price span {font: 500 italic 24px/30px "Fira Sans"; color: #4579A6; display: block;}
 #item .info-box .features {width: 240px; height: 90px; display: block; background: lightgray; margin: auto;}
-#item .info-box .owner-name {font: italic 18px/30px "PT Sans"; color: #4A4A4A;}
-#item .info-box .owner-phone {font: 700 28px/60px "PT Sans"; color: #4A4A4A; color: #4A4A4A;}
-#main-menu .add-item:hover {font: italic 18px/44px "PT Sans"; text-decoration: none; color: white; border-radius: 4px; display: block; padding-left: 50px; text-align: right; padding-right: 15px; float: right; background: url(/img/note.svg) no-repeat 15px center; background-color: #4579A6; margin-top: 8px;}
+#item .info-box .owner-name {font: italic 18px/30px "Fira Sans"; color: #4A4A4A;}
+#item .info-box .owner-phone {font: 700 28px/60px "Fira Sans"; color: #4A4A4A; color: #4A4A4A;}
 
 #item .info-box form {}
 
 
 
 #item .info-box form input {
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	box-sizing: border-box;
 	height: 45px;
 	text-align: center;
@@ -70,7 +71,7 @@ body {
 }
 
 #item .info-box form div {
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	box-sizing: border-box;
 	height: 45px;
 	text-align: center;
@@ -155,7 +156,7 @@ body {
 }
 
 .get-for-free {
-	font: italic 16px/20px "PT Sans";
+	font: italic 16px/20px "Fira Sans";
 	color: #4A4A4A;
 	display: block;
 	text-align: left;
@@ -196,7 +197,7 @@ body {
 
 .item-description {
 	width: 620px;
-	font-family: "Georgia";
+	font-family: "Fira Sans";
 	color: #4A4A4A;
 	padding-top: 30px;
 	margin: 0px 20px 60px 0px;
@@ -245,7 +246,7 @@ body {
 <title>Аренда квартир и комнат</title>
 <!-- <link href="/img/logo.png" rel="shortcut icon"> -->
 </head>
-<body style='background-color:#00CCFF'>
+<body>
 
 
 <div id="item" class="wrapper">
@@ -259,7 +260,7 @@ body {
 
 <?php echo $content; ?>
 
-        <p class="break-line">&nbsp;</p>
+        
         <div id='paysto_verification-form'>
 			<!-- begin paysto verification --> 
 			<a href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
@@ -274,8 +275,8 @@ body {
 				<img border="0" src="/img/yandex8831_s1.png">
 			</a>
 		</div>
-		<div style="float:right; margin-top: -55px; line-height: 20px;">
-			<b style="font-size:14px;">
+		<div style="float:right; margin-top: -55px; line-height: 20px; font-size:12px;">
+			<b style="width:50px;">
 				<a href="/contact">Если у вас возникли сложности — обратитесь в службу поддержки:</a>
 				<br>
 				+7 (965) 035-63-02, 6425123@gmail.com
@@ -357,4 +358,5 @@ body {
         
 		</div>
 </body>
+
 </html>

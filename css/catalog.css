@@ -1,13 +1,15 @@
 
 #main-search {
-	background: /*#FBFAF6*/ white;
+	background: /*#FBFAF6*/ #e3e3e3;
+	margin-left: -10px;
+	width: 955px;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
 	overflow: hidden;
-	height: 190px;
-	opacity: 0.8;
+	height: 210px;
+	/*opacity: 0.8;*/
 	/*color: #9B9B9B;*/
-	margin-bottom: 30px;
-	padding-left:5px;
+	/*margin-bottom: 30px;*/
+	padding-left:10px;
 }
 
 
@@ -15,7 +17,7 @@
 #main-search p {
 	line-height: 60px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 15px;
 	padding-left: 5px;
 }
 
@@ -24,7 +26,7 @@
 	display: inline-block;
 	float: left;
 	margin-right: 20px;
-	color: black;
+	color: white;
 }
 
 #main-search .room input[type="checkbox"] {display: none;}
@@ -33,29 +35,36 @@
 	float: left;
 	line-height: 44px;
 	padding: 0px 20px 0px 20px;
-	border: 1px solid #BCBCBC; 
+	border: 1px solid #5c80a4; 
 	cursor: pointer;
 	margin: 8px 0px;
+	color: white;
 }
 
 #main-search .room input[type="checkbox"] + label:nth-of-type(1){
-	border-left: 1px solid #BCBCBC;
+	border-left: 1px solid #5c80a4;
 	border-radius: 4px;
+	background-color:#8b8b8b;
+	color: white;
 }
 #main-search .room input[type="checkbox"] + label:nth-of-type(1):hover {
-    border-left: 1px solid #bcbcbc;
+    border-left: 1px solid #5c80a4;
     border-radius: 4px;
    /*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
+   color: white;
 }
 
 #main-search .room label:last-of-type {
-	border-right: 1px solid #BCBCBC;
+	border-right: 1px solid #5c80a4;
 	border-radius: 0px 4px 4px 0px;
+	color: white;
 }
 
 #main-search .room input[type="checkbox"]:checked + label {
 	background: rgba(0, 0, 0, 0.07);
-	box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
+	background-color: #5c80a4;
+	/*box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);*/
+	color: white;
 }
 
 
@@ -69,38 +78,45 @@
 	display: block;
 	float: left;
 	line-height: 44px;
-	padding: 0px 20px 0px 20px;
-	border: 1px solid #BCBCBC; 
+	padding: 0px 15px 0px 15px;
+	background: #8b8b8b;
+	border: 1px solid #5c80a4; 
 	border-left: none;  
 	cursor: pointer;
 	margin: 8px 0px;
+	color: white;
 }
 
 #main-search .rooms input[type="checkbox"] + label:nth-of-type(1){
-	border-left: 1px solid #BCBCBC;
+	border-left: 1px solid #5c80a4;
 	border-radius: 4px 0px 0px 4px;
+	color: white;
 }
 
 #main-search .rooms input[type="checkbox"] + label:nth-of-type(1):hover{
-	border-left: 1px solid #BCBCBC;
+	border-left: 1px solid #5c80a4;
 	border-radius: 4px 0px 0px 4px;
+	color: white;
 	/*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
 }
 
 #main-search .rooms label:last-of-type {
-	border-right: 1px solid #BCBCBC;
+	border-right: 1px solid #5c80a4;
 	border-radius: 0px 4px 4px 0px;
+	color: white;
 }
 
 #main-search .rooms label:last-of-type:hover {
-	border-right: 1px solid #BCBCBC;
+	border-right: 1px solid #5c80a4;
 	border-radius: 0px 4px 4px 0px;
 	/*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;*/
+	color: white;
 }
 
 #main-search .rooms input[type="checkbox"]:checked + label {
-	background: rgba(0, 0, 0, 0.07);
-	box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
+	background-color: #5c80a4;
+	box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.40);
+	color: white;
 }
 
 #main-search .rooms p {margin-left: 20px;}
@@ -112,13 +128,17 @@
 	display: block;
 	float: left;
 	line-height: 44px;
-	padding: 0px 20px 0px 20px;
-	border: 1px solid #BCBCBC; 
+	padding: 0px 1px 0px 1px;
+	border: 1px solid #5c80a4; 
 	border-radius: 4px;
 	cursor: pointer;
 	margin-top: 8px;
 	text-decoration: none;
 	color: black;
+	background-color:#8b8b8b;
+	width: 195px;
+	color: white;
+	text-align: center;
 }
 
 
@@ -129,50 +149,57 @@
 	float: left;
 	margin-right: 20px;
 	height: 44px;
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	margin-top: 8px;
 	padding: 0px 20px 0px 20px;
-	border: 1px solid #BCBCBC;
+	border: 1px solid #5c80a4;
 	background: none;
 	text-align: center;
 
 }
 #main-search input {
     -moz-appearance: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #bcbcbc;
+    background-color:white;
+    border: 1px solid #5c80a4;
     float: left;
-    font: 18px/30px "PT Sans";
+    font: 18px/30px "Fira Sans";
     height: 44px;
     margin-right: 20px;
     margin-top: 8px;
-    padding: 0 20px;
+    padding: 0 18px;
     text-align: center;
+    width: 140px;
+    margin-left: 8px;
 }
 
 #main-search input[type="submit"] {
-	background: #ffffff;
-	border: 2px solid #4579A6;
+	background: #8ec549;
+	/*border: 2px solid #4579A6;*/
 	border-radius: 4px;
-	color: #4579A6;
+	color: white;
 	height: 44px;
-	font: 18px/30px "PT Sans";
+	width:125px;
+	font: 18px/30px "Fira Sans";
+	font-weight:bold;
 	padding: 0px 20px 0px 20px;
-	margin-top: 8px;
+	margin-top: -35px;
 	margin-left: 0;
+	float: right;
 	
 }
 #main-search input[type="submit"]:hover {
-	background: #4579A6;
-	border: 2px solid #BCBCBC;
+	background: #8abf47;
+	/*border: 2px solid #BCBCBC;*/
 	border-radius: 5px;
-	color: #ffffff;
+	color: white;
 	height: 44px;
-	font: 18px/30px "PT Sans";
+	font: 18px/30px "Fira Sans";
 	font-weight:bold;
 	padding: 0px 20px 0px 20px;
-	margin-top: 8px;
-	
+	margin-top: -35px;
+	margin-left: 0;
+	float: right;
+	width:125px;
 }
 .back-to-search-item, .add-to-favorites-item {
 	text-decoration: none;
@@ -198,24 +225,24 @@
 }
 
 .showmoreinfo{
- 	background: #4579a6 none repeat scroll 0 0;
+ 	background: #8ec549 none repeat scroll 0 0;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     display: inline-block;
     line-height: 46px;
-    margin: 10px 1px 0px 280px;
+    margin: 47px 1px 0px 260px;
     padding: 0 20px;
     text-decoration: none;
 }
 .showmoreinfo:hover{
- 	background: #4579a6 none repeat scroll 0 0;
+ 	background: #8ec549 none repeat scroll 0 0;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     display: inline-block;
     line-height: 46px;
-    margin: 10px 1px 0px 280px;
+    margin: 47px 1px 0px 260px;
     padding: 0 20px;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);

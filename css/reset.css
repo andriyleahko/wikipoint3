@@ -3,6 +3,11 @@
    License: none (public domain)
 */
 
+
+
+
+
+   
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,10 +24,15 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/*@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);*/
+	font-family: "Fira Sans";
+	font-size: 100%;
+	font-size: 20px;
+	font-weight: 500;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -45,4 +55,17 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+#howitworks{
+	background-color:white;
+	margin-left:-10px; 
+	width:960px;
+	padding:10px;
+}
+#payment-methods{
+	background-color:white;
+	margin-left:-10px; 
+	width:960px;	
+	padding:10px;
+	margin-top: 30px;
 }
