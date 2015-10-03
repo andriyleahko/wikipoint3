@@ -27,7 +27,7 @@
             <?php endif; ?>
             <div class="image" style="overflow: hidden">
                 <?php if ($first !== null) : ?> 
-                    <a class="fancy" rel="example_group<?php echo $item->id_object ?>" href="<?php echo $first ?>"><img style="width: 450px;" src="<?php echo $first ?>"/></a>
+                    <a class="fancy" rel="example_group<?php echo $item->id_object ?>" href="<?php echo $first ?>"><img style="width: 150px; height: 110px;" src="<?php echo $first ?>"/></a>
                 <?php endif; ?>
                 <?php if ($first === null) : ?> 
                     <div id="map_canvas<?php echo $item->id_object ?>"></div>
@@ -75,7 +75,7 @@
                     </script>
                     <style>
 
-                        #map_canvas<?php echo $item->id_object ?> { height: 240px; width: 450px; }
+                        #map_canvas<?php echo $item->id_object ?> { height: 110px; width: 150px; }
 
                     </style>
             <?php endif; ?>
@@ -88,6 +88,7 @@
             <div class="info">
 				
             	<p class="type"><?php if ($item->ObjectsDovType) echo $aObjectType2[$item->ObjectsDovType->id] ?></p>
+                <p class="price"><?php echo substr_replace($item->price, ' 000', -3) ?></p>
                 <p class="metro11 line-<?php echo $item->ObjectsMetro->ObjectsDovMetro->metro_line?>"> 
                     <?php
                     if ($item->ObjectsMetro->ObjectsDovMetro->name) {
@@ -106,9 +107,9 @@
                     ?> 	
                 </p>
 				<br/>
-				<p class="price"><?php echo substr_replace($item->price, ' 000', -3) ?></p>
+				
                 <div class="features">
-                    <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:10px; padding-top:5px;'>
+                    <div style='text-align: left; font: italic 14px/20px "PT Sans"; margin-left:0px; padding-top:5px;'>
                         <?php if ($item->ObjectsMoreinfo): ?>
                             <?php if ($item->ObjectsMoreinfo->internet == 1){ ?>
                                 <img  title='Интернет' src='/img/internet.png'> 

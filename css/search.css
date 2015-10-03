@@ -17,18 +17,18 @@
 }
 .item {
 	background: #e3e3e3;
-	height: 240px;
+	height: 110px;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
 	border-radius: 2px;
-	margin: 20px;
+	margin: 20px 30px;
 	cursor: pointer;
 	overflow: hidden;
 	padding:5px;
 }
 
 .item .image {
-	width: 450px;
-	height: 240px;
+	width: 150px;
+	height: 110px;
 	margin-right: 30px;
 	float: left;
 	//background: url(img/no.png) no-repeat;
@@ -42,8 +42,12 @@
     width: 960px;
 }
 
-.item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 15px;}
-.item .metro11 {font-size: 16px; padding-left: 37px; background: url() no-repeat left center; float: left;  margin-top: 10px;}
+.item .type {color: #4A4A4A; font: 700 24px/30px "PT Sans"; padding-top: 0px;}
+.item .metro11 {font-size: 16px; 
+				padding-left: 37px; 
+				background: url() no-repeat left center; 
+				float: left;  
+				margin-top: 2px;}
 
 .item .line-1 {color: #ff0000; background-image: url(/img/metro-line-1.png); }
 .item .line-2 {color: #0080ff; background-image: url(/img/metro-line-2.png);}
@@ -52,18 +56,20 @@
 .item .line-5 {color: #702785; background-image: url(/img/metro-line-5.png);}
 
 .item .address {
-	color: #5c80a4; 
-	font: 700 16px/30px "Fira Sans"; /*margin-bottom: 30px;*/ 
-	float: left; margin-top: -100px; width: 350px;
-	margin-left: -9px;
+    color: #5c80a4;
+    float: right;
+    font: 700 16px/30px "Fira Sans";
+    margin-right: 217px;
+    margin-top: -30px;
+    width: 500px;
 	}
 .item .price {
 	color: balck; 
 	font: 700 50px/30px "Fira Sans"; 
-	margin-bottom: 20px;
-    width:210px;
-    margin-left:474px;
-    margin-top: -70px;
+	/*margin-bottom: 20px;*/
+    /*width:210px;*/
+    margin-left:490px;
+    margin-top: -20px;
     
 	}
 .item .features {
@@ -71,7 +77,8 @@
 	width: 240px;
 	/*background: #efefef;*/
 	float: left;
-	 margin-left: -13px;
+	 margin-left: 490px;
+	 margin-top:-44px;
 }
 .item .button {
 	color: #4579A6;
@@ -87,7 +94,7 @@
 	box-sizing: border-box;
 	
 }
-.item .timestamp {float: right; margin: 30px 20px 0px 0px; color: #99AEC2;}
+.item .timestamp {float: right; margin: -25px 30px 0px 0px; color: #99AEC2;}
 
 .metro {
     width: 123px;

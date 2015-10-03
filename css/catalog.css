@@ -231,18 +231,20 @@
     cursor: pointer;
     display: inline-block;
     line-height: 46px;
-    margin: 47px 1px 0px 260px;
+    margin: -41px 1px 0px 330px;
     padding: 0 20px;
     text-decoration: none;
+    float: right;
 }
 .showmoreinfo:hover{
+	float: right;
  	background: #8ec549 none repeat scroll 0 0;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     display: inline-block;
     line-height: 46px;
-    margin: 47px 1px 0px 260px;
+    margin: -41px 1px 0px 330px;
     padding: 0 20px;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
