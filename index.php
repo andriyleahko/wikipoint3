@@ -1,5 +1,5 @@
 <?php
-	date_default_timezone_set('Europe/Moscow'); // Äóæå ïîãàíî, ùî ĞÎñ³ÿ íå ïåğåõîäèòü íà ë³òí³é ÷àñ....
+	date_default_timezone_set('Europe/Moscow'); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½....
 	date_default_timezone_set('Europe/Kiev');
 	
 	
@@ -7,9 +7,6 @@
 $yii=dirname(__FILE__).'/framework/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
-// for global functions
-$globalFunctions=dirname(__FILE__).'/protected/globalfunctions.php';
-require_once($globalFunctions);
 
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);
@@ -17,4 +14,9 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 require_once($yii);
+
+// for global functions
+$globalFunctions=dirname(__FILE__).'/protected/globalfunctions.php';
+require_once($globalFunctions);
+
 Yii::createWebApplication($config)->run();

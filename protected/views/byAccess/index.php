@@ -48,7 +48,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 <h1 style='color: #4579a6; font: 700 48px/60px "Fira Sans";  text-align: center;'>Покупка пароля к базе</h1>
 <p class="subheader"><span class="sh">для доступа к контактам владельцев</span></p>
 
-<h3>1. Выберите ТАРИФ</h3>
+<h3>1. Выберите ТАРИФ (все способы оплаты - без комиссии)</h3>
 <div style='text-align: center;margin-left: 115px;'>
 <fieldset class="radio-box">
 	<?php $i=1; foreach ($model as $mod):?>
@@ -64,9 +64,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 </div>
 <?php echo (isset($not_tarif)&$not_tarif!='')?'<p style="color:red">'.$not_tarif.'</p>':'';?>
 
-<h3>2. Способ платы - без комиссии</h3>
 
-<h3>3. Ваш номер телефона</h3>
+<h3>2. Ваш номер телефона</h3>
 
 <div style='text-align: center;'>
 	<input class="phone" type="text" name='phone' value="<?php echo ($_POST['phone'])?$_POST['phone']:'';?>">	

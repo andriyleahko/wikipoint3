@@ -16,7 +16,7 @@
 <script type="text/javascript">
 document.write(VK.Share.button({
 	  	url: 'http://baza812.ru',
-	  	title: 'База812. Аренда квартир и комнат',
+	  	title: 'База812. Аренда квартир и комнат без комиссии',
 	  	description: 'Самая полная, актуальная база по аренде квартир и комнат',
 	  	image: 'http://baza812.ru/img/logo.png',
 	  	noparse: true

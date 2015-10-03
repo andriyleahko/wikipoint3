@@ -82,49 +82,49 @@ class ByAccessController extends Controller {
 			$modelOrder->save(false);
 			$order_id=$modelOrder->id;
 				
-			
-			
-			
-			
-			// Компонент переадресует пользователя в свой интерфейс оплаты
-			Yii::app()->robokassa->pay(
-					$price,
-					$order_id,
-					$description,
-					'email'
+			$data = array(
+					'summ' => $price, // з бази по тарифах
+					'order_id' => $order_id, // id ордера
+					'description' => $description // .....
 			);
 			
+			
+			Yii::app()->session['order_id'] = $order_id;
+			Yii::app()->paysto->genere_form($data);
 		}
 	}
 	
+	public function actionPay_paysto_check_url() {
+		
+		echo Yii::app()->paysto->check_paid();
+		exit ();
+	}
 	
-	public function actionResult() {
+	public function actionPay_callback_paysto() {
 		
-		
-		
-		$rc = Yii::app()->robokassa;
-		
-		
-		$mrh_pass2 = $rc->sMerchantPass2;
-		$out_summ = $_GET['OutSum'];
-		$inv_id = $_GET['InvId'];
-		$crc = strtolower($_GET["SignatureValue"]);
-		$my_crc = strtolower(md5("$out_summ:$inv_id:$mrh_pass2"));
-		
-		
-		if ($my_crc === $crc) {
-			$InvId = Yii::app()->request->getParam('InvId');
-			$modelOrders=Baza812UserBuyOrders::model()->findByPk($InvId);
+		if ($id_order = Yii::app()->paysto->check_paid()) {
+			// по ід ми дістаємо наш ордер з бд
+			$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order); 
+			
+			
 			if ($modelOrders->status == 0){
-				// перевіркa чи статус дорівнює 0. важливо
-				// міняємо статус в таблиці ордерів
+			// перевіркa чи статус дорівнює 0. важливо
+			// міняємо статус в таблиці ордерів
 				$modelOrders->status = 1;
 				$pas=$this->_generatepasword();
 				$id_type_pasword=$modelOrders->id_type_pasword;
 				$modelOrders->pasword = $pas;
 				$user_id=$modelOrders->id_user;
 				$modelOrders->save(false);
-				// заповняємо таблицю доступів
+				/*$model = new Baza812UserBuyOrders();
+				$model->findByPk($id_order);
+				$user_id=$model->user_id;
+				$id_type_pasword->$model->id_type_pasword;
+				$model->status = 1;
+				$pas=_generatepasword();
+				$model->pasword = $pas;
+				$model->save(false);*/
+			// заповняємо таблицю доступів
 				$modelUserAccess = new Baza812UserAccess();
 				$modelUserAccess->user_id = $user_id;
 				$modelUserAccess->pasword = $pas;
@@ -136,51 +136,42 @@ class ByAccessController extends Controller {
 					$modelUserAccess->number_opened_phone_allowed = 0;
 				}
 				$modelUserAccess->save(false);
-					
+				
 				/// відправити смс
-				list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms('7'.$modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
-				list($status, $time) = Yii::app()->smsc->get_status($sms_id, '7'.$modelOrders->Baza812User->phone);
+
 			}
-		
-		} else {
-			$InvId = Yii::app()->request->getParam('InvId');
-			$modelOrders = Baza812UserBuyOrders::model()->findByPk($InvId);
-			$modelOrders->status=-1;
-			$modelOrders->save(false);
+			
 		}
-		
 	}
 	
-	public function actionSuccess() {
-		$InvId = Yii::app()->request->getParam('InvId');
-		$modelOrders=Baza812UserBuyOrders::model()->findByPk($InvId);
-		if (isset($modelOrders)&&$modelOrders) {
-			if ($modelOrders->status==1) {
-				// Если робокасса уже сообщила ранее, что платеж успешно принят
-				Yii::app()->user->setFlash('global',
-						'Средства зачислены на ваш личный счет. Пароль будет в смс. Спасибо.');
-			} else {
-				// Если робокасса еще не отзвонилась
-				Yii::app()->user->setFlash('global', 'Ваш платеж принят. Средства
-                    будут зачислены на ваш личный счет в течение нескольких минут.
-                     Пароль будет в смс. Спасибо.');
-			}
+	public function actionPay_callback_success() {
+		
+		$id_order = $_POST['PAYSTO_INVOICE_ID'];
+		// ордер з бд і перевірити статус якщо 0 значить щось було не так і вивести повідомлення
+		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
+		
+		list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms('7'.$modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
+		list($status, $time) = Yii::app()->smsc->get_status($sms_id, '7'.$modelOrders->Baza812User->phone);
+		
+		if ($modelOrders->status == 1){
+			//якщо 1 тоді все гуд
+			$ok='ok';	
+		}else{
+			$ok='not_ok';
 		}
-		//list($sms_id, $sms_cnt, $cost, $balance)=Yii::app()->smsc->send_sms('7'.$modelOrders->Baza812User->phone, "Ваш пароль: ".$modelOrders->pasword);
-		//list($status, $time) = Yii::app()->smsc->get_status($sms_id, '7'.$modelOrders->Baza812User->phone);
-		$this->render('view', array('ok'=>'ok', 'model'=>$modelOrders));
+		$this->render('view', array('ok'=>$ok, 'model'=>$modelOrders, 'smsstatus'=>$status));
+ 
 	}
 	
-		
-	public function actionFailure() {
-		Yii::app()->user->setFlash('global', 'Отказ от оплаты. Если вы столкнулись
-            с трудностями при внесении средств на счет, свяжитесь
-            с нашей технической поддержкой.');
-	
-		$this->render('view', array('ok'=>'not_ok', 'model'=>$modelOrders));
+	public function actionPay_callback_fail() {
+		$id_order = Yii::app()->session['order_id'];
+		Yii::app()->session['order_id'] ='';
+		$modelOrders = Baza812UserBuyOrders::model()->findByPk($id_order);
+		$modelOrders->status=-1;
+		$modelOrders->save(false);
+		$this->render('view', array('ok'=>'abort', 'model'=>$modelOrders));
+		// ставиш статус -1 і 
 	}
-	
-	
 	private function _generatepasword()
 	{
 		$pas=rand(10000, 99999);

@@ -9,6 +9,9 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <html>
 <head>
 <meta charset="utf-8">
+
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+  
 <script type="text/javascript" src="http://vk.com/js/api/share.js?91" charset="utf-8"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&language=ru"></script>
 <!-- <script type="text/javascript" -->
@@ -298,9 +301,11 @@ body {
 
 
         <div id='paysto_verification-form'>
+        <?php /*
 			<!-- begin paysto verification --> 
 			<a style='text-decoration: none; color: #5e5e5e; font-size:14px;' href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
-			<!-- end paysto verification -->
+			<!-- end paysto verification -->		*/
+		?>
 			<br>
 			<a target="_blank" href="http://www.megastock.ru/">
 				<img border="0" alt="www.megastock.ru" src="/img/acc_blue_on_transp_ru.png">
@@ -318,6 +323,7 @@ body {
 				+7 (965) 035-63-02, 6425123@gmail.com
 			</b>
 		</div>
+
         </div>
 </div>
      <div class="reveal-modal" id="metro" style="heigth: 100%;">

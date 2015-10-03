@@ -1,7 +1,17 @@
 <h1>Статус оплаты</h1>
 
+<?php
+$fl=Yii::app()->user->getFlashes();
+ if (isset($fl)&&count($fl)>0){
+    foreach($fl as $key => $message) {
+        echo '<p>' . $message . "</p>\n";
+	}
+	
+ }
+?>
+
 <p>
-<?php echo ($ok=='ok')?'Вам открыт доступ':'Ошыбка. Обратитесь в службу поддержки'?>
+<?php echo ($ok=='ok')?'Вам открыт доступ':''?>
 </p>
 
 <?php if ($ok=='ok'):?>

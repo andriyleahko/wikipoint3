@@ -6,7 +6,7 @@
 </div>
 <div id="main-page">
 
-	<h1>Снять квартиру и комнату</h1>
+	<h1>Снять квартиру или комнату</h1>
 	<p class="subheader"><span class='sh'>Без комиссии</span></p>
 	<div id="statistics">
 		<p>Сейчас в базе <strong><?php echo $NumberObjects?></strong> объектов.</p>

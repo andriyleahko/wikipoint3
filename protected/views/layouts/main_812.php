@@ -77,7 +77,7 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
         <!-- <script type="text/javascript" -->
         <!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->
         <!-- </script> -->
-
+		<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
        
         <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
         <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>
@@ -229,9 +229,11 @@ $(document).ready(function(){
 
         
         <div id='paysto_verification-form'>
+        <?php /*
 			<!-- begin paysto verification --> 
 			<a style='text-decoration: none; color: #5e5e5e; font-size:14px;' href="http://paysto.ru/fromshop=22523" target="_blank">Совместно с PAYSTO</a> 
-			<!-- end paysto verification -->
+			<!-- end paysto verification -->			*/
+		?>
 			<br>
 			<a target="_blank" href="http://www.megastock.ru/">
 				<img border="0" alt="www.megastock.ru" src="/img/acc_blue_on_transp_ru.png">
@@ -241,6 +243,7 @@ $(document).ready(function(){
 			<a target="_blank" href="http://www.money.yandex.ru">
 				<img border="0" src="/img/yandex8831_s1.png">
 			</a>
+
 		</div>
 		<div style="float:right; margin-top: -55px; line-height: 20px; width: 235px; text-align: right; color: #5e5e5e">
 			<b style="font-size:13px;">

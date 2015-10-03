@@ -8,11 +8,60 @@ class ItemController extends Controller {
         $this->render('index');
     }
 
+    public function actionComplain(){
+    	if(isset(Yii::app()->session['user_id'])&&Yii::app()->session['user_id']){
+	    	$category=strip_tags($_GET['category']);
+	    	$textt=strip_tags($_GET['textt']);
+	    	$id_object=strip_tags($_GET['objectId']);
+	    	$user_id=Yii::app()->session['user_id'];
+	    	$id_type = aGetComplainTypes($category, 1); // тип жалобы
+	    	if(!$id_type || !$id_object){
+	    		echo json_encode(array('no_complain' => '3')); // complain eror
+	    		exit;
+	    	}
+	    	
+	    	// проверка, чтоб 1 пользователь мог оставить одну жалобу на 1 данный объект и не боле
+	    	$compmod = Complaints::model()->find ( array (
+					'select' => '*',
+					'condition' => 'id_object=:id_object And id_user_baza812=:id_user_baza812',
+					'params' => array (':id_object' => $id_object, ':id_user_baza812'=>Yii::app()->session['user_id']) 
+			) );
+	    	if(count($compmod)>0){
+	    		// уже жалобу пользователь на данный объект оставлял
+	    		echo json_encode(array('no_complain' => '4'));
+	    		exit;
+	    	}
+	    	
+	    	
+	    	//ели жалоб на данный обеъкт пользователь не оставлял, то работаем дальше 
+	    	$Complaints = new Complaints;
+	    	$Complaints->id_user = 0; // 0 - с база812
+	    	$Complaints->id_object = $id_object;
+	    	$Complaints->note = $textt;
+	    	$Complaints->status = 0;
+	    	//date_default_timezone_set("Europe/Moscow");
+	    	$Complaints->date_add = date('Y-m-d H:i:s', time());
+	    	$Complaints->id_type = $id_type;
+	    	$Complaints->id_user_baza812 = Yii::app()->session['user_id'];
+	    	$Complaints->save();
+	    	if($id_type==7 || aGetComplainTypes($id_type)=='Сдано'){// SDANO functionality
+	    		Complaints::sdanoCheckToRemoveTheseComplaints($Complaints->id_object);
+	    		echo json_encode(array('no_complain' => '1')); // all ok;
+	    		exit;
+	    	}
+	    	echo json_encode(array('no_complain' => '1')); // all ok
+    	}else{
+    		echo json_encode(array('no_complain' => '2')); // не ауторизованный пользователь жалоб ставить не может
+    	}	
+    }
+    
     public function actionShow($itemId) {
         $model = Objects::model()->with('ObjectsMetro', 'Owners')->findByPk($itemId);
-        $opened=FALSE;
+        $opened=FALSE; // по умолчанию тел. скрыт
         
-        If(isset(Yii::app()->session['user_id'])&&Yii::app()->session['user_id']){
+        $opened=show_number_if_old($model->date_add); // тел видно если обявление старше 7 дней
+
+        if(isset(Yii::app()->session['user_id'])&&Yii::app()->session['user_id']){
         	// if session exist, then find all users in Baza812UserAccess with current user_id 
         	$modelBaza812User=Baza812User::model()->findByPk(Yii::app()->session['user_id']);
         	if ($modelBaza812User->ids_object){

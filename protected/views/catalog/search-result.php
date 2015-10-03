@@ -14,7 +14,7 @@
 		 '2 комнаты 2(4)', 
 		'2 комнаты 2(5)', 
 		'2 комнаты 2(>5)');?>
-<?php if (!$offset) : ?><p class="items-counter">Найдено <?php echo $total ?> объектов.</p> <?php endif; ?>
+<?php if (!$offset) : ?><p class="items-counter">Найдено <?php echo declOfNum($total, array('объект', 'объекта', 'объектов')) ?> </p> <?php endif; ?>
 <input type="hidden" name="offsetNext" value="<?php echo $offsetNext ?>" />
 <?php if (count($objects)) : ?>
     <?php foreach ($objects as $item): ?>
@@ -49,7 +49,9 @@
                                      
                                     var lat = Data<?php echo $item->id_object ?>.results[0].geometry.location.lat;
                                     var lng = Data<?php echo $item->id_object ?>.results[0].geometry.location.lng;
-
+                                    map(lat,lng,<?php echo $item->id_object ?>,2);
+                                    
+/* ГУГЛ
                                     var fenway = new google.maps.LatLng(lat, lng);
                                     var mapZoom = 15;
 
@@ -59,9 +61,9 @@
                                         mapTypeId: google.maps.MapTypeId.ROADMAP
                                     };
                                     
-                                    var map = new google.maps.Map(document.getElementById("map_canvas<?php echo $item->id_object ?>"),
-                                            mapOptions);
-
+                                    var map = new google.maps.Map(document.getElementById("map_canvas<?php // echo $item->id_object ?>"),
+//                                            mapOptions);
+*/
 
 
                                 }
@@ -132,7 +134,7 @@
                             <?php if ($item->ObjectsMoreinfo->furniture == 1){ ?>
                                 <img  title='Мебель' src='/img/mebel.png'>  
             				<?php }else{ ?>
-            				    <img  title='неь мебели' src='/img/no-mebel.png'>
+            				    <img  title='нет мебели' src='/img/no-mebel.png'>
             				<?php }?>
         				<?php endif; ?>
                     </div>

@@ -131,6 +131,8 @@ class AddItemController extends Controller {
 //                 var_dump($user->errors);
 
                 Yii::app()->user->setFlash('success', "Объект добавлен!!!!");
+                $this->render('add_succes', array('metro' => $metro, 'model' => $modelAddForm, 'district' => $district, 'street' => $street));
+                exit;
             }
         }
         $this->render('add_item', array('metro' => $metro, 'model' => $modelAddForm, 'district' => $district, 'street' => $street));

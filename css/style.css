@@ -301,7 +301,8 @@ input[type="submit"] {
 }
 
 #paysto_verification-form{
-    background-color: #e3e3e3;
+	background-color: white;
+    /*background-color: #e3e3e3;*/
     margin-bottom: -20px;
     margin-left: -10px;
     padding: 10px;

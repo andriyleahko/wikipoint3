@@ -50,7 +50,13 @@ $('#main-search').attr('style','display:none');
         background: url(img/icon-key3.png) no-repeat 0px center / 110px auto;
         margin-top: -26px;
     }
-
+    .reward .icon-key4 {
+        width: 105px;
+        height:111px;
+        display: inline-block;
+        background: url(img/icon-key4.png) no-repeat 0px center / 110px auto;
+        margin-top: -26px;
+    }
 
     .button {
         font: 700 18px/44px "Fira Sans";
@@ -112,17 +118,22 @@ $('#main-search').attr('style','display:none');
     <p class="reward"><span class="icon-key3">&nbsp;</span></p>
     <a class="button" href="/tellafriend">Рассказать друзьям</a>
 
-
+    <p class="activity"><span>Вступить в группу Вконтакте</span> Подпишитесь на группу и получите бесплатный пароль</p>
+    <p class="reward"><span class="icon-key3">&nbsp;</span></p>
+    <a class="button" href="http://vk.com/clubbaza812">Вступить в группу</a>
+    
+<?php /*
     <p class="activity"><span>Подписаться на рассылку новых объявлений</span> Подпишитесь на рассылку свежих объявлений, пароль придет<br> на телефон, указанный в рассылке.</p>
     <p class="reward"><span class="icon-key3">&nbsp;</span></p>
     <a class="button" href="/subscribe">Подписаться на рассылку</a>
-<?php /*
+    
+
     <p class="activity"><span>Привести друзей на сайт</span> Внизу письма из рассылки есть ссылка на вашу страницу baza812.ru/likeXXXXX за каждые 10 “лайков” вы получите один бесплатный пароль.</p>
     <p class="reward">1<span class="icon-key">&nbsp;</span></p>
     <p class="sidenote">Для использования должна быть подключена рассылка. (см. выше)</p>
 */ ?>
-    <p class="activity"><span>Написать отзыв Вконтакте</span> Вы получете один бесплатный пароль</p>
-    <p class="reward"><span class="icon-key3">&nbsp;</span></p>
+    <p class="activity"><span>Написать отзыв Вконтакте</span> Вы получете один бесплатный пароль на два контакта</p>
+    <p class="reward"><span class="icon-key4">&nbsp;</span></p>
     <a class="button" href="http://vk.com/topic-90622364_31995394" target="_blank">Написать отзыв</a>
 
 

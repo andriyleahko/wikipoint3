@@ -24,7 +24,7 @@ class Paysto extends CApplicationComponent
 		<input type='hidden' name='PAYSTO_SUM' value='{$data['summ']}'>
 		<input type='hidden' name='PAYSTO_INVOICE_ID' value='{$data['order_id']}'>
 		<input type='hidden' name='PAYSTO_DESC' value='{$data['description']}'>
-		<input type='hidden' name='PayerEMail' value='your@email.com'>
+		<input type='hidden' name='PayerEMail' value='укажите ваш e-mail'>
 		</form><script type='text/javascript'>document.getElementById('pay-form-pay').submit()</script>";
 	
 	}

@@ -20,10 +20,8 @@
     var lat = Data.results[0].geometry.location.lat;
     var lng = Data.results[0].geometry.location.lng;
     
-        
 
-// пошук координат за адресом
-    
+ /*  
     var fenway = new google.maps.LatLng(lat, lng);
     var mapZoom = 15;
     function map() {
@@ -34,17 +32,32 @@
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"),
                 mapOptions);
+        var marker = new google.maps.Marker({
+        	position: new google.maps.LatLng(lat, lng),
+        	map: map,
+        	title: ''
+        	});
+
+        var contentString ='<div id="а">Тут всё то про что должно быть рассказано</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        google.maps.event.addListener(marker, 'click', function() {   infowindow.open(map,marker); });
+
     }
-    
+   
 
+    // panorama
 
-    /**************** for panorama */
     var map;
     var sv = new google.maps.StreetViewService();
     var panorama;
     function pan() {
         panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
-        sv.getPanoramaByLocation(fenway, 200, processSVData);
+        sv.getPanoramaByLocation(fenway, 30, processSVData);
     }
     function processSVData(data, status) {
         if (status == google.maps.StreetViewStatus.OK) {
@@ -56,51 +69,47 @@
             });
             panorama.setVisible(true);
         } else {
-            alert('Street View data not found for this location.');
+        	sv.getPanoramaByLocation(fenway, 350, processSVData);
+            //alert('Street View data not found for this location.');
         }
     }
-    /**************** for panorama */
 
+    // for panorama 
 
+*/
 
+/*
     function showpan() {
         $('#pano').attr("style", "visibility: visible; height:540px; width:620px;");
-        $('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
-        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
+        $('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
+        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
         $('#photo').attr('style','display:none');
         pan();
     }
+    */
     function showmap() {
+    	$('#map_canvas').empty();
         $('#map_canvas').attr("style", "visibility: visible; height:540px; width:620px;");
-        $('#pano').attr("style", "visibility: hidden; height:0px; width:0px;");
+       // $('#pano').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
         $('#photo').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
-        map();
+        map(lat,lng,'',1);
     }
     function showphoto() {
+    	$('#map_canvas').empty();
         $('#photo').attr("style", "visibility: visible; height:540px; width:620px;");
-        $('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px;");
-        $('#pano').attr("style", "visibility: hidden; height:0px; width:0px;")
+        $('#map_canvas').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
+        //$('#pano').attr("style", "visibility: hidden; height:0px; width:0px; display:none;")
 
     }
 
     $(document).ready(function () {
-        map();
-        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px;");
-
-
-//         $('#scrollLeft').cycle({
-//             fx: 'scrollHorz',
-//             speed: 1000,
-//             timeout: 5000,
-//             prev: '#prev',
-//             next: '#next'
-//         });
-
+        map(lat,lng,'',1);
+        $('#photo').attr("style", "visibility: hidden; height:0px; width:0px; display:none;");
         
     	if($('#c1').attr('checked')){
-   		 showphoto();
-   		$('#c1').attr('checked','checked');	
-   	}
+   		 	showphoto();
+   			$('#c1').attr('checked','checked');	
+   		}
     });
 
 </script>
@@ -117,6 +126,44 @@
 .cycle-prev { left: 0;  background: url(/img/fancy_nav_left.png) 50% 50% no-repeat;}
 .cycle-next { right: 0; background: url(/img/fancy_nav_right.png) 50% 50% no-repeat;}
 .cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+
+#galoba{
+display:none;
+}
+
+#complains textarea{
+    font: 300 16px/20px "Fira Sans";
+    height: 74px;
+    margin-left: -8px;
+    width: 248px;  
+}
+
+#complain-button{
+background: #8ec549 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font: 700 18px/44px "Fira Sans";
+    width: 260px;
+}
+#complain-button:hover {
+background: #8abf47 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font: 700 18px/44px "Fira Sans";
+    width: 260px;
+}
+
+.ui-dialog{
+z-index: 1001;
+width: 307px;
+}
+
+.inp {
+ height: 13px;
+}
 
 .metro11 {
     background: rgba(0, 0, 0, 0) url("") no-repeat scroll left center;
@@ -210,7 +257,9 @@ echo $model->building_number ?></h1>
                 <img style='height: 540px; width: 620px; text-align:center;' src="<?php echo Yii::app()->params['imgDomain']?>/images/no-photo.jpg" />
                 <?php } ?>
         </div>
+        <?php /*
         <div class="panorama" id='pano'></div>
+        */?>
     </div>
     <div class="right-column">
     <div style='font-size:25px; text-align: left; font-weight: 700; margin-top: -35px;'>
@@ -257,6 +306,7 @@ echo $model->building_number ?></h1>
         <div class="open-contact" method="get">
             <input type="text" id='pasword' placeholder="Введите пароль">
             <input type="button" id='showphone' value="Показать телефон ">
+            <span style="<?php echo (show_number_if_old($model->date_add))?'dispaly: block; visibility:visible; color:red;':'dispaly: none; visibility:hidden; ';?>"> Возмножно сдано</span>
             <p class="wrong-password">Этот пароль не подходит :(</p>
         </div>
         <div class="get-acces">
@@ -266,7 +316,16 @@ echo $model->building_number ?></h1>
     </div>
 </div>
 
-
+<script type="text/javascript">
+	var str=$('.owner-phone').text();
+    if(str.indexOf('XXX') + 1) {
+    	// тел скрыто
+     }else{
+    		// тел открыто
+ 	$('#showphone').val('Пожаловаться');
+         }
+                   
+</script>
 
 
 <fieldset class="photo-map-panorama">
@@ -275,13 +334,16 @@ echo $model->building_number ?></h1>
 
     <input id="c2" name="photo-map-panorama" type="radio" <?php  if (isset($model->Pictures) && $model->Pictures){echo "";}else{echo "checked='checked'";}?> onclick='showmap()'/>
     <label for="c2"><span>Карта</span></label>
-
+<?php /*
     <input id="c3" name="photo-map-panorama" type="radio" onclick='showpan()'/>
     <label for="c3"><span>Панорама</span></label>
+   */ ?>
 </fieldset>
 
 
-<p class="password-note">Телефонный номер владельца квартиры скрыт. Для просмотра объявления вам нужен пароль для открытия контактов.</p>
+<p class="password-note">Телефонный номер владельца квартиры скрыт. Для просмотра объявления вам нужен пароль для открытия контактов.
+
+</p>
 <p class="item-description">
 <?php echo $model->note; ?>
 </p>
@@ -294,6 +356,33 @@ echo $model->building_number ?>" rel="sidebar" href="">Добавить в из�
 */
 ?>
 
-
-
 </div>
+
+
+<?php
+// Dialog 1 
+$this->beginWidget('zii.widgets.jui.CJuiDialog',array(
+    'id'=>'object-complaint',
+    // additional javascript options for the dialog plugin
+    'options'=>array(
+        'title'=>'Пожаловаться на объект',
+        'autoOpen'=>false,
+        'draggable'=>false,
+        'resizable'=>false,
+        'modal'=>'true',
+        'height'=>'auto',
+        'width'=>'auto;',
+        'htmlOptions'=>array('style'=>"display:none;"),
+    ),));?>
+<form id="complains">
+    <div><label><input class='inp check' type="radio" name="group2" checked/>Агент</label></div>
+<?php if(!show_number_if_old($model->date_add)):?>   
+    <div><label><input class='inp' type="radio" name="group2"/>Сдано</label></div>
+<?php endif;?>    
+    <div><label><input class='inp' type="radio" name="group2"/>Иное</label></div>
+    <input type="hidden" id='id_ob' name="id_ob" value="<?php echo $model->id_object;?>"/>
+    <p id='wrong-t' style='color:red; font-size:12px;'></p>
+    <textarea name='galoba' id='galoba' placeholder='Обезательно для заполнения'></textarea>
+    <div><input id='complain-button' type="button" value='Пожаловаться' onclick="sComplain(this);"></div>
+</form>
+<?php $this->endWidget('zii.widgets.jui.CJuiDialog');?>

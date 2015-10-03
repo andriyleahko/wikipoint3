@@ -48,6 +48,8 @@ input[type="checkbox"] + label:nth-of-type(1){border-left: 1px solid #5c80a4; bo
 label:last-child {border-right: 1px solid #BCBCBC; border-radius: 0px 4px 4px 0px; background-color:#a6a6a6}
 input[type="checkbox"]:checked + label {background: #5c80a4; box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.50);}
 
+.errorSummary li {font: 12px/20px "Fira Sans"; color:red; padding-left:10px;}
+.errorSummary p {font: 18px/20px "Fira Sans"; color:red; padding-left:10px;}
 
 textarea {
 vertical-align: top; 
@@ -73,11 +75,15 @@ input[type="submit"] {margin-top: 8px; margin-left: 300px; margin-bottom: 30px; 
 <h1 style='margin-left: -10px; width: 960px; background-color: white;'>Добавление нового<br> объекта в базу</h1>
 <p class="subheader"><span class="sh">процедура занимает около 5 минут</span></p>
 <?php echo CHtml::beginForm('','post',array('enctype'=>'multipart/form-data'));?>
-<?php echo CHtml::errorSummary($model,null,null,array('style'=>'color:red'));?>
+<?php echo CHtml::errorSummary($model,null,null,array('style'=>''));?>
 <?php
-    foreach(Yii::app()->user->getFlashes() as $key => $message) {
-        echo '<div style="color: blue;" class="flash-' . $key . '">' . $message . "</div>\n";
-    }
+$fl=Yii::app()->user->getFlashes();
+ if (isset($fl)&&count($fl)>0){
+    foreach($fl as $key => $message) {
+        echo '<div style="color: #4579a6; text-align: center;" class="flash-' . $key . '">' . $message . "</div>\n";
+	}
+	
+ }
 ?>
 
 <p class="wide-label">

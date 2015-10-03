@@ -1,8 +1,82 @@
+    function sComplain(o){
+        // complaint Form
+        var category = $('.check').parent().text();
+        var objectId = $('#id_ob').val();
+        var textt = $("#galoba").val();
+        if(category=='Иное'){
+        	if(textt==''){
+        		$('#wrong-t').text('Поле обезательно для заполнения');
+        		return false;
+        	}
+        }
 
-$(function() {
-	//$(".phone").mask("+7(999)999-99-99");
+        $.ajax({
+        	url:"/item/complain",
+        	type:'GET',
+        	data:{category:category,textt:textt,objectId:objectId},
+        	success: function(data){
+        			dataJS=JSON.parse(data);
+        			if(dataJS.no_complain==2){
+        				$('#wrong-t').text('Жалобу могут оставить только авторизованные пользователи');
+        				return false;
+        			}
+        			if(dataJS.no_complain==3){
+        				$('#wrong-t').text('Ошибка, жалоба не может быть принята');
+        				return false;
+        			}
+        			if(dataJS.no_complain==4){
+        				$('#wrong-t').text('Вы жалобу уже оставляли');
+        				return false;
+        			}
+        			$('#object-complaint').dialog('close');
+        		},
+        	error: function(html){
+        		//
+        		}
+        	});
+    }
 
-});
+
+// для метро от Яндекс
+function map(lat,lng,idd,add){
+	  var myMap = new ymaps.Map('map_canvas'+idd, {
+		    // центр и коэффициент масштабирования однозначно
+		    // определяют область картографирования
+		    center: [lat, lng],
+		    zoom: 16,
+		    behaviors: ['ruler', 'scrollZoom','drag'],
+		  });
+
+      if(add==1){
+    	  myMap.controls.add(
+   			   new ymaps.control.ZoomControl()
+   			);
+		  myMap.controls
+	      // Кнопка изменения масштаба
+	      .add('zoomControl')
+	      // Список типов карты
+	      .add('typeSelector')
+	      // Кнопка изменения масштаба - компактный вариант
+	      // Расположим её справа
+	      .add('smallZoomControl', { right: 5, top: 75 })
+	      // Стандартный набор кнопок
+	      .add('mapTools')    
+	      //Линейка масштаба
+	       .add(new ymaps.control.ScaleLine())
+	       //Обзорная карта, с заданным типом
+	       .add(new ymaps.control.MiniMap({
+	          type: 'yandex#hybrid'
+	      }));
+      }
+
+		
+	  // Создание метки 
+	var myPlacemark = new ymaps.Placemark([lat, lng],{},{preset: 'twirl#redIcon'});
+
+	// Добавление метки на карту
+	myMap.geoObjects.add(myPlacemark);	  
+	  
+    }
 
 function selMetro(el,metro_id){
 	if ($(el).hasClass('active')){
@@ -23,8 +97,27 @@ function selDistrict(el,district_id){
 }
 
 $(document).ready(function () {
+	// для жалоб
+	
+	
+	$('.inp').on('click',function(){
+		$('.inp').each(function(){
+			if ($(this).hasClass('check')){
+				$(this).removeClass('check');
+			}
+		});
+		$(this).addClass('check');
+		if($('.check').parent().text()=='Иное'){
+			$('#galoba').css('display','block');
+		}else{
+			$('#galoba').css('display','none');
+		}
+		$('#wrong-t').text('')
+	})
+	///
+	
 
-	//$('#d-7').find("input").attr('checked','checked');
+
 	// 7, 3, today, from ... to
 	$('.radioss').on('click', function () {
 		var id=$(this).attr('id');
@@ -113,25 +206,31 @@ $(document).ready(function () {
         return false;
     });
     
-    // show phone on click
+    // show phone on click or complain
     $('#showphone').on('click', function(){
-    	var obectId=$('#obectId').val();
-    	var pasword=$('#pasword').val();
-    	$('.wrong-password').attr("style", "visibility: hidden !important");
-    	$.ajax({
-    		type:'post',
-    		url:'/item/showphone?obectId='+obectId+'&pasword='+pasword,
-    		success: function(data){
-    			 var dataJS = JSON.parse(data);
-    			 if (dataJS.status=='ok'){
-    				 $('.owner-phone').text('+7 '+dataJS.phone);
-    			 }else{
-    				 $('.wrong-password').attr("style", "visibility: visible !important");
-    				 $('.wrong-password').text(dataJS.status);
-    			 }
-    		}
-    		
-    	});
+    	if($('#showphone').val()=='Пожаловаться'){
+    		$('#object-complaint').dialog('open');
+    		return
+    	}else{
+	    	var obectId=$('#obectId').val();
+	    	var pasword=$('#pasword').val();
+	    	$('.wrong-password').attr("style", "visibility: hidden !important");
+	    	$.ajax({
+	    		type:'post',
+	    		url:'/item/showphone?obectId='+obectId+'&pasword='+pasword,
+	    		success: function(data){
+	    			 var dataJS = JSON.parse(data);
+	    			 if (dataJS.status=='ok'){
+	    				 $('.owner-phone').text('+7 '+dataJS.phone);
+	    				 $('#showphone').val('Пожаловаться');
+	    			 }else{
+	    				 $('.wrong-password').attr("style", "visibility: visible !important");
+	    				 $('.wrong-password').text(dataJS.status);
+	    			 }
+	    		}
+	    		
+	    	});
+    	}
     });
     
     // show phone on enter
@@ -171,7 +270,7 @@ $(document).ready(function () {
         if (metroArr.indexOf(name) < 0) {
             metroArr.push(name);
             metroArr = cleanArray(metroArr);
-            console.log(metroArr)
+            //console.log(metroArr)
             var metroVal = metroArr.join(',');
             $('#select-metro').append(" <span class='selected-metroes' style='display:block; margin-top:1px;margin-left:5px;'>" + name + "<span class='close-metro' style='color:red;cursor:pointer'> x </span>");
 

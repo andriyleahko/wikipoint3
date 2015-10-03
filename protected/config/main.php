@@ -35,7 +35,17 @@ return array(
 
 	// application components
 	'components'=>array(
-
+			'robokassa' => array(
+					'class' => 'application.components.yii-robokassa.Robokassa',
+					'sMerchantLogin' => 'baza812',
+					'sMerchantPass1' => 'baza812_123',
+					'sMerchantPass2' => '123_baza812',
+					'sCulture' => 'ru',
+					'sIncCurrLabel' => '',
+					//'orderModel' => 'InvoiceRobo', // ваша модель для выставления счетов
+					//'priceField' => 'amount', // атрибут модели, где хранится сумма
+					'isTest' => true, // тестовый либо боевой режим работы
+			),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
