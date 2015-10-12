@@ -26,6 +26,8 @@ class CatalogController extends Controller
                               );
                 $where = ' t.status = 1 ';
                 
+                $where .= 'AND (t.source_url <> "miniwiki") ';
+                
                 switch (Yii::app()->request->getParam('days')) {
                 	case 7:
                 		$where .=' AND (t.date_add >= "' . date('Y-m-d',time()-7*24*60*60).' 00:00:01' . '")';
@@ -101,7 +103,8 @@ class CatalogController extends Controller
                 $count = Objects::model()->count($criteria);
                 $criteria->limit = $this->limit;
                 $criteria->offset = Yii::app()->request->getParam('offset',0);
-                $criteria->order='t.id_object DESC';
+                //$criteria->order='t.id_object DESC';
+				$criteria->order='t.date_add DESC';
                 
                 $model = Objects::model()->findAll($criteria);
                 

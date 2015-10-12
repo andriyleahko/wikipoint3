@@ -1,14 +1,8 @@
-<?php
-$aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
-		7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
-		13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
-		19=>"Фрунзенский",20=>"Центральный",);
-?>
-
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
+<link href='/css/fira.css' rel='stylesheet' type='text/css' />
 
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
   
@@ -17,10 +11,13 @@ $aArea = array(1=>"Адмиралтейский",2=>"Василеостровс�
 <!-- <script type="text/javascript" -->
 <!--       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLPXMgcCP2NtQaJqvz0EwP6LxR4vsb1sY&sensor=TRUE&language=ru"> -->
 <!-- </script> -->
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
-<script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
 
+
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+        <link rel="stylesheet" type="text/css" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+        
+        <script type="text/javascript" src="/js/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
 <!--  <script type="text/javascript" src="/js/jquery.easing.1.1.1.js"></script>  -->
 
 <script src="/js/jquery.cookie.js" ></script>
@@ -180,7 +177,7 @@ body {
 }
 
 
-.photo-map-panorama {margin: -10px 0 8px 138px;}
+.photo-map-panorama {margin: -30px 0 0 85px;}
 .photo-map-panorama input[type="radio"] {display: none;}
 .photo-map-panorama input[type="radio"] + label { 
 	display: block;
@@ -263,30 +260,19 @@ body {
 	cursor:pointer;
 }
 
-/*
-.back-to-search:hover, .add-to-favorites:hover {
-	text-decoration: none;
-	color: white;
-	background: #4579A6;
-	line-height: 46px;
-	display: inline-block;
-	padding: 0px 20px;
-	margin: 7px 22px 7px 0px;
-	border-radius: 4px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-*/
-/* .add-to-favorites { */
-/* 	background: #9B9B9B; */
-/* } */
-
 
 </style>
-<link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+
 <title>Аренда квартир и комнат</title>
 </head>
 <body>
 
+<?php
+$aArea = array(1=>"Адмиралтейский",2=>"Василеостровский",3=>'Всеволожский',4=>"Выборгский",5=>"Калининский",6=>"Кировский",
+		7=>"Колпинский",8=>"Красногвардейский",9=>"Красносельский",10=>"Кронштадтский",11=>"Курортный",12=>"Московский",
+		13=>"Невский",14=>"Павловский",15=>"Петроградский",16=>"Петродворцовый",17=>"Приморский",18=>"Пушкинский",
+		19=>"Фрунзенский",20=>"Центральный",);
+?>
 
 <div id="item" class="wrapper">
 <div id="main-menu">

@@ -11385,3 +11385,2296 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://baza812.loc/catalog/search?rooms-amount[0]=3&metro=&dictrict=&search=1&price_from=&price_to=&days=-1&dayFrom=2013-11-04&dayTo=2015-10-03&offset=10
 ---
+2015/10/05 16:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/05 16:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/07 19:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/07 19:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/09 21:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/09 21:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/09 22:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/09 22:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/09 23:31:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/09 23:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/09 23:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/09 23:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/09 23:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:04:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:25:54 [error] [exception.CException] exception 'CException' with message 'В представлении контроллера ItemController обнаружен лишний вызов endWidget(zii.widgets.jui.CJuiDialog).' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php:218
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\views\item\index.php(394): CBaseController->endWidget('zii.widgets.jui...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 D:\OpenServer\domains\baza812.loc\protected\controllers\ItemController.php(77): CController->render('index', Array)
+#6 [internal function]: ItemController->actionShow('295589')
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#13 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#14 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#16 {main}
+REQUEST_URI=/item/show?itemId=295589
+---
+2015/10/10 00:36:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 00:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295589
+---
+2015/10/10 01:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295580
+---
+2015/10/10 01:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295580
+---
+2015/10/10 01:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/
+---
+2015/10/10 01:02:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297404
+---
+2015/10/10 16:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:41:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:51:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 16:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:06:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:06:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:09:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:09:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:09:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:11:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:23:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:23:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:27:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:30:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:31:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:31:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:37:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:37:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:37:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:39:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:45:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:46:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297458
+---
+2015/10/10 17:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/10 17:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/10/10 17:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:48:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 17:48:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:08:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:09:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:19:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:19:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:26:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:26:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.mousewheel-3.1.12.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.easing-1.3.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.jcarousellite.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.easing-1.3.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.mousewheel-3.1.12.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery....')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery.jcarousellite.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:33:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/js/jquery-...')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/item/js/jquery-1.11.1.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:47:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 18:54:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:00:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:07:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:08:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:09:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:09:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 19:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/5e6e4efe/jquery.js".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e6e4efe...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/5e6e4efe/jquery.js
+HTTP_REFERER=http://baza812.loc/item/show?itemId=297276
+---
+2015/10/10 20:10:45 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character' in D:\OpenServer\domains\baza812.loc\protected\globalfunctions.php:31
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\protected\globalfunctions.php(31): DateTime->__construct('@')
+#1 D:\OpenServer\domains\baza812.loc\protected\controllers\ItemController.php(62): show_number_if_old(NULL)
+#2 [internal function]: ItemController->actionShow('295062')
+#3 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#4 D:\OpenServer\domains\baza812.loc\framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#5 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\baza812.loc\framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(282): CController->run('show')
+#9 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('item/show')
+#10 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/item/show?itemId=295062
+---
+2015/10/10 20:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295046
+---
+2015/10/10 20:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295043
+---
+2015/10/10 20:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295043
+---
+2015/10/10 20:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295042
+---
+2015/10/10 20:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295042
+---
+2015/10/10 21:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-SemiBold.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-SemiBold.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Regular.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Regular.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Bold.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Bold.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Italic.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Italic.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Medium.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Medium.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Bold.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Bold.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Italic.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Italic.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Regular.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Regular.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-SemiBold.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-SemiBold.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-MediumItalic.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-MediumItalic.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Medium.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Medium.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:20:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-MediumItalic.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-MediumItalic.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Bold.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Bold.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Medium.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Medium.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Italic.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Italic.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-SemiBold.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-SemiBold.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-Regular.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-Regular.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/woff/FiraSans-MediumItalic.woff".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/woff/FiraSa...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/woff/FiraSans-MediumItalic.woff
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Bold.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Bold.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-SemiBold.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-SemiBold.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Italic.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Italic.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Medium.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Medium.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-MediumItalic.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-MediumItalic.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/ttf/FiraSans-Regular.ttf".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('css/ttf/FiraSan...')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ttf/FiraSans-Regular.ttf
+HTTP_REFERER=http://baza812.loc/css/fira.css
+---
+2015/10/10 21:21:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295038
+---
+2015/10/10 21:31:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295037
+---
+2015/10/10 21:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295036
+---
+2015/10/10 21:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\baza812.loc\framework\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\baza812.loc\framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\baza812.loc\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://baza812.loc/item/show?itemId=295036
+---

@@ -156,13 +156,13 @@ $fl=Yii::app()->user->getFlashes();
                     'id' => 'street_name',
                     'name' => 'Allstreets',
                    // 'value' => (isset($_POST['AddObjectForm']['street'])&&$_POST['AddObjectForm']['street'])?'':"",
-                    'source' => '/addItem/autocompleteStreets',
+                    'source' => '/cabinet/autocompleteStreets',
                     'options' => array(
                         'showAnim' => 'fold',
                        // 'class' => 'full-width',
                     		'select'=>'js:function( event, ui ) {
                     		 	$.ajax({
-        							url: "/addItem/getStreetId?namestr="+ui.item.value, 
+        							url: "/cabinet/getStreetId?namestr="+ui.item.value, 
         							type: "GET",
         							success: function (data) {
                     					dataJS = JSON.parse(data);
